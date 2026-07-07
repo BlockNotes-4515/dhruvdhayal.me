@@ -91,4 +91,16 @@ Software Engineer focused on scalable backend systems, applied AI/ML, and secure
   <a href="https://x.com/DhayalDhruv"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
 </p>
 
-<p align="center"><sub>© 2026 Dhruv Dhayal</sub></p>
+---
+
+---
+
+<div align="center">
+Software engineering is not just about writing code—it's about solving problems with scalable, maintainable, and impactful solutions.
+<br><br>
+<sub>Designed & Developed by <strong>Dhruv Dhayal</strong></sub>
+</div>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+</p>
