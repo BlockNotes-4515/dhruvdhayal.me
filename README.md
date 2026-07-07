@@ -1,4 +1,7 @@
 <div align="center">
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=25&duration=3500&pause=1200&color=00FF7F&center=true&vCenter=true&width=1000&lines=Designing+Scalable+Software.;Building+Production-Ready+Applications.;Researching+AI%2C+ML+%26+Intelligent+Systems.;Always+Learning.+Always+Building." alt="Typing SVG" />
+</p>
 
 <p align="center">
   <a href="https://gitfut.com/BlockNotes-4515">
