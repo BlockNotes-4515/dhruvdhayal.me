@@ -5,7 +5,7 @@
     <img
       src="https://gitfut.com/BlockNotes-4515.png"
       alt="My GitFut Card"
-      width="450"
+      width="250"
     />
   </a>
 </p>
