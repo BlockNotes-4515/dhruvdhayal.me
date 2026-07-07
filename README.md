@@ -5,7 +5,7 @@
     <img
       src="https://gitfut.com/BlockNotes-4515.png"
       alt="My GitFut Card"
-      width="750"
+      width="450"
     />
   </a>
 </p>
@@ -74,7 +74,7 @@ Software Engineer focused on scalable backend systems, applied AI/ML, and secure
 
 ## Contribution Graph
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=BlockNotes-4515&theme=tokyo-night&hide_border=true&area=true" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=BlockNotes-4515&theme=merko&hide_border=true&area=true" width="100%" />
 </p>
 
 ---
