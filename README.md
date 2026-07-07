@@ -107,7 +107,10 @@ Software engineering is not just about writing code—it's about solving problem
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 </p>
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&pause=1000&color=2EA043&center=true&vCenter=true&width=700&lines=Building scalable software.;Solving real-world problems!;Engineering with purpose.;See+you+again." />
+  <img
+    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&pause=1000&color=2EA043&center=true&vCenter=true&width=700&lines=Building+scalable+software.;Solving+real-world+problems!;Engineering+with+purpose.;See+you+again."
+    alt="Typing SVG"
+  />
 </p>
 <p align="center">
 <sub>© 2026 Dhruv Dhayal</sub>
