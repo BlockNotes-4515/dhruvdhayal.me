@@ -104,3 +104,7 @@ Software engineering is not just about writing code—it's about solving problem
 <p align="center">
   <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
 </p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&pause=1000&color=2EA043&center=true&vCenter=true&width=700&lines=Thanks+for+visiting.;Happy+Coding!;Keep+Building.;See+you+again." />
+</p>
