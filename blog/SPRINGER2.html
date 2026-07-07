@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" class="sora_3fd80e00-module__HLND6q__variable jetbrains_mono_5f0647e3-module__UHGtKW__variable">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charSet="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preload" href="https://www.lakshaymahajan.com/_next/static/media/70bc3e132a0a741e-s.p.1409xf.ylxg8g.woff2" as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload" href="https://www.lakshaymahajan.com/_next/static/media/c41ca59f1c34ba31-s.p.0xxb547n1hn74.woff2" as="font" crossorigin="" type="font/woff2" />
+    <link rel="stylesheet" href="https://www.lakshaymahajan.com/_next/static/chunks/15copuenlrz~n.css" data-precedence="next" />
+    <link rel="preload" as="script" fetchPriority="low" href="https://www.lakshaymahajan.com/_next/static/chunks/013f.eieuavfe.js" />
+    <script src="https://www.lakshaymahajan.com/_next/static/chunks/0pqt~8bl3ukh4.js" async=""></script>
+    <script src="https://www.lakshaymahajan.com/_next/static/chunks/0w4upf47yj739.js" async=""></script>
+    <script src="https://www.lakshaymahajan.com/_next/static/chunks/0vn2e3cj4vv3r.js" async=""></script>
+    <script src="https://www.lakshaymahajan.com/_next/static/chunks/turbopack-0tk5ut0xsr_um.js" async=""></script>
+    <script src="https://www.lakshaymahajan.com/_next/static/chunks/09dew68nzz~jw.js" async=""></script>
+    <script src="https://www.lakshaymahajan.com/_next/static/chunks/0t2xr05rlu96l.js" async=""></script>
+    <script src="https://www.lakshaymahajan.com/_next/static/chunks/12gj6-uu017k6.js" async=""></script>
+    <script src="https://www.lakshaymahajan.com/_next/static/chunks/13h545vw3y5c1.js" async=""></script>
+    <script src="https://www.lakshaymahajan.com/_next/static/chunks/10acgkpjlb-5y.js" async=""></script>
+    <script src="https://www.lakshaymahajan.com/_next/static/chunks/0hwsf_8kxiyzw.js" async=""></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#000000" />
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src &#x27;self&#x27;;
+        script-src &#x27;self&#x27; &#x27;unsafe-inline&#x27; https://www.googletagmanager.com https://www.google-analytics.com;
+        connect-src &#x27;self&#x27; https://www.google-analytics.com https://analytics.google.com;
+        frame-src &#x27;self&#x27; https://www.googletagmanager.com;
+        style-src &#x27;self&#x27; &#x27;unsafe-inline&#x27; https://fonts.googleapis.com;
+        img-src &#x27;self&#x27; data: https: https://www.google-analytics.com https://www.googletagmanager.com;
+        font-src &#x27;self&#x27; data: https://fonts.gstatic.com;
+      " />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous" />
+    <meta name="next-size-adjust" content="" />
+    <title>Publications — Dhruv Dhayal</title>
+    <meta name="description" content="Learn the difference between ML engineers and Applied AI engineers using a simple wheat-to-bread analogy. Discover how LLM APIs power modern AI applications without building models from scratch." />
+    <meta name="author" content="Lakshay Mahajan" />
+    <meta name="keywords" content="Machine Learning,Applied AI,AI Engineering,Artificial Intelligence,Software Engineering" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
+    <link rel="canonical" href="ml-engineers-vs-applied-ai-engineer.html" />
+    <meta property="og:title" content="From Wheat to Chatbots: Understanding ML Engineers vs Applied AI Engineers — Lakshay Mahajan" />
+    <meta property="og:description" content="Learn the difference between ML engineers and Applied AI engineers using a simple wheat-to-bread analogy. Discover how LLM APIs power modern AI applications without building models from scratch." />
+    <meta property="og:url" content="https://www.lakshaymahajan.com/blog/ml-engineers-vs-applied-ai-engineer" />
+    <meta property="og:site_name" content="Lakshay Mahajan" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:image" content="https://www.lakshaymahajan.com/images/blog/analogy.png" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2026-06-30" />
+    <meta property="article:tag" content="Machine Learning" />
+    <meta property="article:tag" content="Applied AI" />
+    <meta property="article:tag" content="AI Engineering" />
+    <meta property="article:tag" content="Artificial Intelligence" />
+    <meta property="article:tag" content="Software Engineering" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lakshay2224" />
+    <meta name="twitter:creator" content="@lakshay2224" />
+    <meta name="twitter:title" content="From Wheat to Chatbots: Understanding ML Engineers vs Applied AI Engineers — Lakshay Mahajan" />
+    <meta name="twitter:description" content="Learn the difference between ML engineers and Applied AI engineers using a simple wheat-to-bread analogy. Discover how LLM APIs power modern AI applications without building models from scratch." />
+    <meta name="twitter:image" content="https://www.lakshaymahajan.com/images/blog/analogy.png" />
+    <link rel="icon" href="../favicon.png" />
+    <script src="https://www.lakshaymahajan.com/_next/static/chunks/03~yq9q893hmn.js" noModule=""></script>
+</head>
+
+<body class="bg-background dark:bg-background-dark">
+
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4W4RW3C" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><a href="#main" class="sr-only focus:not-sr-only">Skip to main content</a>
+    <script>
+        ((a, b, c, d, e, f, g, h) => {
+            let i = document.documentElement,
+                j = ["light", "dark"];
+
+            function k(b) {
+                var c;
+                (Array.isArray(a) ? a : [a]).forEach(a => {
+                    let c = "class" === a,
+                        d = c && f ? e.map(a => f[a] || a) : e;
+                    c ? (i.classList.remove(...d), i.classList.add(f && f[b] ? f[b] : b)) : i.setAttribute(a, b)
+                }), c = b, h && j.includes(c) && (i.style.colorScheme = c)
+            }
+            if (d) k(d);
+            else try {
+                let a = localStorage.getItem(b) || c,
+                    d = g && "system" === a ? window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light" : a;
+                k(d)
+            } catch (a) {}
+        })("class", "theme", "system", null, ["light", "dark"], null, true, true)
+    </script>
+    <main id="main">
+        <div class="animate-fade-in">
+            <div class="flex min-h-screen flex-col">
+
+
+
+
+
+                <!-- HEADER -->
+                <header id="mainHeader" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+
+                    <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="flex items-center justify-between h-20">
+
+                            <!-- Logo -->
+                            <a class="text-lg font-semibold text-primary dark:text-primary-dark hover:text-accent dark:hover:text-accent-dark transition-colors duration-200" href="index.html">
+                Dhruv Dhayal
+            </a>
+                            <!-- Desktop Menu -->
+                            <div class="hidden md:flex items-center gap-8">
+                                <a class="text-sm transition-colors duration-200 text-primary dark:text-primary-dark" href="../index.html">Home</a>
+                                <a class="text-sm transition-colors duration-200 text-secondary dark:text-secondary-dark hover:text-primary dark:hover:text-primary-dark" href="../projects.html">Projects</a>
+                                <a class="text-sm transition-colors duration-200 text-secondary dark:text-secondary-dark hover:text-primary dark:hover:text-primary-dark" href="../experience.html">Experience</a>
+                                <a class="text-sm transition-colors duration-200 text-secondary dark:text-secondary-dark hover:text-primary dark:hover:text-primary-dark" href="../blog.html">Publications</a>
+                                <a class="text-sm transition-colors duration-200 text-primary dark:text-primary-dark" href="../index.html#contact">Contact</a>
+
+                                <button onclick="window.open('../images/UPDATED%20JUNE%20SUMMER%20CV.pdf', '_blank')" class="text-sm text-secondary dark:text-secondary-dark hover:text-primary dark:hover:text-primary-dark transition-colors duration-200">
+    Resume
+</button>
+
+                            </div>
+                            <!-- Mobile Menu -->
+
+                            <button class="p-2 flex flex-col justify-center items-center gap-1.5 md:hidden">
+                <span class="w-6 h-0.5 bg-primary dark:bg-primary-dark"></span>
+                <span class="w-6 h-0.5 bg-primary dark:bg-primary-dark"></span>
+                <span class="w-6 h-0.5 bg-primary dark:bg-primary-dark"></span>
+            </button>
+                        </div>
+                    </nav>
+                </header>
+
+
+
+                <style>
+                    .scrolled-header {
+                        /* Very transparent glass */
+                        background: rgba(255, 255, 255, 0.035);
+                        /* Strong blur for premium glass effect */
+                        backdrop-filter: blur(32px) saturate(220%);
+                        -webkit-backdrop-filter: blur(32px) saturate(220%);
+                        /* Multi-layer glossy reflection */
+                        background-image: linear-gradient( 135deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
+                        /* Thin glass border */
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+                        /* Premium depth */
+                        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.18), inset 0 -1px 0 rgba(255, 255, 255, 0.04);
+                        /* Smooth animation */
+                        transition: all 0.35s ease;
+                    }
+                    /* Dark mode version */
+                    
+                    .dark .scrolled-header {
+                        /* keep content visible behind */
+                        background: rgba(15, 23, 42, 0.18);
+                        backdrop-filter: blur(32px) saturate(220%);
+                        -webkit-backdrop-filter: blur(32px) saturate(220%);
+                        background-image: linear-gradient( 135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.015));
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+                    }
+                </style>
+
+
+                <!-- JS -->
+                <script>
+                    window.addEventListener("scroll", function() {
+                        const header = document.getElementById("mainHeader");
+
+                        if (window.scrollY > 50) {
+                            header.classList.add("scrolled-header");
+                        } else {
+                            header.classList.remove("scrolled-header");
+                        }
+                    });
+                </script>
+
+                <div class="flex-1">
+                    <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "BlogPosting",
+                            "headline": "From Wheat to Chatbots: Understanding ML Engineers vs Applied AI Engineers",
+                            "description": "Learn the difference between ML engineers and Applied AI engineers using a simple wheat-to-bread analogy. Discover how LLM APIs power modern AI applications without building models from scratch.",
+                            "datePublished": "2026-06-30",
+                            "author": {
+                                "@type": "Person",
+                                "name": "Lakshay Mahajan",
+                                "url": "https://www.lakshaymahajan.com"
+                            },
+                            "publisher": {
+                                "@type": "Person",
+                                "name": "Lakshay Mahajan",
+                                "url": "https://www.lakshaymahajan.com"
+                            },
+                            "image": "https://www.lakshaymahajan.com/images/blog/analogy.png",
+                            "url": "https://www.lakshaymahajan.com/blog/ml-engineers-vs-applied-ai-engineer",
+                            "mainEntityOfPage": {
+                                "@type": "WebPage",
+                                "@id": "https://www.lakshaymahajan.com/blog/ml-engineers-vs-applied-ai-engineer"
+                            },
+                            "keywords": "Machine Learning, Applied AI, AI Engineering, Artificial Intelligence, Software Engineering"
+                        }
+                    </script>
+                    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-24">
+                        <article class="max-w-3xl mx-auto"><a class="inline-flex items-center gap-2 text-sm text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark transition-colors mb-8" href="../blog.html"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>Back to All Publications</a>
+                            <header class="mb-10">
+                                <div class="flex flex-wrap gap-2 mb-4"><span class="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-mono bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Machine Learning</span>
+                                    <span class="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-mono bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Data Mining
+                                       </span>
+                                    <span class="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-mono bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Cyber Forensics</span>
+                                    <span class="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-mono bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+                                    Financial Security
+                                           </span>
+                                    <span class="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-mono bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Temporal Sequence Mining, Enterprise Systems</span></div>
+                                <h1 class="text-3xl sm:text-4xl font-bold text-primary dark:text-primary-dark mb-4">Mining Insider Threats in Enterprise Systems Using Behavioral Data and Cyber Forensics</h1>
+                                <p class="text-secondary dark:text-secondary-dark mb-6">Proceedings of International Conference on Artificial Intelligence and Networks (ICAIN 2025) <br>Part of the book series: Lecture Notes in Networks and Systems ((LNNS,volume 1952)) Included in the following conference series:
+                                    International Conference on Artificial Intelligence and Networking</p>
+                                <div class="flex flex-wrap items-center gap-4 text-sm font-mono text-secondary dark:text-secondary-dark pb-6 border-b border-border dark:border-border-dark"><span>Dhruv Dhayal</span><span class="flex items-center gap-1"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>May 26, 2026</span>
+                                    <span class="flex items-center gap-1"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>6
+                                            min read</span>
+                                </div>
+                            </header>
+                            <div class="prose prose-lg prose-neutral dark:prose-invert max-w-none">
+                                <h1 class="text-3xl sm:text-4xl font-bold mt-12 mb-6 text-primary dark:text-primary-dark">Abstract</h1>
+                                <p class="text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg" node="[object Object]">We found out that Insider threats are hard to detect because attackers use normal access but behave abnormally, making them difficult to identify using traditional security systems In order to overcome we bypass by using
+                                    several created Techniques discussed below:</p>
+                                <ol class="list-decimal list-outside ml-6 mb-6 space-y-2 text-secondary dark:text-secondary-dark">
+                                    <li class="text-base sm:text-lg leading-relaxed pl-2">Banking and stock exchange systems are increasingly vulnerable to insider threats because employees or internal users already have legitimate access credentials, making traditional security systems like rule-based monitoring
+                                        and static firewalls ineffective. With rapid digitization of financial infrastructure, attackers inside the system can perform activities such as unauthorized access, hidden data extraction, or transaction manipulation
+                                        without easily triggering alarms. This creates a critical gap in conventional cybersecurity approaches, which are not designed to detect behavior-based or intent-based anomalies in real time.</li>
+                                    <li class="text-base sm:text-lg leading-relaxed pl-2">The proposed system, Threat Sense, is an advanced machine learning-based detection framework that integrates behavioral analytics, temporal pattern recognition, and digital forensics to identify insider threats. It
+                                        uses multivariate temporal sequence mining algorithms to analyze user behavior over time, detecting deviations from normal activity patterns across different transaction loads and usage conditions. By building a
+                                        behavioral baseline for each user, it can detect subtle anomalies like unusual login behavior, abnormal transaction timing, or suspicious data access patterns with high accuracy, making it significantly more effective
+                                        than traditional security systems.</li>
+                                    <li class="text-base sm:text-lg leading-relaxed pl-2">Testing across three financial institutions showed that the system performs best when data quality is high and behavioral baselines are accurately defined. Its detection capability improves with better structured and
+                                        cleaner datasets. The system provides continuous real-time monitoring, generating actionable alerts whenever suspicious behavior is detected. Additionally, it maintains a strong digital forensic chain-of-custody,
+                                        ensuring that all evidence is preserved securely for legal investigations. During penetration testing, Threat Sense successfully detected threats like unauthorized financial data access, covert transaction manipulation,
+                                        and data leakage, proving its superiority over traditional detection methods.</li>
+                                </ol>
+                                <p class="text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg" node="[object Object]">Department of Computer Science and IT, Institute of Information Technology & Management, GGSIP University, New Delhi, India <strong class="font-semibold text-primary dark:text-primary-dark">Correspondence to "Manzoor Ansari"</strong></p>
+                                <ol class="list-decimal list-outside ml-6 mb-6 space-y-2 text-secondary dark:text-secondary-dark">
+                                    <li class="text-base sm:text-lg leading-relaxed pl-2">The banking and stock exchange sectors face rising insider threats that traditional security systems fail to detect due to trusted internal access and rapid digital transformation.</li>
+                                    <li class="text-base sm:text-lg leading-relaxed pl-2">Threat Sense is an ML-based framework that uses behavioral analytics and temporal pattern mining to detect abnormal user activities and insider attacks with high accuracy.</li>
+                                    <li class="text-base sm:text-lg leading-relaxed pl-2">It provides continuous monitoring and forensic-grade evidence tracking, successfully identifying unauthorized access, transaction manipulation, and data leakage in financial systems.</li>
+                                </ol>
+                                <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-4 text-primary dark:text-primary-dark border-b border-border dark:border-border-dark pb-2">Enhancing Financial Security through Data Mining and Cybersecurity: An Integrated Approach for Threat Detection and Prevention</h2>
+                                <p class="text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg" node="[object Object]">The study proposes a data mining-based cybersecurity framework that processes large-scale financial data using preprocessing, feature engineering, and dimensionality reduction to generate meaningful security insights.</p>
+                                <p class="text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg" node="[object Object]">It combines multiple AI techniques—supervised learning, anomaly detection, and sequential pattern mining using ensemble methods—to accurately detect both known and unknown insider threats.</p>
+                                <p class="text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg" node="[object Object]">The system integrates <strong class="font-semibold text-primary dark:text-primary-dark">cybersecurity mechanisms like blockchain ledgering</strong>, digital signatures, forensic evidence preservation, and privacy protection
+                                    to ensure secure, compliant, and tamper-proof financial transactions. ada witd critical infrastructure security systems. their LLM APIs to engineers and other companies.
+                                </p>
+
+                                <span class="block my-8 max-w-3xl mx-auto">
+                                      <span class="relative block w-full overflow-hidden rounded-lg border border-border dark:border-border-dark shadow-md">
+                                      <img
+    src="images/PUBLICATIONS/MINNING1.png"
+    alt="IntelliGuard V5"
+    class="w-full h-auto rounded-lg">
+                                    </span>
+                                <span class="block text-center text-xs text-secondary/70 dark:text-secondary-dark/70 mt-3 italic px-4">Working Structure of Machine Learning Pipelining for Risk Prediction and Threat Detection in Banking and Financial Systems in Data Warehousing and Data Mining</span>
+                                </span>
+
+
+
+
+
+
+
+
+
+
+
+                                <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-4 text-primary dark:text-primary-dark border-b border-border dark:border-border-dark pb-2">Problem Statement & Key Challenges</h2>
+                                <p class="text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg" node="[object Object]">Those who develop different kinds of applications using these Machine Learning Techniques and their software knowledge are called <strong class="font-semibold text-primary dark:text-primary-dark">Data Minning or Blockchain Lang Engineers</strong>.
+                                    Applications such as:</p>
+                                <ol class="list-decimal list-outside ml-6 mb-6 space-y-2 text-secondary dark:text-secondary-dark">
+                                    <li class="text-base sm:text-lg leading-relaxed pl-2">The system combines data mining techniques with machine learning approaches such as supervised learning, anomaly detection, and sequential pattern mining to identify both known and unknown insider threats from complex
+                                        financial and enterprise data.</li>
+                                    <li class="text-base sm:text-lg leading-relaxed pl-2"> It integrates continuous real-time monitoring with advanced cybersecurity mechanisms to detect suspicious activities instantly while also preserving digital forensic evidence for investigation and legal validation.</li>
+                                    <li class="text-base sm:text-lg leading-relaxed pl-2">The framework combines strong security enforcement with privacy-preserving methods and regulatory compliance measures, ensuring secure operations without violating user privacy or legal requirements in enterprise environments.</li>
+                                </ol>
+                                <p class="text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg" node="[object Object]">Problems that we found and solution by passing different Intercepting Challenges by using several Techniques we got the way to recover the data as well.</p>
+                                <p class="text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg" node="[object Object]">
+                                    <span class="block my-8 max-w-3xl mx-auto">
+                                      <span class="relative block w-full overflow-hidden rounded-lg border border-border dark:border-border-dark shadow-md">
+                                    <img
+    src="images/PUBLICATIONS/MINNING2.png"
+    alt="IntelliGuard V5"
+    class="w-full h-auto rounded-lg">
+                                    </span>
+                                    <span class="block text-center text-xs text-secondary/70 dark:text-secondary-dark/70 mt-3 italic px-4">Cyber Forensic Framework for Protecting Sensitive Data in Financial and Enterprise Networks using KYC</span>
+                                    </span>
+                                    <span class="block my-8 max-w-3xl mx-auto">
+                                      <span class="relative block w-full overflow-hidden rounded-lg border border-border dark:border-border-dark shadow-md">
+                                      <img
+    src="images/PUBLICATIONS/MINNING3.png"
+    alt="IntelliGuard V5"
+    class="w-full h-auto rounded-lg">
+                                    <span class="block text-center text-xs text-secondary/70 dark:text-secondary-dark/70 mt-3 italic px-4"> Multi-Tiered Data Mining Architecture for Behavioral Analysis and Insider Threat Detection in Enterprise and Financial Systems</span>
+                                    </span>
+                                </p>
+
+
+
+
+                                <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-4 text-primary dark:text-primary-dark border-b border-border dark:border-border-dark pb-2">Ethical and Legal Considerations</h2>
+                                <p class="text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg" node="[object Object]">Ethical data handling requires organizations to ensure user privacy, obtain informed consent, and prevent bias in machine learning systems that may lead to unfair or discriminatory decisions. Legally, institutions must
+                                    comply with regulations such as GDPR and CCPA, ensuring transparency, data minimization, and user rights like access and deletion, as non-compliance can result in penalties and loss of trust.</p>
+                                <p class="text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg" node="[object Object]">Secure data exchange and cybersecurity systems are widely used in banking for secure cross-border payments, in e-commerce for fraud prevention and safe transactions, in healthcare for protecting patient records, and in
+                                    government systems for digital identity and secure communication. <strong class="font-semibold text-primary dark:text-primary-dark">Blockchain and smart contracts</strong> further enhance transparency and automation
+                                    in decentralized finance and global trade systems. </p>
+                                <span class="block my-8 max-w-3xl mx-auto">
+                                      <span class="relative block w-full overflow-hidden rounded-lg border border-border dark:border-border-dark shadow-md">
+                                      <img
+    src="images/PUBLICATIONS/MINNING4.png"
+    alt="IntelliGuard V5"
+    class="w-full h-auto rounded-lg">
+
+                                <span class="block text-center text-xs text-secondary/70 dark:text-secondary-dark/70 mt-3 italic px-4"> Data Workflow in Cybersecurity for Secure Transaction
+</span>
+                                </span>
+
+
+                                <h2 class="text-2xl sm:text-3xl font-semibold mt-10 mb-4 text-primary dark:text-primary-dark border-b border-border dark:border-border-dark pb-2">Conclusions and Future Direction</h2>
+                                <p class="text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg" node="[object Object]">In the coming years, data mining and cybersecurity will become increasingly important for securing and managing large-scale data across industries. Data mining techniques will evolve to provide more accurate real-time insights,
+                                    anomaly detection, and predictive analysis for complex systems. <br>At the same time, cybersecurity will become more intelligent by integrating AI, advanced analytics, and blockchain to proactively detect threats and
+                                    ensure data integrity. Together, these technologies will help organizations prevent fraud, improve decision-making, and build secure and intelligent digital infrastructures.
+                                </p>
+
+
+                            </div>
+                            <footer class="mt-12 pt-6 border-t border-border dark:border-border-dark"><a class="inline-flex items-center gap-2 text-sm text-accent dark:text-accent-dark hover:underline" href="../blog.html"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>View all Publications</a></footer>
+                        </article>
+                    </div>
+                </div>
+
+
+
+                <footer class="bg-surface dark:bg-surface-dark border-t border-border dark:border-border-dark">
+                    <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
+                        <div class="max-w-6xl mx-auto">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-primary dark:text-primary-dark mb-3">Dhruv Dhayal</h3>
+                                    <p class="text-secondary dark:text-secondary-dark text-sm leading-relaxed">Software Engineer focused on building reliable systems with Node.js, MongoDB, and AWS.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-primary dark:text-primary-dark mb-4 uppercase tracking-wider font-mono">Quick Links</h4>
+                                    <ul class="space-y-3">
+                                        <li><a class="text-sm text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark transition-colors duration-200" href="projects.html">Projects</a></li>
+                                        <li><a class="text-sm text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark transition-colors duration-200" href="experience.html">Experience</a></li>
+                                        <li><a class="text-sm text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark transition-colors duration-200" href="blog.html">Publications</a></li>
+                                        <li><a class="text-sm text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark transition-colors duration-200" href="research.html">Research</a></li>
+                                        <li><a class="text-sm text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark transition-colors duration-200" href="index.html#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-primary dark:text-primary-dark mb-4 uppercase tracking-wider font-mono">Connect</h4>
+                                    <div class="flex gap-3">
+                                        <a href="https://github.com/BlockNotes-4515" target="_blank" rel="noopener noreferrer" class="p-3 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200"
+                                            aria-label="GitHub">
+                                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                                        <a href="https://www.linkedin.com/in/dhruv-dhayal-9568b7262/" target="_blank" rel="noopener noreferrer" class="p-3 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200"
+                                            aria-label="LinkedIn"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                                        <a href="https://x.com/DhayalDhruv" target="_blank" rel="noopener noreferrer" class="p-3 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200"
+                                            aria-label="X (Twitter)"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                                        <a href="https://t.me/dhayaldhruv271" target="_blank" class="p-3 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200"
+                                            aria-label="Telegram">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+        <path d="M21.944 2.506a1.5 1.5 0 0 0-1.633-.242L2.64 
+        10.06a1.5 1.5 0 0 0 .104 2.77l4.52 1.694 
+        1.694 4.52a1.5 1.5 0 0 0 2.77.104l7.796-17.67a1.5 
+        1.5 0 0 0-.58-1.972zM9.5 14.5l-.8 3.2-1.2-3.2 
+        8.9-8.1-6.9 8.1z"/>
+    </svg>
+                                        </a>
+
+                                        <a href="https://orcid.org/0009-0000-8346-7834" target="_blank" rel="noopener noreferrer" class="p-3 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200"
+                                            aria-label="ORCID">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-4 h-4" fill="currentColor">
+        <path d="M128 0C57.3 0 0 57.3 0 128s57.3 128 128 128 128-57.3 128-128S198.7 0 128 0zm-45.3 192H59.7V64h23v128zm-11.5-139.5c-7.6 0-13.7-6.1-13.7-13.7S63.6 25 71.2 25s13.7 6.1 13.7 13.8-6.1 13.7-13.7 13.7zM197 192h-28.8l-39.5-64.5h-.6V192h-23V64h39.5c29.5 0 52.5 13.2 52.5 44.7 0 22.7-12.7 38.2-35.8 41.9L197 192zM144.7 83h-16.6v49.7h16.6c17.3 0 29.4-7.9 29.4-24.9S162 83 144.7 83z"/>
+    </svg>
+
+                                        </a>
+
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-px bg-border dark:bg-border-dark mb-6"></div>
+                            <p class="text-sm text-secondary dark:text-secondary-dark font-mono text-xs">©
+                                <!-- -->2026
+                                <!-- -->Dhruv Dhayal
+                                <!-- -->| All rights reserved
+                            </p>
+                        </div>
+                    </div>
+                </footer>
+
+                <!-- Floating Bottom Right Buttons -->
+                <div class="floating-actions">
+
+                    <!-- Linkdin Button -->
+                    <button class="float-btn" onclick="window.open('https://www.linkedin.com/in/dhruv-dhayal-9568b7262/', '_blank')">
+    <!-- LinkedIn Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" 
+         width="22" 
+         height="22" 
+         fill="currentColor" 
+         viewBox="0 0 16 16">
+         
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 
+        0 16 .513 16 1.146v13.708c0 .633-.526 
+        1.146-1.175 1.146H1.175C.526 16 0 
+        15.487 0 14.854V1.146zm4.943 
+        12.248V6.169H2.542v7.225h2.401zM3.743 
+        5.18c.837 0 1.358-.554 
+        1.358-1.248-.015-.709-.521-1.248-1.343-1.248-.822 
+        0-1.358.54-1.358 1.248 0 .694.521 
+        1.248 1.327 1.248h.016zm4.908 
+        8.214V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 
+        1.232-.878.869 0 1.216.662 
+        1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 
+        0-1.845.7-2.165 1.193v.025h-.016a5.54 
+        5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 
+        0 7.225 0 7.225h2.4z"/>
+        
+    </svg>
+</button>
+
+
+                    <!-- Theme Toggle -->
+                    <button class="float-btn" id="themeToggle">
+    <svg id="themeIcon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="currentColor"
+        viewBox="0 0 16 16">
+        <path d="M6 0a.75.75 0 0 1 .73.602 
+        7 7 0 0 0 8.668 8.668A.75.75 
+        0 0 1 16 10a8 8 0 1 1-10-10z"/>
+    </svg>
+</button>
+
+                </div>
+
+                <style>
+                    .floating-actions {
+                        z-index: 999999 !important;
+                        pointer-events: auto !important;
+                    }
+                    
+                    .float-btn {
+                        pointer-events: auto !important;
+                    }
+                    /* Floating buttons container */
+                    
+                    .floating-actions {
+                        position: fixed;
+                        bottom: 24px;
+                        right: 18px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 14px;
+                        z-index: 999999;
+                    }
+                    /* Premium glossy circular buttons */
+                    
+                    .float-btn {
+                        width: 62px;
+                        height: 62px;
+                        border: none;
+                        outline: none;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        /* dark navy glass effect */
+                        background: rgba(0, 0, 0, 0.92);
+                        backdrop-filter: blur(22px);
+                        -webkit-backdrop-filter: blur(22px);
+                        border: 1px solid rgba(255, 255, 255, 0.06);
+                        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.30), inset 0 1px 2px rgba(255, 255, 255, 0.05);
+                        color: #ffffff;
+                        transition: all 0.28s ease;
+                    }
+                    /* Icon size */
+                    
+                    .float-btn svg {
+                        width: 24px;
+                        height: 24px;
+                    }
+                    /* Hover animation */
+                    
+                    .float-btn:hover {
+                        transform: scale(1.08);
+                        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35), inset 0 1px 2px rgba(255, 255, 255, 0.08);
+                    }
+                </style>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+
+                        const themeBtn = document.getElementById("themeToggle");
+                        const themeIcon = document.getElementById("themeIcon");
+                        const html = document.documentElement;
+
+                        // SVG icons
+                        const moonIcon = `
+        <path d="M6 0a.75.75 0 0 1 .73.602 
+        7 7 0 0 0 8.668 8.668A.75.75 
+        0 0 1 16 10a8 8 0 1 1-10-10z"/>
+    `;
+
+                        const sunIcon = `
+        <path d="M8 4.5a3.5 3.5 0 1 1 0 7 
+        3.5 3.5 0 0 1 0-7zm0-4a.5.5 0 0 
+        1 .5.5v1a.5.5 0 0 1-1 0v-1A.5.5 
+        0 0 1 8 .5zm0 13a.5.5 0 0 1 .5.5v1
+        a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5zm7-5.5
+        a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1 0-1h1
+        a.5.5 0 0 1 .5.5zm-13 0a.5.5 0 0 1-.5.5h-1
+        a.5.5 0 0 1 0-1h1a.5.5 0 0 1 .5.5zm9.95 
+        4.536a.5.5 0 0 1 .707 0l.708.707a.5.5 
+        0 0 1-.708.708l-.707-.708a.5.5 0 0 
+        1 0-.707zm-9.193 0a.5.5 0 0 1 0 
+        .707l-.707.708a.5.5 0 1 1-.708-.708
+        l.708-.707a.5.5 0 0 1 .707 0zm9.193-9.193
+        a.5.5 0 0 1 0 .707l-.707.708a.5.5 0 1 
+        1-.708-.708l.708-.707a.5.5 0 0 1 .707 
+        0zm-9.193 0a.5.5 0 0 1 .707 0l.708.707
+        a.5.5 0 1 1-.708.708l-.707-.708a.5.5 
+        0 0 1 0-.707z"/>
+    `;
+
+                        // Set correct icon on load
+                        function updateIcon() {
+                            if (html.classList.contains("dark")) {
+                                themeIcon.innerHTML = sunIcon; // dark mode = show sun
+                            } else {
+                                themeIcon.innerHTML = moonIcon; // light mode = show moon
+                            }
+                        }
+
+                        updateIcon();
+
+                        themeBtn.addEventListener("click", function() {
+
+                            if (html.classList.contains("dark")) {
+                                html.classList.remove("dark");
+                                html.classList.add("light");
+                                localStorage.setItem("theme", "light");
+                            } else {
+                                html.classList.remove("light");
+                                html.classList.add("dark");
+                                localStorage.setItem("theme", "dark");
+                            }
+
+                            updateIcon();
+                        });
+
+                    });
+                </script>
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <script src="https://www.lakshaymahajan.com/_next/static/chunks/013f.eieuavfe.js" id="_R_" async=""></script>
+    <script>
+        (self.__next_f = self.__next_f || []).push([0])
+    </script>
+    <script>
+        self.__next_f.push([1, "1:\"$Sreact.fragment\"\n2:I[79520,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"\"]\n4:I[63178,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"ThemeProvider\"]\n5:I[63687,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"default\"]\n6:I[39756,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"default\"]\n7:I[58298,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\",\"/_next/static/chunks/12gj6-uu017k6.js\"],\"default\"]\n8:I[16868,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\",\"/_next/static/chunks/13h545vw3y5c1.js\"],\"default\"]\n9:I[37457,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"default\"]\na:I[22016,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\",\"/_next/static/chunks/10acgkpjlb-5y.js\",\"/_next/static/chunks/0hwsf_8kxiyzw.js\"],\"\"]\n10:I[68027,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"default\",1]\n:HL[\"/_next/static/chunks/15copuenlrz~n.css\",\"style\"]\n:HL[\"/_next/static/media/70bc3e132a0a741e-s.p.1409xf.ylxg8g.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/c41ca59f1c34ba31-s.p.0xxb547n1hn74.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n3:[\"$\",\"iframe\",null,{\"src\":\"https://www.googletagmanager.com/ns.html?id=GTM-P4W4RW3C\",\"height\":\"0\",\"width\":\"0\",\"style\":{\"display\":\"none\",\"visibility\":\"hidden\"}}]\n"])
+    </script>
+    <script>
+        self.__next_f.push([1, "0:{\"P\":null,\"c\":[\"\",\"blog\",\"ml-engineers-vs-applied-ai-engineer\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"blog\",{\"children\":[[\"slug\",\"ml-engineers-vs-applied-ai-engineer\",\"d\",null],{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",16],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/15copuenlrz~n.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/09dew68nzz~jw.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/0t2xr05rlu96l.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"suppressHydrationWarning\":true,\"className\":\"sora_3fd80e00-module__HLND6q__variable jetbrains_mono_5f0647e3-module__UHGtKW__variable\",\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"meta\",null,{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",null,{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",null,{\"httpEquiv\":\"X-UA-Compatible\",\"content\":\"IE=edge\"}],[\"$\",\"meta\",null,{\"name\":\"theme-color\",\"content\":\"#000000\"}],[\"$\",\"meta\",null,{\"httpEquiv\":\"Content-Security-Policy\",\"content\":\"\\n        default-src 'self';\\n        script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com;\\n        connect-src 'self' https://www.google-analytics.com https://analytics.google.com;\\n        frame-src 'self' https://www.googletagmanager.com;\\n        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;\\n        img-src 'self' data: https: https://www.google-analytics.com https://www.googletagmanager.com;\\n        font-src 'self' data: https://fonts.gstatic.com;\\n      \"}],[\"$\",\"meta\",null,{\"httpEquiv\":\"X-Content-Type-Options\",\"content\":\"nosniff\"}],[\"$\",\"meta\",null,{\"httpEquiv\":\"X-XSS-Protection\",\"content\":\"1; mode=block\"}],[\"$\",\"meta\",null,{\"name\":\"referrer\",\"content\":\"strict-origin-when-cross-origin\"}],[\"$\",\"link\",null,{\"rel\":\"manifest\",\"href\":\"/manifest.json\"}],[\"$\",\"link\",null,{\"rel\":\"preconnect\",\"href\":\"https://fonts.googleapis.com\"}],[\"$\",\"link\",null,{\"rel\":\"preconnect\",\"href\":\"https://fonts.gstatic.com/\",\"crossOrigin\":\"anonymous\"}]]}],[\"$\",\"$L2\",null,{\"id\":\"google-tag-manager\",\"strategy\":\"afterInteractive\",\"children\":\"\\n          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\\n          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\\n          j=d.createElement(s),dl=l!='dataLayer'?'\u0026l='+l:'';j.async=true;j.src=\\n          '../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);\\n          })(window,document,'script','dataLayer','GTM-P4W4RW3C');\\n        \"}],[\"$\",\"body\",null,{\"className\":\"bg-background dark:bg-background-dark\",\"children\":[[\"$\",\"noscript\",null,{\"children\":\"$3\"}],[\"$\",\"a\",null,{\"href\":\"#main\",\"className\":\"sr-only focus:not-sr-only\",\"children\":\"Skip to main content\"}],[\"$\",\"$L4\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"children\":[[\"$\",\"$L5\",null,{}],[\"$\",\"main\",null,{\"id\":\"main\",\"children\":[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$7\",\"errorStyles\":[],\"errorScripts\":[[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/12gj6-uu017k6.js\",\"async\":true}]],\"template\":[\"$\",\"$L8\",null,{\"children\":[\"$\",\"$L9\",null,{}]}],\"templateStyles\":[],\"templateScripts\":[[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/13h545vw3y5c1.js\",\"async\":true}]],\"notFound\":[[\"$\",\"div\",null,{\"className\":\"min-h-screen flex items-center justify-center bg-background dark:bg-background-dark\",\"children\":[\"$\",\"div\",null,{\"className\":\"text-center p-8 max-w-md\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-5xl font-bold text-primary dark:text-primary-dark mb-2\",\"children\":\"404\"}],[\"$\",\"h2\",null,{\"className\":\"text-xl font-semibold text-primary dark:text-primary-dark mb-4\",\"children\":\"Page Not Found\"}],[\"$\",\"p\",null,{\"className\":\"text-secondary dark:text-secondary-dark mb-8\",\"children\":\"The page you're looking for doesn't exist or has been moved.\"}],[\"$\",\"$La\",null,{\"href\":\"/\",\"className\":\"inline-block px-6 py-3 bg-primary dark:bg-primary-dark text-white dark:text-black hover:bg-accent dark:hover:bg-accent-dark transition-colors duration-200\",\"children\":\"Go Home\"}]]}]}],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]]}]]}]]}]]}],{\"children\":[\"$Lb\",{\"children\":[\"$Lc\",{\"children\":[\"$Ld\",{},null,false,null]},null,false,\"$@e\"]},null,false,\"$@e\"]},null,false,null],\"$Lf\",false]],\"m\":\"$undefined\",\"G\":[\"$10\",[\"$L11\"]],\"S\":true,\"h\":null,\"s\":\"$undefined\",\"l\":\"$undefined\",\"p\":\"$undefined\",\"d\":\"$undefined\",\"b\":\"AXFm6cvPIjWdHassPVoHn\"}\n"])
+    </script>
+    <script>
+        self.__next_f.push([1, "13:I[97367,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"OutletBoundary\"]\n14:\"$Sreact.suspense\"\n17:I[97367,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"ViewportBoundary\"]\n19:I[97367,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"MetadataBoundary\"]\nb:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L9\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\nc:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L9\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\nd:[\"$\",\"$1\",\"c\",{\"children\":[\"$L12\",[[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/10acgkpjlb-5y.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/0hwsf_8kxiyzw.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"$L13\",null,{\"children\":[\"$\",\"$14\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@15\"}]}]]}]\n16:[]\ne:\"$W16\"\nf:[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L17\",null,{\"children\":\"$L18\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$L19\",null,{\"children\":[\"$\",\"$14\",null,{\"name\":\"Next.Metadata\",\"children\":\"$L1a\"}]}]}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}]\n11:[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/15copuenlrz~n.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]\n"])
+    </script>
+    <script>
+        self.__next_f.push([1, "1b:I[45678,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\",\"/_next/static/chunks/10acgkpjlb-5y.js\",\"/_next/static/chunks/0hwsf_8kxiyzw.js\"],\"default\"]\n"])
+    </script>
+    <script>
+        self.__next_f.push([1, "12:[\"$\",\"div\",null,{\"className\":\"flex min-h-screen flex-col\",\"children\":[[\"$\",\"$L1b\",null,{}],[\"$\",\"div\",null,{\"className\":\"flex-1\",\"children\":[[\"$\",\"script\",null,{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"{\\\"@context\\\":\\\"https://schema.org/\\\",\\\"@type\\\":\\\"BlogPosting\\\",\\\"headline\\\":\\\"From Wheat to Chatbots: Understanding ML Engineers vs Applied AI Engineers\\\",\\\"description\\\":\\\"Learn the difference between ML engineers and Applied AI engineers using a simple wheat-to-bread analogy. Discover how LLM APIs power modern AI applications without building models from scratch.\\\",\\\"datePublished\\\":\\\"2026-06-30\\\",\\\"author\\\":{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Lakshay Mahajan\\\",\\\"url\\\":\\\"https://www.lakshaymahajan.com\\\"},\\\"publisher\\\":{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Lakshay Mahajan\\\",\\\"url\\\":\\\"https://www.lakshaymahajan.com\\\"},\\\"image\\\":\\\"../images/blog/analogy.png\\\",\\\"url\\\":\\\"ml-engineers-vs-applied-ai-engineer.html\\\",\\\"mainEntityOfPage\\\":{\\\"@type\\\":\\\"WebPage\\\",\\\"@id\\\":\\\"https://www.lakshaymahajan.com/blog/ml-engineers-vs-applied-ai-engineer\\\"},\\\"keywords\\\":\\\"Machine Learning, Applied AI, AI Engineering, Artificial Intelligence, Software Engineering\\\"}\"}}],[\"$\",\"div\",null,{\"className\":\"container mx-auto px-4 sm:px-6 lg:px-8 py-24\",\"children\":[\"$\",\"article\",null,{\"className\":\"max-w-3xl mx-auto\",\"children\":[[\"$\",\"$La\",null,{\"href\":\"/blog\",\"className\":\"inline-flex items-center gap-2 text-sm text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark transition-colors mb-8\",\"children\":[[\"$\",\"svg\",null,{\"stroke\":\"currentColor\",\"fill\":\"none\",\"strokeWidth\":\"2\",\"viewBox\":\"0 0 24 24\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"w-4 h-4\",\"children\":[\"$undefined\",[[\"$\",\"line\",\"0\",{\"x1\":\"19\",\"y1\":\"12\",\"x2\":\"5\",\"y2\":\"12\",\"children\":[]}],[\"$\",\"polyline\",\"1\",{\"points\":\"12 19 5 12 12 5\",\"children\":[]}]]],\"style\":{\"color\":\"$undefined\"},\"height\":\"1em\",\"width\":\"1em\",\"xmlns\":\"http://www.w3.org/2000/svg\"}],\"Back to Blog\"]}],[\"$\",\"header\",null,{\"className\":\"mb-10\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-2 mb-4\",\"children\":[[\"$\",\"span\",\"Machine Learning\",{\"className\":\"inline-flex items-center gap-1 px-2 py-0.5 text-xs font-mono bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded\",\"children\":[[\"$\",\"svg\",null,{\"stroke\":\"currentColor\",\"fill\":\"none\",\"strokeWidth\":\"2\",\"viewBox\":\"0 0 24 24\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"w-3 h-3\",\"children\":[\"$undefined\",[[\"$\",\"path\",\"0\",{\"d\":\"M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z\",\"children\":[]}],[\"$\",\"line\",\"1\",{\"x1\":\"7\",\"y1\":\"7\",\"x2\":\"7.01\",\"y2\":\"7\",\"children\":[]}]]],\"style\":{\"color\":\"$undefined\"},\"height\":\"1em\",\"width\":\"1em\",\"xmlns\":\"http://www.w3.org/2000/svg\"}],\"Machine Learning\"]}],[\"$\",\"span\",\"Applied AI\",{\"className\":\"inline-flex items-center gap-1 px-2 py-0.5 text-xs font-mono bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded\",\"children\":[[\"$\",\"svg\",null,{\"stroke\":\"currentColor\",\"fill\":\"none\",\"strokeWidth\":\"2\",\"viewBox\":\"0 0 24 24\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"w-3 h-3\",\"children\":[\"$undefined\",[[\"$\",\"path\",\"0\",{\"d\":\"M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z\",\"children\":[]}],[\"$\",\"line\",\"1\",{\"x1\":\"7\",\"y1\":\"7\",\"x2\":\"7.01\",\"y2\":\"7\",\"children\":[]}]]],\"style\":{\"color\":\"$undefined\"},\"height\":\"1em\",\"width\":\"1em\",\"xmlns\":\"http://www.w3.org/2000/svg\"}],\"Applied AI\"]}],[\"$\",\"span\",\"AI Engineering\",{\"className\":\"inline-flex items-center gap-1 px-2 py-0.5 text-xs font-mono bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded\",\"children\":[[\"$\",\"svg\",null,{\"stroke\":\"currentColor\",\"fill\":\"none\",\"strokeWidth\":\"2\",\"viewBox\":\"0 0 24 24\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"w-3 h-3\",\"children\":[\"$undefined\",[[\"$\",\"path\",\"0\",{\"d\":\"M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z\",\"children\":[]}],[\"$\",\"line\",\"1\",{\"x1\":\"7\",\"y1\":\"7\",\"x2\":\"7.01\",\"y2\":\"7\",\"children\":[]}]]],\"style\":{\"color\":\"$undefined\"},\"height\":\"1em\",\"width\":\"1em\",\"xmlns\":\"http://www.w3.org/2000/svg\"}],\"AI Engineering\"]}],\"$L1c\",\"$L1d\"]}],\"$L1e\",\"$L1f\",\"$L20\"]}],\"$L21\",\"$L22\"]}]}]]}],\"$L23\",\"$L24\",\"$L25\"]}]\n"])
+    </script>
+    <script>
+        self.__next_f.push([1, "31:I[13642,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\",\"/_next/static/chunks/10acgkpjlb-5y.js\",\"/_next/static/chunks/0hwsf_8kxiyzw.js\"],\"default\"]\n32:I[95373,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\",\"/_next/static/chunks/10acgkpjlb-5y.js\",\"/_next/static/chunks/0hwsf_8kxiyzw.js\"],\"default\"]\n33:I[22530,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\",\"/_next/static/chunks/10acgkpjlb-5y.js\",\"/_next/static/chunks/0hwsf_8kxiyzw.js\"],\"default\"]\n1c:[\"$\",\"span\",\"Artificial Intelligence\",{\"className\":\"inline-flex items-center gap-1 px-2 py-0.5 text-xs font-mono bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded\",\"children\":[[\"$\",\"svg\",null,{\"stroke\":\"currentColor\",\"fill\":\"none\",\"strokeWidth\":\"2\",\"viewBox\":\"0 0 24 24\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"w-3 h-3\",\"children\":[\"$undefined\",[[\"$\",\"path\",\"0\",{\"d\":\"M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z\",\"children\":[]}],[\"$\",\"line\",\"1\",{\"x1\":\"7\",\"y1\":\"7\",\"x2\":\"7.01\",\"y2\":\"7\",\"children\":[]}]]],\"style\":{\"color\":\"$undefined\"},\"height\":\"1em\",\"width\":\"1em\",\"xmlns\":\"http://www.w3.org/2000/svg\"}],\"Artificial Intelligence\"]}]\n1d:[\"$\",\"span\",\"Software Engineering\",{\"className\":\"inline-flex items-center gap-1 px-2 py-0.5 text-xs font-mono bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded\",\"children\":[[\"$\",\"svg\",null,{\"stroke\":\"currentColor\",\"fill\":\"none\",\"strokeWidth\":\"2\",\"viewBox\":\"0 0 24 24\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"w-3 h-3\",\"children\":[\"$undefined\",[[\"$\",\"path\",\"0\",{\"d\":\"M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z\",\"children\":[]}],[\"$\",\"line\",\"1\",{\"x1\":\"7\",\"y1\":\"7\",\"x2\":\"7.01\",\"y2\":\"7\",\"children\":[]}]]],\"style\":{\"color\":\"$undefined\"},\"height\":\"1em\",\"width\":\"1em\",\"xmlns\":\"http://www.w3.org/2000/svg\"}],\"Software Engineering\"]}]\n1e:[\"$\",\"h1\",null,{\"className\":\"text-3xl sm:text-4xl font-bold text-primary dark:text-primary-dark mb-4\",\"children\":\"From Wheat to Chatbots: Understanding ML Engineers vs Applied AI Engineers\"}]\n1f:[\"$\",\"p\",null,{\"className\":\"text-secondary dark:text-secondary-dark mb-6\",\"children\":\"Learn the difference between ML engineers and Applied AI engineers using a simple wheat-to-bread analogy. Discover how LLM APIs power modern AI applications without building models from scratch.\"}]\n"])
+    </script>
+    <script>
+        self.__next_f.push([1, "20:[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-4 text-sm font-mono text-secondary dark:text-secondary-dark pb-6 border-b border-border dark:border-border-dark\",\"children\":[[\"$\",\"span\",null,{\"children\":\"Lakshay Mahajan\"}],[\"$\",\"span\",null,{\"className\":\"flex items-center gap-1\",\"children\":[[\"$\",\"svg\",null,{\"stroke\":\"currentColor\",\"fill\":\"none\",\"strokeWidth\":\"2\",\"viewBox\":\"0 0 24 24\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"w-3 h-3\",\"children\":[\"$undefined\",[[\"$\",\"rect\",\"0\",{\"x\":\"3\",\"y\":\"4\",\"width\":\"18\",\"height\":\"18\",\"rx\":\"2\",\"ry\":\"2\",\"children\":[]}],[\"$\",\"line\",\"1\",{\"x1\":\"16\",\"y1\":\"2\",\"x2\":\"16\",\"y2\":\"6\",\"children\":[]}],[\"$\",\"line\",\"2\",{\"x1\":\"8\",\"y1\":\"2\",\"x2\":\"8\",\"y2\":\"6\",\"children\":[]}],[\"$\",\"line\",\"3\",{\"x1\":\"3\",\"y1\":\"10\",\"x2\":\"21\",\"y2\":\"10\",\"children\":[]}]]],\"style\":{\"color\":\"$undefined\"},\"height\":\"1em\",\"width\":\"1em\",\"xmlns\":\"http://www.w3.org/2000/svg\"}],\"June 30, 2026\"]}],[\"$\",\"span\",null,{\"className\":\"flex items-center gap-1\",\"children\":[[\"$\",\"svg\",null,{\"stroke\":\"currentColor\",\"fill\":\"none\",\"strokeWidth\":\"2\",\"viewBox\":\"0 0 24 24\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"w-3 h-3\",\"children\":[\"$undefined\",[[\"$\",\"circle\",\"0\",{\"cx\":\"12\",\"cy\":\"12\",\"r\":\"10\",\"children\":[]}],[\"$\",\"polyline\",\"1\",{\"points\":\"12 6 12 12 16 14\",\"children\":[]}]]],\"style\":{\"color\":\"$undefined\"},\"height\":\"1em\",\"width\":\"1em\",\"xmlns\":\"http://www.w3.org/2000/svg\"}],\"2 min read\"]}]]}]\n"])
+    </script>
+    <script>
+        self.__next_f.push([1, "21:[\"$\",\"div\",null,{\"className\":\"prose prose-lg prose-neutral dark:prose-invert max-w-none\",\"children\":[[\"$\",\"h1\",\"h1-0\",{\"className\":\"text-3xl sm:text-4xl font-bold mt-12 mb-6 text-primary dark:text-primary-dark\",\"children\":\"From Wheat to Chatbots: Understanding ML Engineers vs Applied AI Engineers\"}],\"\\n\",[\"$\",\"p\",\"p-0\",{\"className\":\"text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg\",\"node\":{\"type\":\"element\",\"tagName\":\"p\",\"properties\":{},\"children\":[{\"type\":\"text\",\"value\":\"Let's imagine a farmer who needs to grow wheat in his field. He needs to take care of multiple things. For example:\",\"position\":{\"start\":{\"line\":4,\"column\":1,\"offset\":79},\"end\":{\"line\":4,\"column\":116,\"offset\":194}}}],\"position\":{\"start\":{\"line\":4,\"column\":1,\"offset\":79},\"end\":{\"line\":4,\"column\":116,\"offset\":194}}},\"children\":\"Let's imagine a farmer who needs to grow wheat in his field. He needs to take care of multiple things. For example:\"}],\"\\n\",[\"$\",\"ol\",\"ol-0\",{\"className\":\"list-decimal list-outside ml-6 mb-6 space-y-2 text-secondary dark:text-secondary-dark\",\"children\":[\"\\n\",[\"$\",\"li\",\"li-0\",{\"className\":\"text-base sm:text-lg leading-relaxed pl-2\",\"children\":\"The right season to grow wheat\"}],\"\\n\",[\"$\",\"li\",\"li-1\",{\"className\":\"text-base sm:text-lg leading-relaxed pl-2\",\"children\":\"Whether he should grow only wheat in his field or combine it with other crops\"}],\"\\n\",[\"$\",\"li\",\"li-2\",{\"className\":\"text-base sm:text-lg leading-relaxed pl-2\",\"children\":\"How much water should be given to crops over the season, and many more things\"}],\"\\n\"]}],\"\\n\",[\"$\",\"p\",\"p-1\",{\"className\":\"text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg\",\"node\":{\"type\":\"element\",\"tagName\":\"p\",\"properties\":{},\"children\":[{\"type\":\"text\",\"value\":\"Similar to growing a crop, the engineers who build \",\"position\":{\"start\":{\"line\":10,\"column\":1,\"offset\":393},\"end\":{\"line\":10,\"column\":52,\"offset\":444}}},{\"type\":\"element\",\"tagName\":\"strong\",\"properties\":{},\"children\":[{\"type\":\"text\",\"value\":\"LLMs (Large Language Models)\",\"position\":{\"start\":{\"line\":10,\"column\":54,\"offset\":446},\"end\":{\"line\":10,\"column\":82,\"offset\":474}}}],\"position\":{\"start\":{\"line\":10,\"column\":52,\"offset\":444},\"end\":{\"line\":10,\"column\":84,\"offset\":476}}},{\"type\":\"text\",\"value\":\" are \",\"position\":{\"start\":{\"line\":10,\"column\":84,\"offset\":476},\"end\":{\"line\":10,\"column\":89,\"offset\":481}}},{\"type\":\"element\",\"tagName\":\"strong\",\"properties\":{},\"children\":[{\"type\":\"text\",\"value\":\"ML Engineers\",\"position\":{\"start\":{\"line\":10,\"column\":91,\"offset\":483},\"end\":{\"line\":10,\"column\":103,\"offset\":495}}}],\"position\":{\"start\":{\"line\":10,\"column\":89,\"offset\":481},\"end\":{\"line\":10,\"column\":105,\"offset\":497}}},{\"type\":\"text\",\"value\":\". They need to think about:\",\"position\":{\"start\":{\"line\":10,\"column\":105,\"offset\":497},\"end\":{\"line\":10,\"column\":132,\"offset\":524}}}],\"position\":{\"start\":{\"line\":10,\"column\":1,\"offset\":393},\"end\":{\"line\":10,\"column\":132,\"offset\":524}}},\"children\":[\"Similar to growing a crop, the engineers who build \",[\"$\",\"strong\",\"strong-0\",{\"className\":\"font-semibold text-primary dark:text-primary-dark\",\"children\":\"LLMs (Large Language Models)\"}],\" are \",[\"$\",\"strong\",\"strong-1\",{\"className\":\"font-semibold text-primary dark:text-primary-dark\",\"children\":\"ML Engineers\"}],\". They need to think about:\"]}],\"\\n\",[\"$\",\"ol\",\"ol-1\",{\"className\":\"list-decimal list-outside ml-6 mb-6 space-y-2 text-secondary dark:text-secondary-dark\",\"children\":[\"\\n\",[\"$\",\"li\",\"li-0\",{\"className\":\"text-base sm:text-lg leading-relaxed pl-2\",\"children\":\"Which algorithm to use to build the model\"}],\"\\n\",[\"$\",\"li\",\"li-1\",{\"className\":\"text-base sm:text-lg leading-relaxed pl-2\",\"children\":\"How big the model should be\"}],\"\\n\",[\"$\",\"li\",\"li-2\",{\"className\":\"text-base sm:text-lg leading-relaxed pl-2\",\"children\":\"How to get the relevant data to build the model, and many more things\"}],\"\\n\"]}],\"\\n\",[\"$\",\"h2\",\"h2-0\",{\"className\":\"text-2xl sm:text-3xl font-semibold mt-10 mb-4 text-primary dark:text-primary-dark border-b border-border dark:border-border-dark pb-2\",\"children\":\"From Wheat to Bread: LLM API Providers\"}],\"\\n\",[\"$\",\"p\",\"p-2\",{\"className\":\"text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg\",\"node\":{\"type\":\"element\",\"tagName\":\"p\",\"properties\":{},\"children\":[{\"type\":\"text\",\"value\":\"After selling the crops to the manufacturer, they convert the wheat to bread, which they sell further to others such as cafes.\",\"position\":{\"start\":{\"line\":19,\"column\":1,\"offset\":720},\"end\":{\"line\":19,\"column\":127,\"offset\":846}}}],\"position\":{\"start\":{\"line\":19,\"column\":1,\"offset\":720},\"end\":{\"line\":19,\"column\":127,\"offset\":846}}},\"children\":\"After selling the crops to the manufacturer, they convert the wheat to bread, which they sell further to others such as cafes.\"}],\"\\n\",\"$L26\",\"\\n\",\"$L27\",\"\\n\",\"$L28\",\"\\n\",\"$L29\",\"\\n\",\"$L2a\",\"\\n\",\"$L2b\",\"\\n\",\"$L2c\",\"\\n\",\"$L2d\",\"\\n\",\"$L2e\",\"\\n\",\"$L2f\",\"\\n\",\"$L30\"]}]\n"])
+    </script>
+    <script>
+        self.__next_f.push([1, "22:[\"$\",\"footer\",null,{\"className\":\"mt-12 pt-6 border-t border-border dark:border-border-dark\",\"children\":[\"$\",\"$La\",null,{\"href\":\"/blog\",\"className\":\"inline-flex items-center gap-2 text-sm text-accent dark:text-accent-dark hover:underline\",\"children\":[[\"$\",\"svg\",null,{\"stroke\":\"currentColor\",\"fill\":\"none\",\"strokeWidth\":\"2\",\"viewBox\":\"0 0 24 24\",\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"w-4 h-4\",\"children\":[\"$undefined\",[[\"$\",\"line\",\"0\",{\"x1\":\"19\",\"y1\":\"12\",\"x2\":\"5\",\"y2\":\"12\",\"children\":[]}],[\"$\",\"polyline\",\"1\",{\"points\":\"12 19 5 12 12 5\",\"children\":[]}]]],\"style\":{\"color\":\"$undefined\"},\"height\":\"1em\",\"width\":\"1em\",\"xmlns\":\"http://www.w3.org/2000/svg\"}],\"View all posts\"]}]}]\n23:[\"$\",\"$L31\",null,{}]\n24:[\"$\",\"$L32\",null,{}]\n25:[\"$\",\"$L33\",null,{}]\n"])
+    </script>
+    <script>
+        self.__next_f.push([1, "34:I[85437,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\",\"/_next/static/chunks/10acgkpjlb-5y.js\",\"/_next/static/chunks/0hwsf_8kxiyzw.js\"],\"Image\"]\n26:[\"$\",\"p\",\"p-3\",{\"className\":\"text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg\",\"node\":{\"type\":\"element\",\"tagName\":\"p\",\"properties\":{},\"children\":[{\"type\":\"text\",\"value\":\"The cafes use the bread and sell different types of food made using the bread — such as grilled sandwiches, bread butter, vegetable sandwiches, and many more.\",\"position\":{\"start\":{\"line\":21,\"column\":1,\"offset\":848},\"end\":{\"line\":21,\"column\":159,\"offset\":1006}}}],\"position\":{\"start\":{\"line\":21,\"column\":1,\"offset\":848},\"end\":{\"line\":21,\"column\":159,\"offset\":1006}}},\"children\":\"The cafes use the bread and sell different types of food made using the bread — such as grilled sandwiches, bread butter, vegetable sandwiches, and many more.\"}]\n"])
+    </script>
+    <script>
+        self.__next_f.push([1, "27:[\"$\",\"p\",\"p-4\",{\"className\":\"text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg\",\"node\":{\"type\":\"element\",\"tagName\":\"p\",\"properties\":{},\"children\":[{\"type\":\"text\",\"value\":\"Similar to converting wheat to bread, companies like \",\"position\":{\"start\":{\"line\":23,\"column\":1,\"offset\":1008},\"end\":{\"line\":23,\"column\":54,\"offset\":1061}}},{\"type\":\"element\",\"tagName\":\"strong\",\"properties\":{},\"children\":[{\"type\":\"text\",\"value\":\"OpenAI\",\"position\":{\"start\":{\"line\":23,\"column\":56,\"offset\":1063},\"end\":{\"line\":23,\"column\":62,\"offset\":1069}}}],\"position\":{\"start\":{\"line\":23,\"column\":54,\"offset\":1061},\"end\":{\"line\":23,\"column\":64,\"offset\":1071}}},{\"type\":\"text\",\"value\":\" and \",\"position\":{\"start\":{\"line\":23,\"column\":64,\"offset\":1071},\"end\":{\"line\":23,\"column\":69,\"offset\":1076}}},{\"type\":\"element\",\"tagName\":\"strong\",\"properties\":{},\"children\":[{\"type\":\"text\",\"value\":\"Anthropic\",\"position\":{\"start\":{\"line\":23,\"column\":71,\"offset\":1078},\"end\":{\"line\":23,\"column\":80,\"offset\":1087}}}],\"position\":{\"start\":{\"line\":23,\"column\":69,\"offset\":1076},\"end\":{\"line\":23,\"column\":82,\"offset\":1089}}},{\"type\":\"text\",\"value\":\" provide their LLM APIs to engineers and other companies.\",\"position\":{\"start\":{\"line\":23,\"column\":82,\"offset\":1089},\"end\":{\"line\":23,\"column\":139,\"offset\":1146}}}],\"position\":{\"start\":{\"line\":23,\"column\":1,\"offset\":1008},\"end\":{\"line\":23,\"column\":139,\"offset\":1146}}},\"children\":[\"Similar to converting wheat to bread, companies like \",[\"$\",\"strong\",\"strong-0\",{\"className\":\"font-semibold text-primary dark:text-primary-dark\",\"children\":\"OpenAI\"}],\" and \",[\"$\",\"strong\",\"strong-1\",{\"className\":\"font-semibold text-primary dark:text-primary-dark\",\"children\":\"Anthropic\"}],\" provide their LLM APIs to engineers and other companies.\"]}]\n"])
+    </script>
+    <script>
+        self.__next_f.push([1, "28:[\"$\",\"h2\",\"h2-1\",{\"className\":\"text-2xl sm:text-3xl font-semibold mt-10 mb-4 text-primary dark:text-primary-dark border-b border-border dark:border-border-dark pb-2\",\"children\":\"Applied AI Engineers: Building with LLM APIs\"}]\n29:[\"$\",\"p\",\"p-5\",{\"className\":\"text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg\",\"node\":{\"type\":\"element\",\"tagName\":\"p\",\"properties\":{},\"children\":[{\"type\":\"text\",\"value\":\"Those who develop different kinds of applications using these LLM APIs and their software knowledge are called \",\"position\":{\"start\":{\"line\":27,\"column\":1,\"offset\":1197},\"end\":{\"line\":27,\"column\":112,\"offset\":1308}}},{\"type\":\"element\",\"tagName\":\"strong\",\"properties\":{},\"children\":[{\"type\":\"text\",\"value\":\"Applied AI Engineers\",\"position\":{\"start\":{\"line\":27,\"column\":114,\"offset\":1310},\"end\":{\"line\":27,\"column\":134,\"offset\":1330}}}],\"position\":{\"start\":{\"line\":27,\"column\":112,\"offset\":1308},\"end\":{\"line\":27,\"column\":136,\"offset\":1332}}},{\"type\":\"text\",\"value\":\". Applications such as:\",\"position\":{\"start\":{\"line\":27,\"column\":136,\"offset\":1332},\"end\":{\"line\":27,\"column\":159,\"offset\":1355}}}],\"position\":{\"start\":{\"line\":27,\"column\":1,\"offset\":1197},\"end\":{\"line\":27,\"column\":159,\"offset\":1355}}},\"children\":[\"Those who develop different kinds of applications using these LLM APIs and their software knowledge are called \",[\"$\",\"strong\",\"strong-0\",{\"className\":\"font-semibold text-primary dark:text-primary-dark\",\"children\":\"Applied AI Engineers\"}],\". Applications such as:\"]}]\n2a:[\"$\",\"ol\",\"ol-2\",{\"className\":\"list-decimal list-outside ml-6 mb-6 space-y-2 text-secondary dark:text-secondary-dark\",\"children\":[\"\\n\",[\"$\",\"li\",\"li-0\",{\"className\":\"text-base sm:text-lg leading-relaxed pl-2\",\"children\":\"Chatbots\"}],\"\\n\",[\"$\",\"li\",\"li-1\",{\"className\":\"text-base sm:text-lg leading-relaxed pl-2\",\"children\":\"AI code reviewers\"}],\"\\n\",[\"$\",\"li\",\"li-2\",{\"className\":\"text-base sm:text-lg leading-relaxed pl-2\",\"children\":\"Lovable, and many more\"}],\"\\n\"]}]\n2b:[\"$\",\"p\",\"p-6\",{\"className\":\"text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg\",\"node\":{\"type\":\"element\",\"tagName\":\"p\",\"properties\":{},\"children\":[{\"type\":\"text\",\"value\":\"Applied AI Engineers are similar to the cafes selling different kinds of food made using the bread.\",\"position\":{\"start\":{\"line\":33,\"column\":1,\"offset\":1417},\"end\":{\"line\":33,\"column\":100,\"offset\":1516}}}],\"position\":{\"start\":{\"line\":33,\"column\":1,\"offset\":1417},\"end\":{\"line\":33,\"column\":100,\"offset\":1516}}},\"children\":\"Applied AI Engineers are similar to the cafes selling different kinds of food made using the bread.\"}]\n"])
+    </script>
+    <script>
+        self.__next_f.push([1, "2c:[\"$\",\"p\",\"p-7\",{\"className\":\"text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg\",\"node\":{\"type\":\"element\",\"tagName\":\"p\",\"properties\":{},\"children\":[{\"type\":\"element\",\"tagName\":\"img\",\"properties\":{\"src\":\"/images/blog/analogy.png\",\"alt\":\"Wheat-to-bread analogy comparing farmers, manufacturers, and cafes to ML engineers, LLM API providers, and Applied AI engineers\"},\"children\":[],\"position\":{\"start\":{\"line\":35,\"column\":1,\"offset\":1518},\"end\":{\"line\":35,\"column\":157,\"offset\":1674}}}],\"position\":{\"start\":{\"line\":35,\"column\":1,\"offset\":1518},\"end\":{\"line\":35,\"column\":157,\"offset\":1674}}},\"children\":[\"$\",\"span\",\"img-0\",{\"className\":\"block my-8 max-w-3xl mx-auto\",\"children\":[[\"$\",\"span\",null,{\"className\":\"relative block w-full overflow-hidden rounded-lg border border-border dark:border-border-dark shadow-md\",\"children\":[\"$\",\"$L34\",null,{\"src\":\"/images/blog/analogy.png\",\"alt\":\"Wheat-to-bread analogy comparing farmers, manufacturers, and cafes to ML engineers, LLM API providers, and Applied AI engineers\",\"width\":800,\"height\":450,\"className\":\"w-full h-auto\",\"sizes\":\"(max-width: 768px) 100vw, 800px\"}]}],[\"$\",\"span\",null,{\"className\":\"block text-center text-xs text-secondary/70 dark:text-secondary-dark/70 mt-3 italic px-4\",\"children\":\"Wheat-to-bread analogy comparing farmers, manufacturers, and cafes to ML engineers, LLM API providers, and Applied AI engineers\"}]]}]}]\n"])
+    </script>
+    <script>
+        self.__next_f.push([1, "2d:[\"$\",\"h2\",\"h2-2\",{\"className\":\"text-2xl sm:text-3xl font-semibold mt-10 mb-4 text-primary dark:text-primary-dark border-b border-border dark:border-border-dark pb-2\",\"children\":\"Which Path Is Right for You?\"}]\n2e:[\"$\",\"p\",\"p-8\",{\"className\":\"text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg\",\"node\":{\"type\":\"element\",\"tagName\":\"p\",\"properties\":{},\"children\":[{\"type\":\"text\",\"value\":\"So you don't need to build a model yourself to become an AI Engineer. You can become one by building AI applications using LLM APIs.\",\"position\":{\"start\":{\"line\":39,\"column\":1,\"offset\":1709},\"end\":{\"line\":39,\"column\":133,\"offset\":1841}}}],\"position\":{\"start\":{\"line\":39,\"column\":1,\"offset\":1709},\"end\":{\"line\":39,\"column\":133,\"offset\":1841}}},\"children\":\"So you don't need to build a model yourself to become an AI Engineer. You can become one by building AI applications using LLM APIs.\"}]\n2f:[\"$\",\"p\",\"p-9\",{\"className\":\"text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg\",\"node\":{\"type\":\"element\",\"tagName\":\"p\",\"properties\":{},\"children\":[{\"type\":\"text\",\"value\":\"If you want to build a model like GPT or Claude yourself, you will be becoming an \",\"position\":{\"start\":{\"line\":41,\"column\":1,\"offset\":1843},\"end\":{\"line\":41,\"column\":83,\"offset\":1925}}},{\"type\":\"element\",\"tagName\":\"strong\",\"properties\":{},\"children\":[{\"type\":\"text\",\"value\":\"ML engineer\",\"position\":{\"start\":{\"line\":41,\"column\":85,\"offset\":1927},\"end\":{\"line\":41,\"column\":96,\"offset\":1938}}}],\"position\":{\"start\":{\"line\":41,\"column\":83,\"offset\":1925},\"end\":{\"line\":41,\"column\":98,\"offset\":1940}}},{\"type\":\"text\",\"value\":\", where you need to have a strong foundation in mathematics and statistics.\",\"position\":{\"start\":{\"line\":41,\"column\":98,\"offset\":1940},\"end\":{\"line\":41,\"column\":173,\"offset\":2015}}}],\"position\":{\"start\":{\"line\":41,\"column\":1,\"offset\":1843},\"end\":{\"line\":41,\"column\":173,\"offset\":2015}}},\"children\":[\"If you want to build a model like GPT or Claude yourself, you will be becoming an \",[\"$\",\"strong\",\"strong-0\",{\"className\":\"font-semibold text-primary dark:text-primary-dark\",\"children\":\"ML engineer\"}],\", where you need to have a strong foundation in mathematics and statistics.\"]}]\n30:[\"$\",\"p\",\"p-10\",{\"className\":\"text-secondary dark:text-secondary-dark leading-relaxed mb-6 text-base sm:text-lg\",\"node\":{\"type\":\"element\",\"tagName\":\"p\",\"properties\":{},\"children\":[{\"type\":\"text\",\"value\":\"I will be releasing a blog on a high-level overview of how LLMs work, so stay tuned for it.\",\"position\":{\"start\":{\"line\":43,\"column\":1,\"offset\":2017},\"end\":{\"line\":43,\"column\":92,\"offset\":2108}}}],\"position\":{\"start\":{\"line\":43,\"column\":1,\"offset\":2017},\"end\":{\"line\":43,\"column\":92,\"offset\":2108}}},\"children\":\"I will be releasing a blog on a high-level overview of how LLMs work, so stay tuned for it.\"}]\n"])
+    </script>
+    <script>
+        self.__next_f.push([1, "18:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])
+    </script>
+    <script>
+        self.__next_f.push([1, "35:I[27201,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"IconMark\"]\n15:null\n"])
+    </script>
+    <script>
+        self.__next_f.push([1, "1a:[[\"$\",\"title\",\"0\",{\"children\":\"From Wheat to Chatbots: Understanding ML Engineers vs Applied AI Engineers — Lakshay Mahajan\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Learn the difference between ML engineers and Applied AI engineers using a simple wheat-to-bread analogy. Discover how LLM APIs power modern AI applications without building models from scratch.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"author\",\"content\":\"Lakshay Mahajan\"}],[\"$\",\"meta\",\"3\",{\"name\":\"keywords\",\"content\":\"Machine Learning,Applied AI,AI Engineering,Artificial Intelligence,Software Engineering\"}],[\"$\",\"meta\",\"4\",{\"name\":\"robots\",\"content\":\"index, follow\"}],[\"$\",\"meta\",\"5\",{\"name\":\"googlebot\",\"content\":\"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1\"}],[\"$\",\"link\",\"6\",{\"rel\":\"canonical\",\"href\":\"https://www.lakshaymahajan.com/blog/ml-engineers-vs-applied-ai-engineer\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:title\",\"content\":\"From Wheat to Chatbots: Understanding ML Engineers vs Applied AI Engineers — Lakshay Mahajan\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:description\",\"content\":\"Learn the difference between ML engineers and Applied AI engineers using a simple wheat-to-bread analogy. Discover how LLM APIs power modern AI applications without building models from scratch.\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:url\",\"content\":\"https://www.lakshaymahajan.com/blog/ml-engineers-vs-applied-ai-engineer\"}],[\"$\",\"meta\",\"10\",{\"property\":\"og:site_name\",\"content\":\"Lakshay Mahajan\"}],[\"$\",\"meta\",\"11\",{\"property\":\"og:locale\",\"content\":\"en_IN\"}],[\"$\",\"meta\",\"12\",{\"property\":\"og:image\",\"content\":\"https://www.lakshaymahajan.com/images/blog/analogy.png\"}],[\"$\",\"meta\",\"13\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"14\",{\"property\":\"article:published_time\",\"content\":\"2026-06-30\"}],[\"$\",\"meta\",\"15\",{\"property\":\"article:tag\",\"content\":\"Machine Learning\"}],[\"$\",\"meta\",\"16\",{\"property\":\"article:tag\",\"content\":\"Applied AI\"}],[\"$\",\"meta\",\"17\",{\"property\":\"article:tag\",\"content\":\"AI Engineering\"}],[\"$\",\"meta\",\"18\",{\"property\":\"article:tag\",\"content\":\"Artificial Intelligence\"}],[\"$\",\"meta\",\"19\",{\"property\":\"article:tag\",\"content\":\"Software Engineering\"}],[\"$\",\"meta\",\"20\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"21\",{\"name\":\"twitter:site\",\"content\":\"@lakshay2224\"}],[\"$\",\"meta\",\"22\",{\"name\":\"twitter:creator\",\"content\":\"@lakshay2224\"}],[\"$\",\"meta\",\"23\",{\"name\":\"twitter:title\",\"content\":\"From Wheat to Chatbots: Understanding ML Engineers vs Applied AI Engineers — Lakshay Mahajan\"}],[\"$\",\"meta\",\"24\",{\"name\":\"twitter:description\",\"content\":\"Learn the difference between ML engineers and Applied AI engineers using a simple wheat-to-bread analogy. Discover how LLM APIs power modern AI applications without building models from scratch.\"}],[\"$\",\"meta\",\"25\",{\"name\":\"twitter:image\",\"content\":\"https://www.lakshaymahajan.com/images/blog/analogy.png\"}],[\"$\",\"link\",\"26\",{\"rel\":\"icon\",\"href\":\"/favicon.png\"}],[\"$\",\"$L35\",\"27\",{}]]\n"])
+    </script>
+</body>
+<!-- Mirrored from www.lakshaymahajan.com/blog/ml-engineers-vs-applied-ai-engineer by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Jun 2026 07:59:28 GMT -->
+
+</html>
+
+</html>
