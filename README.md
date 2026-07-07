@@ -1,299 +1,382 @@
-# dhruvdhayal.me
-Personal portfolio website showcasing my software engineering projects, internships, research, technical skills, achievements, and professional experience.
+# Enterprise-Grade GitHub Profile README
 
+> **Note:** Replace the placeholder values (`YOUR_GITHUB_USERNAME`, `YOUR_LINKEDIN`, `YOUR_EMAIL`, etc.) with your own information.
+
+````markdown
 <div align="center">
 
 # Dhruv Dhayal
 
-### Software Engineer | AI/ML Developer | Full-Stack Developer | Researcher
+### Software Engineer • Full Stack Developer • AI/ML Engineer • Researcher
 
-Building scalable software, intelligent systems, and production-ready applications with a focus on performance, maintainability, and user experience.
+Building scalable software, intelligent systems, and production-ready applications through modern software engineering practices.
 
-<p>
-  <a href="https://dhruvdhayal.me">
-    <img src="https://img.shields.io/badge/Portfolio-Visit_Website-111827?style=for-the-badge" />
-  </a>
-  <a href="https://github.com/yourusername">
-    <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github" />
-  </a>
-  <a href="https://www.linkedin.com/in/yourlinkedin">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" />
-  </a>
-  <a href="mailto:your@email.com">
-    <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail" />
-  </a>
+<br>
+
+<p align="center">
+
+<a href="https://dhruvdhayal.me">
+<img src="https://img.shields.io/badge/Portfolio-dhruvdhayal.me-000000?style=for-the-badge">
+</a>
+
+<a href="https://github.com/YOUR_GITHUB_USERNAME">
+<img src="https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?style=for-the-badge&logo=github&label=Followers">
+</a>
+
+<a href="https://www.linkedin.com/in/YOUR_LINKEDIN">
+<img src="https://img.shields.io/badge/LinkedIn-Professional_Profile-0A66C2?style=for-the-badge&logo=linkedin">
+</a>
+
+<a href="mailto:YOUR_EMAIL">
+<img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail">
+</a>
+
 </p>
+
+<img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&style=for-the-badge">
 
 </div>
 
 ---
 
-# About Me
+# Engineering Overview
 
-I am a Software Engineer passionate about building reliable, scalable, and impactful software solutions. My interests span Full-Stack Development, Artificial Intelligence, Machine Learning, Backend Engineering, Cloud Computing, and System Design.
+I am a Software Engineer focused on designing, developing, and delivering scalable software systems that solve meaningful real-world problems.
 
-I enjoy transforming complex problems into production-ready products by combining strong engineering principles with modern technologies. My work focuses on writing clean, maintainable code while designing systems that are secure, efficient, and built to scale.
+My experience spans full-stack engineering, backend architecture, artificial intelligence, machine learning, cloud deployment, research, and product development.
 
-Beyond software development, I actively participate in research, technical communities, hackathons, and collaborative engineering projects where I continuously expand my knowledge and contribute to innovative solutions.
-
----
-
-# Engineering Philosophy
-
-I believe great software is not only functional but also:
-
-- Scalable
-- Maintainable
-- Secure
-- Well Documented
-- Performance Driven
-- User Focused
-- Production Ready
-
-Every project I build follows engineering best practices including modular architecture, clean code principles, reusable components, responsive design, and continuous improvement.
+I believe software engineering extends far beyond writing code. It involves designing maintainable architectures, improving developer productivity, ensuring reliability, optimizing performance, and creating products capable of supporting millions of users.
 
 ---
 
-# Areas of Expertise
+# Engineering Principles
 
-### Software Engineering
+✔ Clean Architecture
 
-- Full Stack Web Development
-- Backend Development
-- REST API Development
-- Authentication & Authorization
-- Database Design
-- MVC Architecture
-- Object-Oriented Programming
-- Software Design Principles
+✔ SOLID Principles
 
-### Artificial Intelligence
+✔ Scalable Backend Systems
 
-- Machine Learning
-- Deep Learning
-- Computer Vision
-- Recommendation Systems
-- Predictive Analytics
-- Data Processing
-- Model Optimization
+✔ Performance First
 
-### Cloud & DevOps
+✔ Security by Design
 
-- Git
-- GitHub
-- Deployment Pipelines
-- Docker
-- CI/CD
-- Cloud Hosting
-- Linux
+✔ Production Ready Code
 
-### Problem Solving
+✔ Documentation Driven Development
 
-- Data Structures
-- Algorithms
-- System Design
-- Performance Optimization
-- Debugging
-- Software Architecture
+✔ Continuous Learning
+
+✔ Testability
+
+✔ Maintainability
+
+✔ Reusability
+
+✔ Automation
 
 ---
 
-# Tech Stack
+# Technology Stack
 
 ## Languages
 
 <p>
 
-<img src="https://skillicons.dev/icons?i=cpp" />
-<img src="https://skillicons.dev/icons?i=c" />
-<img src="https://skillicons.dev/icons?i=python" />
-<img src="https://skillicons.dev/icons?i=java" />
-<img src="https://skillicons.dev/icons?i=javascript" />
-<img src="https://skillicons.dev/icons?i=typescript" />
-<img src="https://skillicons.dev/icons?i=html" />
-<img src="https://skillicons.dev/icons?i=css" />
-<img src="https://skillicons.dev/icons?i=mysql" />
+<img src="https://skillicons.dev/icons?i=cpp"/>
+
+<img src="https://skillicons.dev/icons?i=c"/>
+
+<img src="https://skillicons.dev/icons?i=python"/>
+
+<img src="https://skillicons.dev/icons?i=java"/>
+
+<img src="https://skillicons.dev/icons?i=javascript"/>
+
+<img src="https://skillicons.dev/icons?i=typescript"/>
+
+<img src="https://skillicons.dev/icons?i=html"/>
+
+<img src="https://skillicons.dev/icons?i=css"/>
+
+<img src="https://skillicons.dev/icons?i=mysql"/>
 
 </p>
 
 ---
 
-## Frontend
+## Frontend Engineering
 
-<p>
+React
 
-<img src="https://skillicons.dev/icons?i=react" />
-<img src="https://skillicons.dev/icons?i=nextjs" />
-<img src="https://skillicons.dev/icons?i=tailwind" />
-<img src="https://skillicons.dev/icons?i=bootstrap" />
-<img src="https://skillicons.dev/icons?i=vite" />
+Next.js
 
-</p>
+Tailwind CSS
 
----
+Bootstrap
 
-## Backend
+Vite
 
-<p>
+Responsive Design
 
-<img src="https://skillicons.dev/icons?i=nodejs" />
-<img src="https://skillicons.dev/icons?i=express" />
-<img src="https://skillicons.dev/icons?i=flask" />
-<img src="https://skillicons.dev/icons?i=firebase" />
-
-</p>
+Progressive Web Applications
 
 ---
 
-## Database
+## Backend Engineering
 
-<p>
+Node.js
 
-<img src="https://skillicons.dev/icons?i=mysql" />
-<img src="https://skillicons.dev/icons?i=mongodb" />
-<img src="https://skillicons.dev/icons?i=sqlite" />
+Express.js
 
-</p>
+REST APIs
 
----
+Authentication
 
-## AI / ML
+Authorization
 
-- Scikit Learn
-- TensorFlow
-- Keras
-- OpenCV
-- Pandas
-- NumPy
-- Matplotlib
+Flask
+
+Firebase
+
+Microservices
 
 ---
 
-## Tools
+## Artificial Intelligence
 
-<p>
+Machine Learning
 
-<img src="https://skillicons.dev/icons?i=git" />
-<img src="https://skillicons.dev/icons?i=github" />
-<img src="https://skillicons.dev/icons?i=vscode" />
-<img src="https://skillicons.dev/icons?i=postman" />
-<img src="https://skillicons.dev/icons?i=figma" />
-<img src="https://skillicons.dev/icons?i=linux" />
-<img src="https://skillicons.dev/icons?i=docker" />
+Deep Learning
 
-</p>
+Computer Vision
 
----
+Recommendation Systems
 
-# Selected Work
+OpenCV
 
-## Software Engineering
+TensorFlow
 
-- Radiation Mapping & Digital Twin Platform
-- AI-Based Plant Disease Detection System
-- Spotify Hybrid Recommendation Engine
-- Museum Ticket Booking Chatbot
-- Real-Time Location Tracking System
-- Stadium Booking Management Platform
-- Portfolio Platform
-- AI Powered Web Applications
+Keras
+
+Scikit-Learn
+
+NumPy
+
+Pandas
 
 ---
 
-# Professional Experience
+## Databases
 
-Throughout my engineering journey, I have contributed to software products, research initiatives, internships, and collaborative engineering teams.
+MongoDB
 
-My experience includes:
+MySQL
 
-- Backend Engineering
-- Frontend Development
-- AI/ML Model Development
-- Technical Documentation
-- Research Publication
-- Project Leadership
-- Agile Collaboration
-- Deployment & Maintenance
+SQLite
+
+Firebase
 
 ---
 
-# Current Focus
+## Cloud & DevOps
 
-Currently working on:
+Git
 
-- AI Powered Applications
-- Backend Systems
-- Intelligent Automation
-- Computer Vision
-- Scalable Web Platforms
-- Performance Optimization
-- System Design
-- Cloud Deployment
+GitHub
+
+Docker
+
+Linux
+
+CI/CD
+
+Cloud Deployment
+
+Version Control
 
 ---
 
-# Development Workflow
+# Software Engineering Workflow
 
-```
+```text
+Business Problem
+      │
+      ▼
 Requirement Analysis
-
-↓
-
-Architecture Design
-
-↓
-
+      │
+      ▼
+System Design
+      │
+      ▼
+Architecture Planning
+      │
+      ▼
 Development
-
-↓
-
+      │
+      ▼
+Code Review
+      │
+      ▼
 Testing
-
-↓
-
-Optimization
-
-↓
-
+      │
+      ▼
 Deployment
-
-↓
-
+      │
+      ▼
 Monitoring
-
-↓
-
+      │
+      ▼
 Continuous Improvement
 ```
 
 ---
 
-# Open Source
+# Featured Engineering Domains
 
-I believe open source accelerates innovation and learning.
+• Full Stack Development
 
-This GitHub profile contains projects demonstrating:
+• Backend Engineering
 
-- Clean Code
-- Engineering Standards
-- Documentation
-- Production Architecture
-- Research
-- Machine Learning
-- Web Development
-- Backend Systems
+• Artificial Intelligence
 
-Every repository represents continuous learning and practical implementation of software engineering concepts.
+• Machine Learning
+
+• Computer Vision
+
+• Recommendation Systems
+
+• Cloud Deployment
+
+• Software Architecture
+
+• Database Design
+
+• API Development
+
+• Research & Innovation
+
+• Technical Leadership
 
 ---
 
-# GitHub Statistics
+# Highlighted Projects
+
+## Radiation Mapping Digital Twin
+
+Production-ready radiation visualization platform integrating real-time detector streams with intelligent mapping.
+
+---
+
+## Spotify Hybrid Recommendation Engine
+
+Recommendation engine combining collaborative filtering, content-based filtering, and intelligent ranking algorithms.
+
+---
+
+## AI Plant Disease Detection
+
+Computer vision system capable of detecting crop diseases using machine learning.
+
+---
+
+## Museum Ticket Booking Platform
+
+AI-powered booking assistant with multilingual interaction, QR generation, analytics, and digital ticketing.
+
+---
+
+## Stadium Booking Management Platform
+
+Enterprise booking solution supporting scheduling, finance, reporting, deployment planning, and scalable management.
+
+---
+
+## Real-Time Location Tracking
+
+Navigation platform capable of live tracking, routing, and geospatial visualization.
+
+---
+
+# Professional Experience
+
+My experience includes contributing across the complete software development lifecycle.
+
+Responsibilities include:
+
+• Product Engineering
+
+• Backend Development
+
+• Frontend Development
+
+• AI Model Development
+
+• Technical Research
+
+• Agile Collaboration
+
+• Deployment Pipelines
+
+• Documentation
+
+• Software Optimization
+
+• Cross-functional Communication
+
+---
+
+# Research
+
+Research interests include:
+
+Artificial Intelligence
+
+Machine Learning
+
+Recommendation Systems
+
+Computer Vision
+
+Cyber Security
+
+IoT
+
+Digital Twin Technologies
+
+Smart Systems
+
+---
+
+# Current Focus
+
+Currently exploring:
+
+Scalable Distributed Systems
+
+Cloud Native Applications
+
+Advanced Backend Architecture
+
+AI-Powered Products
+
+Real-Time Systems
+
+Software Performance Engineering
+
+Modern DevOps
+
+System Design
+
+---
+
+# GitHub Analytics
 
 <p align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=YOURUSERNAME&show_icons=true&theme=github_dark&hide_border=true"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&hide_border=true&theme=github_dark">
 
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=YOURUSERNAME&theme=github-dark&hide_border=true"/>
+<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=github-dark&hide_border=true">
 
 </p>
 
@@ -301,46 +384,73 @@ Every repository represents continuous learning and practical implementation of 
 
 <p align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOURUSERNAME&layout=compact&theme=github_dark&hide_border=true"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&hide_border=true&theme=github_dark">
 
 </p>
 
 ---
 
-# Contribution Graph
+# Contribution Activity
 
 <p align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOURUSERNAME&theme=github-compact"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&theme=github-compact">
 
 </p>
 
 ---
 
-# Connect
+# Achievement Metrics
+
+- Research Publications
+
+- International Conferences
+
+- AI/ML Projects
+
+- Open Source Contributions
+
+- Technical Leadership
+
+- Software Development
+
+- Product Engineering
+
+- System Design
+
+- Backend Development
+
+- Full Stack Development
+
+---
+
+# Open Source Philosophy
+
+Every repository reflects a commitment to engineering excellence.
+
+The objective is not simply to complete projects but to create maintainable, scalable, production-oriented software that demonstrates sound engineering judgment, strong documentation, and practical problem-solving.
+
+---
+
+# Let's Connect
 
 <p>
 
 <a href="https://dhruvdhayal.me">
-<img src="https://img.shields.io/badge/Portfolio-dhruvdhayal.me-black?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Portfolio-Visit_Website-black?style=for-the-badge">
 </a>
 
-<a href="https://www.linkedin.com/in/yourlinkedin">
-<img src="https://img.shields.io/badge/LinkedIn-Professional_Profile-blue?style=for-the-badge&logo=linkedin"/>
+<a href="https://www.linkedin.com/in/YOUR_LINKEDIN">
+<img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin">
 </a>
 
-<a href="mailto:your@email.com">
-<img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail"/>
+<a href="mailto:YOUR_EMAIL">
+<img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail">
 </a>
 
 </p>
 
 ---
 
-# Professional Statement
-
-Software engineering is more than writing code—it is about designing systems that solve real-world problems efficiently, reliably, and at scale.
-
-I continuously invest in learning modern technologies, improving engineering practices, contributing to meaningful projects, and building products that create measurable impact.
-
-I am always interested in collaborating on challenging engineering problems, innovative products, and research-driven software solutions.
+> *Building software with the mindset of ownership, scalability, reliability, and long-term impact.*
+````
