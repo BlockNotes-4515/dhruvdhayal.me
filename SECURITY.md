@@ -26,7 +26,7 @@ The latest version of this repository is actively maintained and supported.
 
 If you believe you have discovered a security vulnerability, please report it responsibly by contacting me directly.
 
-**Email:** YOUR_EMAIL@example.com
+**Email:** dhruv.dhayal@s.amity.edu
 
 Please include the following information whenever possible:
 
