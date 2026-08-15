@@ -72,6 +72,7 @@ Software Engineer focused on scalable backend systems, applied AI/ML, and secure
 | ICAIN 2025 — Springer, BITS Pilani Dubai | Mining Insider Threats in Enterprise Systems Using Behavioral Data and Cyber Forensics | [DOI](https://doi.org/10.1007/978-981-95-5136-1_16) |
 | MRIE 2025 — IEEE, K.R. Mangalam University | Quantum-Resistant Blockchain Authentication Protocol: Securing Decentralized Systems | [DOI](https://doi.org/10.1109/MRIE66930.2025.11156407) |
 | IGI Global — Book Chapter | AI-Driven IoT Surveillance Framework for Signal-Resilient Environmental Monitoring | [DOI](https://doi.org/10.4018/979-8-3373-5727-0.ch010) |
+| CRC Press — Taylor & Francis Group | Drone-enabled IoT-integrated Smart Health-care System for Reducing Ambulance Delays and Mortality in Emergency Conditions | [DOI](https://doi.org/10.1201/9781003685890-5) |
 
 ---
 
