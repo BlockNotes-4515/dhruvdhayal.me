@@ -1,565 +1,1720 @@
 <!DOCTYPE html>
-<html lang="en" class="sora_3fd80e00-module__HLND6q__variable jetbrains_mono_5f0647e3-module__UHGtKW__variable">
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<html lang="en">
 
 <head>
-    <meta charSet="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preload" href="https://www.lakshaymahajan.com/_next/static/media/70bc3e132a0a741e-s.p.1409xf.ylxg8g.woff2" as="font" crossorigin="" type="font/woff2" />
-    <link rel="preload" href="https://www.lakshaymahajan.com/_next/static/media/c41ca59f1c34ba31-s.p.0xxb547n1hn74.woff2" as="font" crossorigin="" type="font/woff2" />
-    <link rel="stylesheet" href="https://www.lakshaymahajan.com/_next/static/chunks/15copuenlrz~n.css" data-precedence="next" />
-    <link rel="preload" as="script" fetchPriority="low" href="https://www.lakshaymahajan.com/_next/static/chunks/013f.eieuavfe.js" />
-    <script src="https://www.lakshaymahajan.com/_next/static/chunks/0pqt~8bl3ukh4.js" async=""></script>
-    <script src="https://www.lakshaymahajan.com/_next/static/chunks/0w4upf47yj739.js" async=""></script>
-    <script src="https://www.lakshaymahajan.com/_next/static/chunks/0vn2e3cj4vv3r.js" async=""></script>
-    <script src="https://www.lakshaymahajan.com/_next/static/chunks/turbopack-0tk5ut0xsr_um.js" async=""></script>
-    <script src="https://www.lakshaymahajan.com/_next/static/chunks/09dew68nzz~jw.js" async=""></script>
-    <script src="https://www.lakshaymahajan.com/_next/static/chunks/0t2xr05rlu96l.js" async=""></script>
-    <script src="https://www.lakshaymahajan.com/_next/static/chunks/12gj6-uu017k6.js" async=""></script>
-    <script src="https://www.lakshaymahajan.com/_next/static/chunks/13h545vw3y5c1.js" async=""></script>
-    <script src="https://www.lakshaymahajan.com/_next/static/chunks/0v_ue~msygctw.js" async=""></script>
-    <script src="https://www.lakshaymahajan.com/_next/static/chunks/0hwsf_8kxiyzw.js" async=""></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="theme-color" content="#000000" />
-    <meta http-equiv="Content-Security-Policy" content="
-        default-src &#x27;self&#x27;;
-        script-src &#x27;self&#x27; &#x27;unsafe-inline&#x27; https://www.googletagmanager.com https://www.google-analytics.com;
-        connect-src &#x27;self&#x27; https://www.google-analytics.com https://analytics.google.com;
-        frame-src &#x27;self&#x27; https://www.googletagmanager.com;
-        style-src &#x27;self&#x27; &#x27;unsafe-inline&#x27; https://fonts.googleapis.com;
-        img-src &#x27;self&#x27; data: https: https://www.google-analytics.com https://www.googletagmanager.com;
-        font-src &#x27;self&#x27; data: https://fonts.gstatic.com;
-      " />
-    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <link rel="manifest" href="manifest.json" />
-    <link rel="preconnect" href="https://fonts.googleapis.com/" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous" />
-    <meta name="next-size-adjust" content="" />
     <title>Projects — Dhruv Dhayal</title>
-    <meta name="description" content="Engineering case studies covering authentication systems, event registration platforms, and backend API design." />
-    <meta name="author" content="Lakshay Mahajan" />
-    <meta name="keywords" content="Backend Engineer,Node.js,ExpressJS,Docker,Git,GitHub,MongoDB,RestAPIs" />
-    <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
-    <meta property="og:title" content="Projects — Lakshay Mahajan" />
-    <meta property="og:description" content="Engineering case studies covering authentication systems, event registration platforms, and backend API design." />
-    <meta property="og:url" content="https://www.lakshaymahajan.com/projects" />
-    <meta property="og:site_name" content="Lakshay Mahajan" />
-    <meta property="og:locale" content="en_IN" />
-    <meta property="og:image" content="https://www.lakshaymahajan.com/opengraph-image" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Lakshay Mahajan — Backend Engineer" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lakshay2224" />
-    <meta name="twitter:creator" content="@lakshay2224" />
-    <meta name="twitter:title" content="Projects — Lakshay Mahajan" />
-    <meta name="twitter:description" content="Engineering case studies covering authentication systems, event registration platforms, and backend API design." />
-    <meta name="twitter:image" content="https://www.lakshaymahajan.com/twitter-image" />
-    <link rel="icon" href="favicon.png" />
-    <script src="https://www.lakshaymahajan.com/_next/static/chunks/03~yq9q893hmn.js" noModule=""></script>
+    <meta name="description" content="Projects and technical work by Dhruv Dhayal across software engineering, AI/ML, IoT, backend development and research.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* =========================================================
+           ROOT / THEME
+        ========================================================= */
+        
+         :root {
+            --bg: #ffffff;
+            --surface: #f7f7f7;
+            --surface-2: #eeeeee;
+            --text: #111111;
+            --muted: #666666;
+            --muted-2: #858585;
+            --line: #dddddd;
+            --line-hover: #aaaaaa;
+            --green: #00a86b;
+            --green-bright: #00c982;
+            --green-soft: rgba(0, 200, 130, 0.08);
+            --header-bg: rgba(255, 255, 255, 0.78);
+            --shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+        }
+        
+        html.dark {
+            --bg: #050505;
+            --surface: #0b0b0b;
+            --surface-2: #111111;
+            --text: #f4f4f4;
+            --muted: #a0a0a0;
+            --muted-2: #777777;
+            --line: #252525;
+            --line-hover: #3d3d3d;
+            --green: #00b875;
+            --green-bright: #00ff9a;
+            --green-soft: rgba(0, 255, 154, 0.08);
+            --header-bg: rgba(5, 5, 5, 0.72);
+            --shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            min-height: 100vh;
+            background: var(--bg);
+            color: var(--text);
+            font-family: "Sora", sans-serif;
+            overflow-x: hidden;
+            transition: background-color .3s ease, color .3s ease;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        button {
+            font: inherit;
+        }
+        /* =========================================================
+           BACKGROUND
+        ========================================================= */
+        
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: -2;
+            background: radial-gradient( circle at 15% 15%, var(--green-soft), transparent 25%);
+            opacity: .65;
+        }
+        
+        html.dark body::before {
+            background: radial-gradient( circle at 15% 15%, rgba(0, 255, 154, .055), transparent 25%), radial-gradient( circle at 85% 80%, rgba(0, 255, 154, .025), transparent 28%);
+        }
+        /* =========================================================
+           CONTAINER
+        ========================================================= */
+        
+        .container {
+            width: min(1120px, calc(100% - 40px));
+            margin: 0 auto;
+        }
+        /* =========================================================
+           HEADER
+        ========================================================= */
+        
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            height: 76px;
+            background: transparent;
+            transition: background .3s ease, border .3s ease, box-shadow .3s ease, backdrop-filter .3s ease;
+        }
+        
+        .main-header.scrolled {
+            background: var(--header-bg);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border-bottom: 1px solid var(--line);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, .08);
+        }
+        
+        html.dark .main-header.scrolled {
+            box-shadow: 0 8px 35px rgba(0, 0, 0, .35), inset 0 1px 0 rgba(255, 255, 255, .025);
+        }
+        
+        .nav {
+            height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -.03em;
+            transition: color .2s ease;
+        }
+        
+        .logo:hover {
+            color: var(--green-bright);
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--muted);
+        }
+        
+        .nav-links a,
+        .nav-links button {
+            border: 0;
+            background: transparent;
+            color: var(--muted);
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 700;
+            transition: color .2s ease, transform .2s ease;
+        }
+        
+        .nav-links a:hover,
+        .nav-links button:hover {
+            color: var(--green-bright);
+            transform: translateY(-1px);
+        }
+        
+        .nav-links .active {
+            color: var(--text);
+        }
+        /* =========================================================
+           MOBILE MENU
+        ========================================================= */
+        
+        .mobile-menu-btn {
+            display: none;
+            width: 42px;
+            height: 42px;
+            border: 1px solid var(--line);
+            background: var(--surface);
+            color: var(--text);
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .mobile-menu-btn span {
+            width: 20px;
+            height: 2px;
+            background: currentColor;
+        }
+        
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 76px;
+            left: 0;
+            right: 0;
+            background: var(--surface);
+            border-bottom: 1px solid var(--line);
+            padding: 10px 20px 20px;
+            box-shadow: var(--shadow);
+        }
+        
+        .mobile-menu.open {
+            display: block;
+        }
+        
+        .mobile-menu a,
+        .mobile-menu button {
+            display: block;
+            width: 100%;
+            padding: 14px 4px;
+            border: 0;
+            border-bottom: 1px solid var(--line);
+            background: transparent;
+            color: var(--muted);
+            text-align: left;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .mobile-menu a:hover,
+        .mobile-menu button:hover {
+            color: var(--green-bright);
+        }
+        /* =========================================================
+           PAGE
+        ========================================================= */
+        
+        main {
+            padding-top: 76px;
+        }
+        
+        .page-section {
+            padding: 105px 0 90px;
+        }
+        /* =========================================================
+           PAGE INTRO
+        ========================================================= */
+        
+        .page-header {
+            max-width: 800px;
+            margin-bottom: 55px;
+        }
+        
+        .eyebrow {
+            margin-bottom: 15px;
+            color: var(--green-bright);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+        }
+        
+        .page-title {
+            margin-bottom: 18px;
+            font-size: clamp(38px, 5vw, 58px);
+            line-height: 1.05;
+            letter-spacing: -.045em;
+            font-weight: 700;
+        }
+        
+        .page-description {
+            max-width: 760px;
+            color: var(--muted);
+            font-size: 17px;
+            line-height: 1.85;
+        }
+        /* =========================================================
+           PROJECT GRID
+        ========================================================= */
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+        }
+        /* =========================================================
+           PROJECT CARD
+        ========================================================= */
+        
+        .project-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 410px;
+            padding: 27px;
+            border: 1px solid var(--line);
+            background: var(--surface);
+            transition: transform .28s ease, border-color .28s ease, background .28s ease, box-shadow .28s ease;
+        }
+        
+        .project-card::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 2px;
+            background: var(--green-bright);
+            transition: width .3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--green);
+            box-shadow: 0 16px 45px rgba(0, 0, 0, .08);
+        }
+        
+        html.dark .project-card:hover {
+            box-shadow: 0 18px 55px rgba(0, 0, 0, .35);
+        }
+        
+        .project-card:hover::before {
+            width: 100%;
+        }
+        /* =========================================================
+           CARD META
+        ========================================================= */
+        
+        .card-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .project-type {
+            color: var(--muted);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        
+        .project-year {
+            padding: 6px 10px;
+            border: 1px solid rgba(0, 255, 154, .22);
+            background: var(--green-soft);
+            color: var(--green-bright);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 12px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        /* =========================================================
+           CARD CONTENT
+        ========================================================= */
+        
+        .project-title {
+            margin-bottom: 13px;
+            font-size: 23px;
+            line-height: 1.3;
+            letter-spacing: -.025em;
+            font-weight: 700;
+        }
+        
+        .project-title a {
+            transition: color .2s ease;
+        }
+        
+        .project-card:hover .project-title a {
+            color: var(--green-bright);
+        }
+        
+        .project-description {
+            margin-bottom: 23px;
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 1.8;
+            flex-grow: 1;
+        }
+        /* =========================================================
+           TAGS
+        ========================================================= */
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 25px;
+        }
+        
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            min-height: 30px;
+            padding: 5px 11px;
+            border: 1px solid var(--line);
+            background: var(--surface-2);
+            color: var(--muted);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 12px;
+            font-weight: 600;
+            transition: color .2s ease, border-color .2s ease, background .2s ease;
+        }
+        
+        .project-card:hover .tag {
+            border-color: rgba(0, 255, 154, .18);
+        }
+        
+        .tag:hover {
+            color: var(--green-bright);
+            border-color: var(--green);
+            background: var(--green-soft);
+        }
+        /* =========================================================
+           CARD FOOTER
+        ========================================================= */
+        
+        .project-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            padding-top: 18px;
+            border-top: 1px solid var(--line);
+        }
+        
+        .read-time {
+            color: var(--muted-2);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        
+        .read-link {
+            color: var(--green-bright);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 14px;
+            font-weight: 700;
+            white-space: nowrap;
+            transition: transform .2s ease, color .2s ease;
+        }
+        
+        .read-link:hover {
+            transform: translateX(4px);
+        }
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+        
+        footer {
+            border-top: 1px solid var(--line);
+            background: var(--surface);
+        }
+        
+        .footer-inner {
+            padding: 58px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 55px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-title {
+            margin-bottom: 13px;
+            font-size: 19px;
+            font-weight: 700;
+        }
+        
+        .footer-description {
+            max-width: 390px;
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 1.8;
+        }
+        
+        .footer-heading {
+            margin-bottom: 18px;
+            color: var(--text);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+        
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .footer-links a {
+            color: var(--muted);
+            font-size: 15px;
+            font-weight: 500;
+            transition: color .2s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--green-bright);
+        }
+        
+        .socials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .social {
+            width: 46px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--line);
+            background: var(--surface-2);
+            color: var(--muted);
+            transition: color .2s ease, border-color .2s ease, transform .2s ease, background .2s ease;
+        }
+        
+        .social:hover {
+            color: var(--green-bright);
+            border-color: var(--green);
+            transform: translateY(-2px);
+            background: var(--green-soft);
+        }
+        
+        .social svg {
+            width: 19px;
+            height: 19px;
+        }
+        
+        .footer-line {
+            height: 1px;
+            background: var(--line);
+            margin-bottom: 22px;
+        }
+        
+        .copyright {
+            color: var(--muted-2);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 12px;
+        }
+        /* =========================================================
+           FLOATING ACTIONS
+        ========================================================= */
+        
+        .floating-actions {
+            position: fixed;
+            right: 20px;
+            bottom: 22px;
+            z-index: 999999;
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+        }
+        
+        .float-btn {
+            width: 62px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255, 255, 255, .08);
+            border-radius: 50%;
+            outline: none;
+            cursor: pointer;
+            background: rgba(8, 8, 8, .94);
+            color: #ffffff;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .25), inset 0 1px 2px rgba(255, 255, 255, .08);
+            transition: transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+        }
+        
+        .float-btn:hover {
+            transform: scale(1.08);
+            color: var(--green-bright);
+            box-shadow: 0 14px 35px rgba(0, 0, 0, .35), 0 0 20px rgba(0, 255, 154, .08);
+        }
+        
+        .float-btn svg {
+            width: 24px;
+            height: 24px;
+        }
+        
+        html:not(.dark) .float-btn {
+            background: #111111;
+            color: #ffffff;
+        }
+        /* =========================================================
+           RESPONSIVE
+        ========================================================= */
+        
+        @media (max-width: 850px) {
+            .nav-links {
+                display: none;
+            }
+            .mobile-menu-btn {
+                display: flex;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .footer-grid>div:first-child {
+                grid-column: 1 / -1;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                width: min(100% - 30px, 1120px);
+            }
+            .page-section {
+                padding: 75px 0 65px;
+            }
+            .page-header {
+                margin-bottom: 38px;
+            }
+            .page-title {
+                font-size: 39px;
+            }
+            .page-description {
+                font-size: 15px;
+                line-height: 1.75;
+            }
+            .project-card {
+                min-height: auto;
+                padding: 21px;
+            }
+            .card-meta {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+            .project-title {
+                font-size: 21px;
+            }
+            .project-description {
+                font-size: 14px;
+            }
+            .tag {
+                font-size: 11px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+            .footer-grid>div:first-child {
+                grid-column: auto;
+            }
+            .floating-actions {
+                right: 14px;
+                bottom: 16px;
+            }
+            .float-btn {
+                width: 56px;
+                height: 56px;
+            }
+        }
+    </style>
 </head>
 
-<body class="bg-background dark:bg-background-dark">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
 
-            const themeBtn = document.getElementById("themeToggle");
-            const themeIcon = document.getElementById("themeIcon");
-            const html = document.documentElement;
+<body>
 
-            // SVG icons
-            const moonIcon = `
-        <path d="M6 0a.75.75 0 0 1 .73.602 
-        7 7 0 0 0 8.668 8.668A.75.75 
-        0 0 1 16 10a8 8 0 1 1-10-10z"/>
-    `;
+    <!-- =========================================================
+         HEADER
+    ========================================================== -->
 
-            const sunIcon = `
-        <path d="M8 4.5a3.5 3.5 0 1 1 0 7 
-        3.5 3.5 0 0 1 0-7zm0-4a.5.5 0 0 
-        1 .5.5v1a.5.5 0 0 1-1 0v-1A.5.5 
-        0 0 1 8 .5zm0 13a.5.5 0 0 1 .5.5v1
-        a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5zm7-5.5
-        a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1 0-1h1
-        a.5.5 0 0 1 .5.5zm-13 0a.5.5 0 0 1-.5.5h-1
-        a.5.5 0 0 1 0-1h1a.5.5 0 0 1 .5.5zm9.95 
-        4.536a.5.5 0 0 1 .707 0l.708.707a.5.5 
-        0 0 1-.708.708l-.707-.708a.5.5 0 0 
-        1 0-.707zm-9.193 0a.5.5 0 0 1 0 
-        .707l-.707.708a.5.5 0 1 1-.708-.708
-        l.708-.707a.5.5 0 0 1 .707 0zm9.193-9.193
-        a.5.5 0 0 1 0 .707l-.707.708a.5.5 0 1 
-        1-.708-.708l.708-.707a.5.5 0 0 1 .707 
-        0zm-9.193 0a.5.5 0 0 1 .707 0l.708.707
-        a.5.5 0 1 1-.708.708l-.707-.708a.5.5 
-        0 0 1 0-.707z"/>
-    `;
+    <header class="main-header" id="mainHeader">
 
-            // Set correct icon on load
-            function updateIcon() {
-                if (html.classList.contains("dark")) {
-                    themeIcon.innerHTML = sunIcon; // dark mode = show sun
-                } else {
-                    themeIcon.innerHTML = moonIcon; // light mode = show moon
-                }
-            }
+        <div class="container">
 
-            updateIcon();
+            <nav class="nav">
 
-            themeBtn.addEventListener("click", function() {
+                <a href="index.html" class="logo">
+                    Dhruv Dhayal
+                </a>
 
-                if (html.classList.contains("dark")) {
-                    html.classList.remove("dark");
-                    html.classList.add("light");
-                    localStorage.setItem("theme", "light");
-                } else {
-                    html.classList.remove("light");
-                    html.classList.add("dark");
-                    localStorage.setItem("theme", "dark");
-                }
+                <div class="nav-links">
 
-                updateIcon();
-            });
+                    <a href="index.html">
+                        Home
+                    </a>
 
-        });
-    </script>
-    <main id="main">
-        <div class="animate-fade-in">
-            <div class="flex min-h-screen flex-col">
+                    <a href="projects.html" class="active">
+                        Projects
+                    </a>
 
+                    <a href="experience.html">
+                        Experience
+                    </a>
 
+                    <a href="blog.html">
+                        Publications
+                    </a>
 
+                    <a href="index.html#contact">
+                        Contact
+                    </a>
 
+                    <button onclick="window.open('./images/UPDATED%20JUNE%20SUMMER%20CV.pdf', '_blank')">
+                        Resume
+                    </button>
 
-
-                <!-- HEADER -->
-                <header id="mainHeader" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
-
-                    <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
-                        <div class="flex items-center justify-between h-20">
-
-                            <!-- Logo -->
-                            <a class="text-lg font-semibold text-primary dark:text-primary-dark hover:text-accent dark:hover:text-accent-dark transition-colors duration-200" href="index.html">
-                Dhruv Dhayal
-            </a>
-                            <!-- Desktop Menu -->
-                            <div class="hidden md:flex items-center gap-8">
-                                <a class="text-sm transition-colors duration-200 text-primary dark:text-primary-dark" href="./index.html">Home</a>
-                                <a class="text-sm transition-colors duration-200 text-secondary dark:text-secondary-dark hover:text-primary dark:hover:text-primary-dark" href="./projects.html">Projects</a>
-                                <a class="text-sm transition-colors duration-200 text-secondary dark:text-secondary-dark hover:text-primary dark:hover:text-primary-dark" href="./experience.html">Experience</a>
-                                <a class="text-sm transition-colors duration-200 text-secondary dark:text-secondary-dark hover:text-primary dark:hover:text-primary-dark" href="./blog.html">Publications</a>
-                                <a class="text-sm transition-colors duration-200 text-primary dark:text-primary-dark" href="./index.html#contact">Contact</a>
-
-                                <button onclick="window.open('./images/UPDATED%20JUNE%20SUMMER%20CV.pdf', '_blank')" class="text-sm text-secondary dark:text-secondary-dark hover:text-primary dark:hover:text-primary-dark transition-colors duration-200">
-    Resume
-</button>
-
-                            </div>
-                            <!-- Mobile Menu -->
-
-                            <button class="p-2 flex flex-col justify-center items-center gap-1.5 md:hidden">
-                <span class="w-6 h-0.5 bg-primary dark:bg-primary-dark"></span>
-                <span class="w-6 h-0.5 bg-primary dark:bg-primary-dark"></span>
-                <span class="w-6 h-0.5 bg-primary dark:bg-primary-dark"></span>
-            </button>
-                        </div>
-                    </nav>
-                </header>
-
-                <style>
-                    .scrolled-header {
-                        /* Very transparent glass */
-                        background: rgba(255, 255, 255, 0.035);
-                        /* Strong blur for premium glass effect */
-                        backdrop-filter: blur(32px) saturate(220%);
-                        -webkit-backdrop-filter: blur(32px) saturate(220%);
-                        /* Multi-layer glossy reflection */
-                        background-image: linear-gradient( 135deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
-                        /* Thin glass border */
-                        border-bottom: 1px solid rgba(255, 255, 255, 0.14);
-                        /* Premium depth */
-                        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.18), inset 0 -1px 0 rgba(255, 255, 255, 0.04);
-                        /* Smooth animation */
-                        transition: all 0.35s ease;
-                    }
-                    /* Dark mode version */
-                    
-                    .dark .scrolled-header {
-                        /* keep content visible behind */
-                        background: rgba(15, 23, 42, 0.18);
-                        backdrop-filter: blur(32px) saturate(220%);
-                        -webkit-backdrop-filter: blur(32px) saturate(220%);
-                        background-image: linear-gradient( 135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.015));
-                        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-                        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.06);
-                    }
-                </style>
-
-                <!-- JS -->
-                <script>
-                    window.addEventListener("scroll", function() {
-                        const header = document.getElementById("mainHeader");
-
-                        if (window.scrollY > 50) {
-                            header.classList.add("scrolled-header");
-                        } else {
-                            header.classList.remove("scrolled-header");
-                        }
-                    });
-                </script>
-
-                <div class="flex-1">
-                    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-24">
-                        <div class="max-w-6xl mx-auto">
-                            <header class="mb-12 max-w-3xl">
-                                <h1 class="text-3xl sm:text-4xl font-bold text-primary dark:text-primary-dark mb-4">Projects</h1>
-                                <p class="text-secondary dark:text-secondary-dark leading-relaxed">Engineering case studies focused on technical decisions, tradeoffs, debugging stories, and real-world problem solving.</p>
-                            </header>
-                            <div class="grid gap-6 sm:grid-cols-2">
-                                <a class="block" href="projects/ShoporaNexus.html">
-                                    <article class="group flex flex-col h-full p-6 border border-border dark:border-border-dark bg-surface dark:bg-surface-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200 rounded">
-                                        <div class="flex flex-wrap items-center gap-2 mb-3">
-                                            <span class="text-xs font-mono text-secondary dark:text-secondary-dark">Personal Tool · Active · Solo Project</span>
-                                            <span class="text-xs font-mono px-2 py-0.5 bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded">Production System [2026]</span></div>
-                                        <h3 class="text-lg font-semibold text-primary dark:text-primary-dark mb-2 group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">Shopora Nexus</h3>
-                                        <p class="text-sm text-secondary dark:text-secondary-dark leading-relaxed mb-4 flex-grow line-clamp-3">Built and customized a full-stack eCommerce platform with secure authentication, payment integration, and scalable architecture using Spring Boot and React.</p>
-                                        <div class="flex flex-wrap gap-1.5 mb-4">
-                                            <span class="text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Java | Springboot</span>
-                                            <span span class="text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">React | Redux</span>
-                                            <span class="text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">JWT | JPA</span>
-                                            <span span class="text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">PostgreSQL</span>
-                                            <span class="text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">AWS | Docker</span>
-                                            <span class="text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Postman | REST API</span>
-                                        </div>
-                                        <div class="flex items-center justify-between text-sm"><span class="font-mono text-xs text-secondary dark:text-secondary-dark">10 min read</span></div>
-                                    </article>
-                                </a>
-                                <a class="block" href="projects/RADMAP (AINST).html">
-                                    <article class="group flex flex-col h-full p-6 border border-border dark:border-border-dark bg-surface dark:bg-surface-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200 rounded">
-                                        <div class="flex flex-wrap items-center gap-2 mb-3">
-                                            <span class="text-xs font-mono text-secondary dark:text-secondary-dark">Amity Nuclear Dept · Active · Team Project</span>
-                                            <span class="text-xs font-mono px-2 py-0.5 bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded">Summer Internship Project</span></div>
-                                        <h3 class="text-lg font-semibold text-primary dark:text-primary-dark mb-2 group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">RADMAP (Radiation Mapping)</h3>
-                                        <p class="text-sm text-secondary dark:text-secondary-dark leading-relaxed mb-4 flex-grow line-clamp-3">Developed a real-time AI-powered Radiation Mapping system using Raspberry Pi 5, LiDAR, Gamma Spectrometer, GPS, and OpenCV. Implemented 2D heatmaps, 3D SLAM-based Digital Twin visualization, and live telemetry dashboards.
-                                        </p>
-                                        <div class="flex flex-wrap gap-1.5 mb-4">
-                                            <span class="text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Raspberry Pi 5</span>
-                                            <span class="text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">LiDAR</span>
-                                            <span class="text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">SLAM</span>
-                                            <span class="text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">CNSPEC MCA</span>
-                                            <span class="text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Python</span>
-                                        </div>
-                                        <div class="flex items-center justify-between text-sm"><span class="font-mono text-xs text-secondary dark:text-secondary-dark">8 min read</span></div>
-                                    </article>
-                                </a>
-                                <a class="block" href="projects/BRON24 Uz.html">
-                                    <article class="group flex flex-col h-full p-6 border border-border dark:border-border-dark bg-surface dark:bg-surface-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200 rounded">
-                                        <div class="flex flex-wrap items-center gap-2 mb-3"><span class="text-xs font-mono text-secondary dark:text-secondary-dark">Developer Tools · Production · Team Project</span>
-                                            <span class="text-xs font-mono px-2 py-0.5 bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded">Summer Internship Project</span></div>
-                                        <h3 class="text-lg font-semibold text-primary dark:text-primary-dark mb-2 group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">Bron 24</h3>
-                                        <p class="text-sm text-secondary dark:text-secondary-dark leading-relaxed mb-4 flex-grow line-clamp-3">Built a scalable Stadium Booking System using Java, Spring Boot, JWT, Hibernate, and PostgreSQL with secure REST APIs and booking management.</p>
-                                        <div class="flex flex-wrap gap-1.5 mb-4">
-                                            <span class="text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">JAVA Spring Boot</span>
-                                            <span class="text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Spring Security</span>
-                                            <span class="text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">JPA | JWT</span>
-                                            <span class="text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">RDS | PostgreSQL</span>
-                                            <span class="text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Stripe API</span>
-                                        </div>
-                                        <div class="flex items-center justify-between text-sm">
-                                            <span class="font-mono text-xs text-secondary dark:text-secondary-dark">5 min read</span></div>
-                                    </article>
-                                </a>
-                                <a class="block" href="projects/Spotify Music.html">
-                                    <article class="group flex flex-col h-full p-6 border border-border dark:border-border-dark bg-surface dark:bg-surface-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200 rounded">
-                                        <div class="flex flex-wrap items-center gap-2 mb-3">
-                                            <span class="text-xs font-mono text-secondary dark:text-secondary-dark">Technical Assessment · Completed · Team Project</span>
-                                            <span class="text-xs font-mono px-2 py-0.5 bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded">Minor Project</span></div>
-                                        <h3 class="text-lg font-semibold text-primary dark:text-primary-dark mb-2 group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">Spotify Music Recommendation System</h3>
-                                        <p class="text-sm text-secondary dark:text-secondary-dark leading-relaxed mb-4 flex-grow line-clamp-3">Developed an AI-driven Spotify recommendation engine using machine learning to provide personalized music recommendations with rich song metadata.</p>
-                                        <div class="flex flex-wrap gap-1.5 mb-4">
-                                            <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Python</span>
-                                            <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Machine Learning</span>
-                                            <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Scikit-learn</span>
-                                            <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Content-Based Filtering</span>
-                                            <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Collaborative Filtering</span>
-                                            <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Streamlit</span>
-                                        </div>
-                                        <div class="flex items-center justify-between text-sm"><span class="font-mono text-xs text-secondary dark:text-secondary-dark">5 min read</span></div>
-                                    </article>
-                                </a>
-                                <a class="block" href="projects/Online Chess.html">
-                                    <article class="group flex flex-col h-full p-6 border border-border dark:border-border-dark bg-surface dark:bg-surface-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200 rounded">
-                                        <div class="flex flex-wrap items-center gap-2 mb-3"><span class="text-xs font-mono text-secondary dark:text-secondary-dark">Personal Tool · Completed · Solo Project</span><span class="text-xs font-mono px-2 py-0.5 bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded">Completed Project</span></div>
-                                        <h3 class="text-lg font-semibold text-primary dark:text-primary-dark mb-2 group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">Online Chess WebAPP</h3>
-                                        <p class="text-sm text-secondary dark:text-secondary-dark leading-relaxed mb-4 flex-grow line-clamp-3">Built an Online Chess Web App by implementing concepts learned from Shreyansh Coding School, focusing on real-time multiplayer communication and full-stack web development.
-                                            <div class="flex flex-wrap gap-1.5 mb-4">
-                                                <span class="text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">JavaScript</span>
-                                                <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Node.js</span>
-                                                <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Express.js</span>
-                                                <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Socket.IO</span>
-                                                <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Chess.js</span>
-                                                <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">EJS</span>
-                                                <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Tailwind CSS</span>
-                                            </div>
-                                            <div class="flex items-center justify-between text-sm"><span class="font-mono text-xs text-secondary dark:text-secondary-dark">5 min read</span></div>
-                                    </article>
-                                </a>
-
-
-                                <!-- My 6th Experience-->
-                                <a class="block" href="projects/Realtime Tracker.html">
-                                    <article class="group flex flex-col h-full p-6 border border-border dark:border-border-dark bg-surface dark:bg-surface-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200 rounded">
-                                        <div class="flex flex-wrap items-center gap-2 mb-3">
-                                            <span class="text-xs font-mono text-secondary dark:text-secondary-dark">Personal Tool · Completed · Solo Project</span><span class="text-xs font-mono px-2 py-0.5 bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded">Completed Project</span></div>
-                                        <h3 class="text-lg font-semibold text-primary dark:text-primary-dark mb-2 group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">Realtime Tracker WebAPP</h3>
-                                        <p class="text-sm text-secondary dark:text-secondary-dark leading-relaxed mb-4 flex-grow line-clamp-3">Developed a real-time location tracking application with live GPS updates, interactive maps, and route visualization for seamless location monitoring.</p>
-                                        <div class="flex flex-wrap gap-1.5 mb-4">
-                                            <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Node.js</span>
-                                            <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Express.js</span>
-                                            <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Socket.IO</span>
-                                            <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">Leaflet.js</span>
-                                            <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">OpenStreetMap</span>
-                                            <span class="px-3 py-1 text-xs font-mono bg-surface dark:bg-surface-dark border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded">JavaScript</span>
-                                        </div>
-                                        <div class="flex items-center justify-between text-sm"><span class="font-mono text-xs text-secondary dark:text-secondary-dark">6 min read</span></div>
-                                    </article>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
 
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </nav>
 
 
+            <!-- MOBILE MENU -->
+
+            <div class="mobile-menu" id="mobileMenu">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="experience.html">
+                    Experience
+                </a>
+
+                <a href="blog.html">
+                    Publications
+                </a>
+
+                <a href="index.html#contact">
+                    Contact
+                </a>
+
+                <button onclick="window.open('./images/UPDATED%20JUNE%20SUMMER%20CV.pdf', '_blank')">
+                    Resume
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
 
 
-                <!-- Footer Section -->
-                <footer class="bg-surface dark:bg-surface-dark border-t border-border dark:border-border-dark">
-                    <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
-                        <div class="max-w-6xl mx-auto">
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-                                <div>
-                                    <h3 class="text-lg font-semibold text-primary dark:text-primary-dark mb-3">Dhruv Dhayal</h3>
-                                    <p class="text-secondary dark:text-secondary-dark text-sm leading-relaxed">Software Engineer focused on building reliable systems with Node.js, MongoDB, and AWS.</p>
-                                </div>
-                                <div>
-                                    <h4 class="text-sm font-semibold text-primary dark:text-primary-dark mb-4 uppercase tracking-wider font-mono">Quick Links</h4>
-                                    <ul class="space-y-3">
-                                        <li><a class="text-sm text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark transition-colors duration-200" href="projects.html">Projects</a></li>
-                                        <li><a class="text-sm text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark transition-colors duration-200" href="experience.html">Experience</a></li>
-                                        <li><a class="text-sm text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark transition-colors duration-200" href="blog.html">Publications</a></li>
-                                        <li><a class="text-sm text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark transition-colors duration-200" href="research.html">Research</a></li>
-                                        <li><a class="text-sm text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark transition-colors duration-200" href="index.html#contact">Contact</a></li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 class="text-sm font-semibold text-primary dark:text-primary-dark mb-4 uppercase tracking-wider font-mono">Connect</h4>
-                                    <div class="flex gap-3">
-                                        <a href="https://github.com/BlockNotes-4515" target="_blank" rel="noopener noreferrer" class="p-3 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200"
-                                            aria-label="GitHub">
-                                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
-                                        <a href="https://www.linkedin.com/in/dhruv-dhayal-9568b7262/" target="_blank" rel="noopener noreferrer" class="p-3 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200"
-                                            aria-label="LinkedIn"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
-                                        <a href="https://x.com/DhayalDhruv" target="_blank" rel="noopener noreferrer" class="p-3 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200"
-                                            aria-label="X (Twitter)"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
-                                        <a href="https://t.me/dhayaldhruv271" target="_blank" class="p-3 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200"
-                                            aria-label="Telegram">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
-        <path d="M21.944 2.506a1.5 1.5 0 0 0-1.633-.242L2.64 
-        10.06a1.5 1.5 0 0 0 .104 2.77l4.52 1.694 
-        1.694 4.52a1.5 1.5 0 0 0 2.77.104l7.796-17.67a1.5 
-        1.5 0 0 0-.58-1.972zM9.5 14.5l-.8 3.2-1.2-3.2 
-        8.9-8.1-6.9 8.1z"/>
-    </svg>
-                                        </a>
+    <!-- =========================================================
+         MAIN
+    ========================================================== -->
 
-                                        <a href="https://orcid.org/0009-0000-8346-7834" target="_blank" rel="noopener noreferrer" class="p-3 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark hover:text-accent dark:hover:text-accent-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200"
-                                            aria-label="ORCID">
+    <main>
 
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-4 h-4" fill="currentColor">
-        <path d="M128 0C57.3 0 0 57.3 0 128s57.3 128 128 128 128-57.3 128-128S198.7 0 128 0zm-45.3 192H59.7V64h23v128zm-11.5-139.5c-7.6 0-13.7-6.1-13.7-13.7S63.6 25 71.2 25s13.7 6.1 13.7 13.8-6.1 13.7-13.7 13.7zM197 192h-28.8l-39.5-64.5h-.6V192h-23V64h39.5c29.5 0 52.5 13.2 52.5 44.7 0 22.7-12.7 38.2-35.8 41.9L197 192zM144.7 83h-16.6v49.7h16.6c17.3 0 29.4-7.9 29.4-24.9S162 83 144.7 83z"/>
-    </svg>
+        <section class="page-section">
 
-                                        </a>
+            <div class="container">
 
+                <!-- PAGE HEADER -->
 
+                <div class="page-header">
 
-
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="h-px bg-border dark:bg-border-dark mb-6"></div>
-                            <p class="text-sm text-secondary dark:text-secondary-dark font-mono text-xs">©
-                                <!-- -->2026
-                                <!-- -->Dhruv Dhayal
-                                <!-- -->| All rights reserved
-                            </p>
-                        </div>
+                    <div class="eyebrow">
+                        Selected Work
                     </div>
-                </footer>
+
+                    <h1 class="page-title">
+                        Projects
+                    </h1>
+
+                    <p class="page-description">
+                        A collection of software engineering, AI/ML, IoT, backend, and research-driven projects built to solve practical problems and explore modern technologies.
+                    </p>
+
+                </div>
+
+
+                <!-- =================================================
+                     PROJECTS
+                ================================================== -->
+
+                <div class="projects-grid">
+
+
+                    <!-- =================================================
+                         PROJECT 1
+                    ================================================== -->
+
+                    <article class="project-card">
+
+                        <div class="card-meta">
+
+                            <span class="project-type">
+                                Full-Stack · Production System
+                            </span>
+
+                            <span class="project-year">
+                                2026
+                            </span>
+
+                        </div>
+
+
+                        <h2 class="project-title">
+
+                            <a href="projects/ShoporaNexus.html">
+                                Shopora Nexus
+                            </a>
+
+                        </h2>
+
+
+                        <p class="project-description">
+                            A scalable e-commerce platform designed with secure authentication, role-based access, REST APIs, product management, cart and order workflows, and secure payment processing.
+                        </p>
+
+
+                        <div class="project-tags">
+
+                            <span class="tag">
+                                Java
+                            </span>
+
+                            <span class="tag">
+                                Spring Boot
+                            </span>
+
+                            <span class="tag">
+                                React
+                            </span>
+
+                            <span class="tag">
+                                Redux
+                            </span>
+
+                            <span class="tag">
+                                JWT
+                            </span>
+
+                            <span class="tag">
+                                JPA
+                            </span>
+
+                            <span class="tag">
+                                PostgreSQL
+                            </span>
+
+                            <span class="tag">
+                                Docker
+                            </span>
+
+                            <span class="tag">
+                                AWS
+                            </span>
+
+                        </div>
+
+
+                        <div class="project-footer">
+
+                            <span class="read-time">
+                                10 min read
+                            </span>
+
+                            <a href="projects/ShoporaNexus.html" class="read-link">
+
+                                Read case study →
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- =================================================
+                     PROJECT-2 REALTIME TRACKER
+                ================================================== -->
+
+                    <article class="project-card">
+
+                        <div class="card-meta">
+
+                            <span class="project-type">
+            Web Development · Real-Time Systems
+        </span>
+
+                            <span class="project-year">
+            2026
+        </span>
+
+                        </div>
+
+
+                        <h2 class="project-title">
+
+                            <a href="./projects/Realtime Tracker.html">
+            Realtime Tracker
+        </a>
+
+                        </h2>
+
+
+                        <p class="project-description">
+                            A real-time GPS tracking platform that captures live location data, synchronizes user positions through WebSockets, and visualizes movement dynamically on an interactive map.
+                        </p>
+
+
+                        <div class="project-tags">
+
+                            <span class="tag">
+            Node.js
+        </span>
+
+                            <span class="tag">
+            Express.js
+        </span>
+
+                            <span class="tag">
+            Socket.IO
+        </span>
+
+                            <span class="tag">
+            JavaScript
+        </span>
+
+                            <span class="tag">
+            Leaflet.js
+        </span>
+
+                            <span class="tag">
+            Geolocation API
+        </span>
+
+                            <span class="tag">
+            WebSockets
+        </span>
+
+                            <span class="tag">
+            OpenStreetMap
+        </span>
+
+                        </div>
+
+
+                        <div class="project-footer">
+
+                            <span class="read-time">
+            Real-Time Tracking
+        </span>
+
+                            <a href="./projects/Realtime Tracker.html" class="read-link">
+
+            View project →
+
+        </a>
+
+                        </div>
+
+                    </article>
+
+
+
+
+
+                    <!-- =================================================
+                     PROJECT 3
+                ================================================== -->
+
+                    <article class="project-card">
+
+                        <div class="card-meta">
+
+                            <span class="project-type">
+            Web Development · Real-Time Systems
+        </span>
+
+                            <span class="project-year">
+            2026
+        </span>
+
+                        </div>
+
+
+                        <h2 class="project-title">
+
+                            <a href="./projects/Online Chess.html">
+            Online Chess.com
+        </a>
+
+                        </h2>
+
+
+                        <p class="project-description">
+                            A real-time multiplayer chess web application that enables two players to play synchronized games online with instant move updates, server-side move validation, and WebSocket-based communication.
+                        </p>
+
+
+                        <div class="project-tags">
+
+                            <span class="tag">
+            Node.js
+        </span>
+
+                            <span class="tag">
+            Express.js
+        </span>
+
+                            <span class="tag">
+            Socket.IO
+        </span>
+
+                            <span class="tag">
+            Chess.js
+        </span>
+
+                            <span class="tag">
+            WebSockets
+        </span>
+
+                            <span class="tag">
+            JavaScript
+        </span>
+
+                            <span class="tag">
+            EJS
+        </span>
+
+                            <span class="tag">
+            Tailwind CSS
+        </span>
+
+                        </div>
+
+
+                        <div class="project-footer">
+
+                            <span class="read-time">
+            Real-Time Multiplayer
+        </span>
+
+                            <a href="./projects/Online Chess.html" class="read-link">
+
+            View project →
+
+        </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                     PROJECT 4
+                ================================================== -->
+
+                    <article class="project-card">
+
+                        <div class="card-meta">
+
+                            <span class="project-type">
+            IoT · Radiation Mapping · Research
+        </span>
+
+                            <span class="project-year">
+            2025
+        </span>
+
+                        </div>
+
+
+                        <h2 class="project-title">
+
+                            <a href="./projects/RADMAP (AINST).html">
+            RADMAP
+        </a>
+
+                        </h2>
+
+
+                        <p class="project-description">
+                            A GPS-enabled radiation mapping system developed using Raspberry Pi to collect, process, and visualize radiation intensity across geographical locations for real-time spatial analysis and monitoring.
+                        </p>
+
+
+                        <div class="project-tags">
+
+                            <span class="tag">
+            Raspberry Pi
+        </span>
+
+                            <span class="tag">
+            Python
+        </span>
+
+                            <span class="tag">
+            GPS
+        </span>
+
+                            <span class="tag">
+            IoT
+        </span>
+
+                            <span class="tag">
+            Streamlit
+        </span>
+
+                            <span class="tag">
+            Folium
+        </span>
+
+                            <span class="tag">
+            Plotly
+        </span>
+
+                            <span class="tag">
+            Google Colab
+        </span>
+
+                        </div>
+
+
+                        <div class="project-footer">
+
+                            <span class="read-time">
+            Research · IoT Project
+        </span>
+
+                            <a href="./projects/RADMAP (AINST).html" class="read-link">
+
+            View project →
+
+        </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================================
+                     PROJECT 5
+                ================================================== -->
+
+                    <article class="project-card">
+
+                        <div class="card-meta">
+
+                            <span class="project-type">
+            AI / ML · Recommendation Systems
+        </span>
+
+                            <span class="project-year">
+            2024
+        </span>
+
+                        </div>
+
+
+                        <h2 class="project-title">
+
+                            <a href="./projects/Spotify Music.html">
+            Spotify Music Recommendation
+        </a>
+
+                        </h2>
+
+
+                        <p class="project-description">
+                            An AI-powered music recommendation system that analyzes user preferences and song characteristics to generate personalized recommendations using machine learning, content-based filtering, and Spotify API integration.
+                        </p>
+
+
+                        <div class="project-tags">
+
+                            <span class="tag">
+            Python
+        </span>
+
+                            <span class="tag">
+            Machine Learning
+        </span>
+
+                            <span class="tag">
+            Recommendation Systems
+        </span>
+
+                            <span class="tag">
+            Pandas
+        </span>
+
+                            <span class="tag">
+            Scikit-learn
+        </span>
+
+                            <span class="tag">
+            Spotify API
+        </span>
+
+                            <span class="tag">
+            Data Analysis
+        </span>
+
+                        </div>
+
+
+                        <div class="project-footer">
+
+                            <span class="read-time">
+            AI/ML Project
+        </span>
+
+                            <a href="./projects/Spotify Music.html" class="read-link">
+
+            View project →
+
+        </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                     PROJECT 6
+                ================================================== -->
+
+                    <article class="project-card">
+
+                        <div class="card-meta">
+
+                            <span class="project-type">
+            Backend · Web Development · Internship
+        </span>
+
+                            <span class="project-year">
+            2026
+        </span>
+
+                        </div>
+
+
+                        <h2 class="project-title">
+
+                            <a href="./projects/BRON24 Uz.html">
+            BRON24 — Backend Development
+        </a>
+
+                        </h2>
+
+
+                        <p class="project-description">
+                            A backend development project completed during my internship at BRON24, focused on building and improving web application functionality, developing backend services, working with APIs, and contributing to production-oriented software development.
+                        </p>
+
+
+                        <div class="project-tags">
+
+                            <span class="tag">
+            Backend Development
+        </span>
+
+                            <span class="tag">
+            JavaScript
+        </span>
+
+                            <span class="tag">
+            Node.js
+        </span>
+
+                            <span class="tag">
+            REST APIs
+        </span>
+
+                            <span class="tag">
+            Git
+        </span>
+
+                            <span class="tag">
+            GitHub
+        </span>
+
+                            <span class="tag">
+            Web Development
+        </span>
+
+                        </div>
+
+
+                        <div class="project-footer">
+
+                            <span class="read-time">
+            Internship Project
+        </span>
+
+                            <a href="./projects/BRON24 Uz.html" class="read-link">
+
+            View project →
+
+        </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
             </div>
 
+        </section>
 
-
-            <!-- Floating Bottom Right Buttons -->
-            <div class="floating-actions">
-
-                <!-- Linkdin Button -->
-                <button class="float-btn" onclick="window.open('https://www.linkedin.com/in/dhruv-dhayal-9568b7262/', '_blank')">
-    <!-- LinkedIn Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" 
-         width="22" 
-         height="22" 
-         fill="currentColor" 
-         viewBox="0 0 16 16">
-         
-        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 
-        0 16 .513 16 1.146v13.708c0 .633-.526 
-        1.146-1.175 1.146H1.175C.526 16 0 
-        15.487 0 14.854V1.146zm4.943 
-        12.248V6.169H2.542v7.225h2.401zM3.743 
-        5.18c.837 0 1.358-.554 
-        1.358-1.248-.015-.709-.521-1.248-1.343-1.248-.822 
-        0-1.358.54-1.358 1.248 0 .694.521 
-        1.248 1.327 1.248h.016zm4.908 
-        8.214V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 
-        1.232-.878.869 0 1.216.662 
-        1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 
-        0-1.845.7-2.165 1.193v.025h-.016a5.54 
-        5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 
-        0 7.225 0 7.225h2.4z"/>
-        
-    </svg>
-</button>
-
-
-                <!-- Theme Toggle -->
-                <button class="float-btn" id="themeToggle">
-    <svg id="themeIcon"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        fill="currentColor"
-        viewBox="0 0 16 16">
-        <path d="M6 0a.75.75 0 0 1 .73.602 
-        7 7 0 0 0 8.668 8.668A.75.75 
-        0 0 1 16 10a8 8 0 1 1-10-10z"/>
-    </svg>
-</button>
-
-            </div>
-
-            <style>
-                .floating-actions {
-                    z-index: 999999 !important;
-                    pointer-events: auto !important;
-                }
-                
-                .float-btn {
-                    pointer-events: auto !important;
-                }
-                /* Floating buttons container */
-                
-                .floating-actions {
-                    position: fixed;
-                    bottom: 24px;
-                    right: 18px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 14px;
-                    z-index: 999999;
-                }
-                /* Premium glossy circular buttons */
-                
-                .float-btn {
-                    width: 62px;
-                    height: 62px;
-                    border: none;
-                    outline: none;
-                    border-radius: 50%;
-                    cursor: pointer;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    /* dark navy glass effect */
-                    background: rgba(0, 0, 0, 0.92);
-                    backdrop-filter: blur(22px);
-                    -webkit-backdrop-filter: blur(22px);
-                    border: 1px solid rgba(255, 255, 255, 0.06);
-                    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.30), inset 0 1px 2px rgba(255, 255, 255, 0.05);
-                    color: #ffffff;
-                    transition: all 0.28s ease;
-                }
-                /* Icon size */
-                
-                .float-btn svg {
-                    width: 24px;
-                    height: 24px;
-                }
-                /* Hover animation */
-                
-                .float-btn:hover {
-                    transform: scale(1.08);
-                    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35), inset 0 1px 2px rgba(255, 255, 255, 0.08);
-                }
-            </style>
     </main>
-    <script src="https://www.lakshaymahajan.com/_next/static/chunks/013f.eieuavfe.js" id="_R_" async=""></script>
+
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-inner">
+
+                <div class="footer-grid">
+
+
+                    <!-- ABOUT -->
+
+                    <div>
+
+                        <h2 class="footer-title">
+                            Dhruv Dhayal
+                        </h2>
+
+                        <p class="footer-description">
+                            Software Engineer focused on software development, AI/ML, backend systems, IoT, research and building practical technology-driven solutions.
+                        </p>
+
+                    </div>
+
+
+                    <!-- QUICK LINKS -->
+
+                    <div>
+
+                        <h3 class="footer-heading">
+                            Quick Links
+                        </h3>
+
+                        <ul class="footer-links">
+
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="projects.html">
+                                    Projects
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="experience.html">
+                                    Experience
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="blog.html">
+                                    Publications
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="index.html#contact">
+                                    Contact
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- CONNECT -->
+
+                    <div>
+
+                        <h3 class="footer-heading">
+                            Connect
+                        </h3>
+
+                        <div class="socials">
+
+
+                            <!-- GitHub -->
+
+                            <a href="https://github.com/BlockNotes-4515" target="_blank" rel="noopener noreferrer" class="social" aria-label="GitHub">
+
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+
+                                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.1c-3.2.69-3.88-1.36-3.88-1.36-.53-1.32-1.28-1.67-1.28-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.73-1.52-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.73.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.35.78 1.04.78 2.1v3.11c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+
+                                </svg>
+
+                            </a>
+
+
+
+                            <!-- LinkedIn -->
+
+                            <a href="https://www.linkedin.com/in/dhruv-dhayal-9568b7262/" target="_blank" rel="noopener noreferrer" class="social" aria-label="LinkedIn">
+
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+
+                                    <path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM.5 8h4.5v13H.5V8Zm7 0H12v1.78h.06c.62-1.18 2.14-2.42 4.4-2.42 4.7 0 5.56 3.09 5.56 7.1V21H17.5v-5.8c0-1.38-.03-3.15-1.92-3.15-1.92 0-2.21 1.5-2.21 3.05V21H7.5V8Z"/>
+
+                                </svg>
+
+                            </a>
+
+
+
+                            <!-- X -->
+
+                            <a href="https://x.com/DhayalDhruv" target="_blank" rel="noopener noreferrer" class="social" aria-label="X">
+
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+
+                                    <path d="M18.9 2H22l-6.77 7.74L23.2 22h-6.24l-4.89-6.39L6.48 22H3.37l7.24-8.28L2.8 2h6.4l4.42 5.84L18.9 2Zm-1.1 17.9h1.73L8.26 3.98H6.4L17.8 19.9Z"/>
+
+                                </svg>
+
+                            </a>
+
+
+
+                            <!-- Telegram -->
+
+                            <a href="https://t.me/dhayaldhruv271" target="_blank" rel="noopener noreferrer" class="social" aria-label="Telegram">
+
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+
+                                    <path d="M21.94 2.5 2.77 9.9c-1.31.51-1.3 1.23-.24 1.55l4.92 1.53 1.88 5.72c.23.63.12.88.78.88.51 0 .73-.23 1-.5l2.39-2.32 4.97 3.67c.91.5 1.57.24 1.8-.84l3.25-15.33c.34-1.33-.51-1.93-1.58-1.26ZM8.2 12.63l10.83-6.84c.54-.33 1.03-.15.62.2l-8.76 7.9-.34 3.65-2.35-4.91Z"/>
+
+                                </svg>
+
+                            </a>
+
+
+
+                            <!-- ORCID -->
+
+                            <a href="https://orcid.org/0009-0000-8346-7834" target="_blank" rel="noopener noreferrer" class="social" aria-label="ORCID">
+
+                                <svg viewBox="0 0 256 256" fill="currentColor">
+
+                                    <path d="M128 0C57.3 0 0 57.3 0 128s57.3 128 128 128 128-57.3 128-128S198.7 0 128 0Zm-45.3 192H59.7V64h23v128Zm-11.5-139.5c-7.6 0-13.7-6.1-13.7-13.7S63.6 25 71.2 25s13.7 6.1 13.7 13.8-6.1 13.7-13.7 13.7ZM197 192h-28.8l-39.5-64.5h-.6V192h-23V64h39.5c29.5 0 52.5 13.2 52.5 44.7 0 22.7-12.7 38.2-35.8 41.9L197 192Zm-52.3-109h-16.6v49.7h16.6c17.3 0 29.4-7.9 29.4-24.9S162 83 144.7 83Z"/>
+
+                                </svg>
+
+                            </a>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-line"></div>
+
+
+                <p class="copyright">
+                    © 2026 Dhruv Dhayal | All rights reserved
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================================
+         FLOATING BUTTONS
+    ========================================================== -->
+
+    <div class="floating-actions">
+
+
+        <!-- LINKEDIN -->
+
+        <button class="float-btn" aria-label="LinkedIn" onclick="window.open('https://www.linkedin.com/in/dhruv-dhayal-9568b7262/', '_blank')">
+
+            <svg
+                viewBox="0 0 24 24"
+                fill="currentColor">
+
+                <path d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.68H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.28 2.38 4.28 5.48v6.26ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM3.56 9h3.56v11.45H3.56V9ZM22.22 0H1.78C.8 0 0 .8 0 1.78v20.44C0 23.2.8 24 1.78 24h20.44c.98 0 1.78-.8 1.78-1.78V1.78C24 .8 23.2 0 22.22 0Z"/>
+
+            </svg>
+
+        </button>
+
+
+
+        <!-- THEME -->
+
+        <button class="float-btn" id="themeToggle" aria-label="Toggle theme">
+
+            <svg
+                id="themeIcon"
+                viewBox="0 0 24 24"
+                fill="currentColor">
+
+                <path d="M21.64 13a1 1 0 0 0-1.05-.14 8.05 8.05 0 0 1-10.45-9.9A1 1 0 0 0 8.83 1.9 10 10 0 1 0 22.1 15.2a1 1 0 0 0-.46-2.2ZM12 22a8 8 0 0 1-4.93-14.3A10.07 10.07 0 0 0 17.3 17.93 8 8 0 0 1 12 22Z"/>
+
+            </svg>
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
     <script>
-        (self.__next_f = self.__next_f || []).push([0])
+        /* =========================================================
+                                                                                                                                                                                                                                                                                                                                                                                   THEME
+                                                                                                                                                                                                                                                                                                                                                                                ========================================================= */
+
+        const html = document.documentElement;
+
+        const themeToggle =
+            document.getElementById("themeToggle");
+
+        const themeIcon =
+            document.getElementById("themeIcon");
+
+
+        const sunIcon = `
+            <path d="M12 4.5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15Zm0 13a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11ZM12 1a1 1 0 0 0-1 1v1.5a1 1 0 0 0 2 0V2a1 1 0 0 0-1-1Zm0 18.5a1 1 0 0 0-1 1V22a1 1 0 0 0 2 0v-1.5a1 1 0 0 0-1-1ZM4.22 3.22a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41L4.22 3.22Zm14.5 14.5a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41l-1.06-1.06ZM1 12a1 1 0 0 0 1 1h1.5a1 1 0 0 0 0-2H2a1 1 0 0 0-1 1Zm18.5 0a1 1 0 0 0 1 1H22a1 1 0 0 0 0-2h-1.5a1 1 0 0 0-1 1ZM5.28 17.78a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41l-1.06-1.06Zm13.44-13.5a1 1 0 0 0-1.41-1.41l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06Z"/>
+        `;
+
+
+        const moonIcon = `
+            <path d="M21.64 13a1 1 0 0 0-1.05-.14 8.05 8.05 0 0 1-10.45-9.9A1 1 0 0 0 8.83 1.9 10 10 0 1 0 22.1 15.2a1 1 0 0 0-.46-2.2ZM12 22a8 8 0 0 1-4.93-14.3A10.07 10.07 0 0 0 17.3 17.93 8 8 0 0 1 12 22Z"/>
+        `;
+
+
+        function updateThemeIcon() {
+
+            if (html.classList.contains("dark")) {
+
+                themeIcon.innerHTML = sunIcon;
+
+            } else {
+
+                themeIcon.innerHTML = moonIcon;
+
+            }
+
+        }
+
+
+        function applyTheme(theme) {
+
+            if (theme === "dark") {
+
+                html.classList.add("dark");
+
+            } else {
+
+                html.classList.remove("dark");
+
+            }
+
+            localStorage.setItem("theme", theme);
+
+            updateThemeIcon();
+
+        }
+
+
+        const savedTheme =
+            localStorage.getItem("theme");
+
+
+        if (savedTheme) {
+
+            applyTheme(savedTheme);
+
+        } else {
+
+            applyTheme("dark");
+
+        }
+
+
+        themeToggle.addEventListener("click", function() {
+
+            if (html.classList.contains("dark")) {
+
+                applyTheme("light");
+
+            } else {
+
+                applyTheme("dark");
+
+            }
+
+        });
+
+
+
+        /* =========================================================
+           HEADER SCROLL
+        ========================================================== */
+
+        const header =
+            document.getElementById("mainHeader");
+
+
+        function updateHeader() {
+
+            if (window.scrollY > 40) {
+
+                header.classList.add("scrolled");
+
+            } else {
+
+                header.classList.remove("scrolled");
+
+            }
+
+        }
+
+
+        window.addEventListener(
+            "scroll",
+            updateHeader, {
+                passive: true
+            }
+        );
+
+
+        updateHeader();
+
+
+
+        /* =========================================================
+           MOBILE MENU
+        ========================================================== */
+
+        const mobileMenuBtn =
+            document.getElementById("mobileMenuBtn");
+
+        const mobileMenu =
+            document.getElementById("mobileMenu");
+
+
+        mobileMenuBtn.addEventListener(
+            "click",
+            function() {
+
+                mobileMenu.classList.toggle("open");
+
+            }
+        );
+
+
+        mobileMenu
+            .querySelectorAll("a, button")
+            .forEach(function(item) {
+
+                item.addEventListener(
+                    "click",
+                    function() {
+
+                        mobileMenu.classList.remove("open");
+
+                    }
+                );
+
+            });
     </script>
-    <script>
-        self.__next_f.push([1, "1:\"$Sreact.fragment\"\n2:I[79520,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"\"]\n4:I[63178,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"ThemeProvider\"]\n5:I[63687,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"default\"]\n6:I[39756,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"default\"]\n7:I[58298,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\",\"/_next/static/chunks/12gj6-uu017k6.js\"],\"default\"]\n8:I[16868,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\",\"/_next/static/chunks/13h545vw3y5c1.js\"],\"default\"]\n9:I[37457,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"default\"]\na:I[22016,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\",\"/_next/static/chunks/0v_ue~msygctw.js\",\"/_next/static/chunks/0hwsf_8kxiyzw.js\"],\"\"]\nf:I[68027,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"default\",1]\n:HL[\"/_next/static/chunks/15copuenlrz~n.css\",\"style\"]\n:HL[\"/_next/static/media/70bc3e132a0a741e-s.p.1409xf.ylxg8g.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/c41ca59f1c34ba31-s.p.0xxb547n1hn74.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n3:[\"$\",\"iframe\",null,{\"src\":\"https://www.googletagmanager.com/ns.html?id=GTM-P4W4RW3C\",\"height\":\"0\",\"width\":\"0\",\"style\":{\"display\":\"none\",\"visibility\":\"hidden\"}}]\n"])
-    </script>
-    <script>
-        self.__next_f.push([1, "0:{\"P\":null,\"c\":[\"\",\"projects\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"projects\",{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",16],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/15copuenlrz~n.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/09dew68nzz~jw.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/0t2xr05rlu96l.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"suppressHydrationWarning\":true,\"className\":\"sora_3fd80e00-module__HLND6q__variable jetbrains_mono_5f0647e3-module__UHGtKW__variable\",\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"meta\",null,{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",null,{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",null,{\"httpEquiv\":\"X-UA-Compatible\",\"content\":\"IE=edge\"}],[\"$\",\"meta\",null,{\"name\":\"theme-color\",\"content\":\"#000000\"}],[\"$\",\"meta\",null,{\"httpEquiv\":\"Content-Security-Policy\",\"content\":\"\\n        default-src 'self';\\n        script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com;\\n        connect-src 'self' https://www.google-analytics.com https://analytics.google.com;\\n        frame-src 'self' https://www.googletagmanager.com;\\n        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;\\n        img-src 'self' data: https: https://www.google-analytics.com https://www.googletagmanager.com;\\n        font-src 'self' data: https://fonts.gstatic.com;\\n      \"}],[\"$\",\"meta\",null,{\"httpEquiv\":\"X-Content-Type-Options\",\"content\":\"nosniff\"}],[\"$\",\"meta\",null,{\"httpEquiv\":\"X-XSS-Protection\",\"content\":\"1; mode=block\"}],[\"$\",\"meta\",null,{\"name\":\"referrer\",\"content\":\"strict-origin-when-cross-origin\"}],[\"$\",\"link\",null,{\"rel\":\"manifest\",\"href\":\"/manifest.json\"}],[\"$\",\"link\",null,{\"rel\":\"preconnect\",\"href\":\"https://fonts.googleapis.com\"}],[\"$\",\"link\",null,{\"rel\":\"preconnect\",\"href\":\"https://fonts.gstatic.com/\",\"crossOrigin\":\"anonymous\"}]]}],[\"$\",\"$L2\",null,{\"id\":\"google-tag-manager\",\"strategy\":\"afterInteractive\",\"children\":\"\\n          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\\n          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\\n          j=d.createElement(s),dl=l!='dataLayer'?'\u0026l='+l:'';j.async=true;j.src=\\n          '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);\\n          })(window,document,'script','dataLayer','GTM-P4W4RW3C');\\n        \"}],[\"$\",\"body\",null,{\"className\":\"bg-background dark:bg-background-dark\",\"children\":[[\"$\",\"noscript\",null,{\"children\":\"$3\"}],[\"$\",\"a\",null,{\"href\":\"#main\",\"className\":\"sr-only focus:not-sr-only\",\"children\":\"Skip to main content\"}],[\"$\",\"$L4\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"children\":[[\"$\",\"$L5\",null,{}],[\"$\",\"main\",null,{\"id\":\"main\",\"children\":[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$7\",\"errorStyles\":[],\"errorScripts\":[[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/12gj6-uu017k6.js\",\"async\":true}]],\"template\":[\"$\",\"$L8\",null,{\"children\":[\"$\",\"$L9\",null,{}]}],\"templateStyles\":[],\"templateScripts\":[[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/13h545vw3y5c1.js\",\"async\":true}]],\"notFound\":[[\"$\",\"div\",null,{\"className\":\"min-h-screen flex items-center justify-center bg-background dark:bg-background-dark\",\"children\":[\"$\",\"div\",null,{\"className\":\"text-center p-8 max-w-md\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-5xl font-bold text-primary dark:text-primary-dark mb-2\",\"children\":\"404\"}],[\"$\",\"h2\",null,{\"className\":\"text-xl font-semibold text-primary dark:text-primary-dark mb-4\",\"children\":\"Page Not Found\"}],[\"$\",\"p\",null,{\"className\":\"text-secondary dark:text-secondary-dark mb-8\",\"children\":\"The page you're looking for doesn't exist or has been moved.\"}],[\"$\",\"$La\",null,{\"href\":\"/\",\"className\":\"inline-block px-6 py-3 bg-primary dark:bg-primary-dark text-white dark:text-black hover:bg-accent dark:hover:bg-accent-dark transition-colors duration-200\",\"children\":\"Go Home\"}]]}]}],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]]}]]}]]}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":\"$Lb\",\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"$Lc\",{},null,false,null]},null,false,\"$@d\"]},null,false,null],\"$Le\",false]],\"m\":\"$undefined\",\"G\":[\"$f\",[\"$L10\"]],\"S\":true,\"h\":null,\"s\":\"$undefined\",\"l\":\"$undefined\",\"p\":\"$undefined\",\"d\":\"$undefined\",\"b\":\"AXFm6cvPIjWdHassPVoHn\"}\n"])
-    </script>
-    <script>
-        self.__next_f.push([1, "11:I[45678,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\",\"/_next/static/chunks/0v_ue~msygctw.js\",\"/_next/static/chunks/0hwsf_8kxiyzw.js\"],\"default\"]\n1e:I[97367,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"ViewportBoundary\"]\n20:I[97367,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"MetadataBoundary\"]\n21:\"$Sreact.suspense\"\nb:[\"$\",\"$L9\",null,{}]\n"])
-    </script>
-    <script>
-        self.__next_f.push([1, "c:[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"div\",null,{\"className\":\"flex min-h-screen flex-col\",\"children\":[[\"$\",\"$L11\",null,{}],[\"$\",\"div\",null,{\"className\":\"flex-1\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto px-4 sm:px-6 lg:px-8 py-24\",\"children\":[\"$\",\"div\",null,{\"className\":\"max-w-6xl mx-auto\",\"children\":[[\"$\",\"header\",null,{\"className\":\"mb-12 max-w-3xl\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-3xl sm:text-4xl font-bold text-primary dark:text-primary-dark mb-4\",\"children\":\"Projects\"}],[\"$\",\"p\",null,{\"className\":\"text-secondary dark:text-secondary-dark leading-relaxed\",\"children\":\"Engineering case studies focused on technical decisions, tradeoffs, debugging stories, and real-world problem solving.\"}]]}],[\"$\",\"div\",null,{\"className\":\"grid gap-6 sm:grid-cols-2\",\"children\":[[\"$\",\"$La\",\"ideahub\",{\"href\":\"/projects/ideahub\",\"className\":\"block\",\"children\":[\"$\",\"article\",null,{\"className\":\"group flex flex-col h-full p-6 border border-border dark:border-border-dark bg-surface dark:bg-surface-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200 rounded\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-2 mb-3\",\"children\":[[\"$\",\"span\",null,{\"className\":\"text-xs font-mono text-secondary dark:text-secondary-dark\",\"children\":\"Personal Tool · Active · Solo Project\"}],[\"$\",\"span\",null,{\"className\":\"text-xs font-mono px-2 py-0.5 bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded\",\"children\":\"Active Project\"}]]}],[\"$\",\"h3\",null,{\"className\":\"text-lg font-semibold text-primary dark:text-primary-dark mb-2 group-hover:text-accent dark:group-hover:text-accent-dark transition-colors\",\"children\":\"IdeaHub\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-secondary dark:text-secondary-dark leading-relaxed mb-4 flex-grow line-clamp-3\",\"children\":\"Centralized platform for capturing product ideas and thoughts, with soft delete and Auth Service integration.\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-1.5 mb-4\",\"children\":[[\"$\",\"span\",\"Next.js\",{\"className\":\"text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded\",\"children\":\"Next.js\"}],[\"$\",\"span\",\"Drizzle ORM\",{\"className\":\"text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded\",\"children\":\"Drizzle ORM\"}],[\"$\",\"span\",\"PostgreSQL\",{\"className\":\"text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded\",\"children\":\"PostgreSQL\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex items-center justify-between text-sm\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-mono text-xs text-secondary dark:text-secondary-dark\",\"children\":\"3 min read\"}],false]}]]}]}],[\"$\",\"$La\",\"auth-service\",{\"href\":\"/projects/auth-service\",\"className\":\"block\",\"children\":[\"$\",\"article\",null,{\"className\":\"group flex flex-col h-full p-6 border border-border dark:border-border-dark bg-surface dark:bg-surface-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200 rounded\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-2 mb-3\",\"children\":[[\"$\",\"span\",null,{\"className\":\"text-xs font-mono text-secondary dark:text-secondary-dark\",\"children\":\"Personal Tool · Active · Solo Project\"}],[\"$\",\"span\",null,{\"className\":\"text-xs font-mono px-2 py-0.5 bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded\",\"children\":\"Active Project\"}]]}],[\"$\",\"h3\",null,{\"className\":\"text-lg font-semibold text-primary dark:text-primary-dark mb-2 group-hover:text-accent dark:group-hover:text-accent-dark transition-colors\",\"children\":\"Auth Service\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-secondary dark:text-secondary-dark leading-relaxed mb-4 flex-grow line-clamp-3\",\"children\":\"Centralized authentication service with asymmetric JWT, local token verification, and async email delivery via AWS.\"}],\"$L12\",\"$L13\"]}]}],\"$L14\",\"$L15\",\"$L16\"]}]]}]}]}],\"$L17\",\"$L18\",\"$L19\"]}],[\"$L1a\",\"$L1b\"],\"$L1c\"]}]\n"])
-    </script>
-    <script>
-        self.__next_f.push([1, "1d:[]\nd:\"$W1d\"\ne:[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L1e\",null,{\"children\":\"$L1f\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$L20\",null,{\"children\":[\"$\",\"$21\",null,{\"name\":\"Next.Metadata\",\"children\":\"$L22\"}]}]}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}]\n10:[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/15copuenlrz~n.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]\n"])
-    </script>
-    <script>
-        self.__next_f.push([1, "23:I[13642,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\",\"/_next/static/chunks/0v_ue~msygctw.js\",\"/_next/static/chunks/0hwsf_8kxiyzw.js\"],\"default\"]\n24:I[95373,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\",\"/_next/static/chunks/0v_ue~msygctw.js\",\"/_next/static/chunks/0hwsf_8kxiyzw.js\"],\"default\"]\n25:I[22530,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\",\"/_next/static/chunks/0v_ue~msygctw.js\",\"/_next/static/chunks/0hwsf_8kxiyzw.js\"],\"default\"]\n26:I[97367,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"OutletBoundary\"]\n12:[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-1.5 mb-4\",\"children\":[[\"$\",\"span\",\"Express\",{\"className\":\"text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded\",\"children\":\"Express\"}],[\"$\",\"span\",\"MongoDB\",{\"className\":\"text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded\",\"children\":\"MongoDB\"}],[\"$\",\"span\",\"AWS SNS\",{\"className\":\"text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded\",\"children\":\"AWS SNS\"}]]}]\n13:[\"$\",\"div\",null,{\"className\":\"flex items-center justify-between text-sm\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-mono text-xs text-secondary dark:text-secondary-dark\",\"children\":\"3 min read\"}],false]}]\n"])
-    </script>
-    <script>
-        self.__next_f.push([1, "14:[\"$\",\"$La\",\"leadership-talk-season-3\",{\"href\":\"/projects/leadership-talk-season-3\",\"className\":\"block\",\"children\":[\"$\",\"article\",null,{\"className\":\"group flex flex-col h-full p-6 border border-border dark:border-border-dark bg-surface dark:bg-surface-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200 rounded\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-2 mb-3\",\"children\":[[\"$\",\"span\",null,{\"className\":\"text-xs font-mono text-secondary dark:text-secondary-dark\",\"children\":\"Internship Project · Production · Team Project\"}],[\"$\",\"span\",null,{\"className\":\"text-xs font-mono px-2 py-0.5 bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded\",\"children\":\"Production System\"}]]}],[\"$\",\"h3\",null,{\"className\":\"text-lg font-semibold text-primary dark:text-primary-dark mb-2 group-hover:text-accent dark:group-hover:text-accent-dark transition-colors\",\"children\":\"Leadership Talk Season 3\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-secondary dark:text-secondary-dark leading-relaxed mb-4 flex-grow line-clamp-3\",\"children\":\"Event registration platform for a 2-day leadership event with 4 speaker sessions and 500+ combined registrations.\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-1.5 mb-4\",\"children\":[[\"$\",\"span\",\"Express\",{\"className\":\"text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded\",\"children\":\"Express\"}],[\"$\",\"span\",\"MongoDB\",{\"className\":\"text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded\",\"children\":\"MongoDB\"}],[\"$\",\"span\",\"Cashfree\",{\"className\":\"text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded\",\"children\":\"Cashfree\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex items-center justify-between text-sm\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-mono text-xs text-secondary dark:text-secondary-dark\",\"children\":\"3 min read\"}],false]}]]}]}]\n"])
-    </script>
-    <script>
-        self.__next_f.push([1, "15:[\"$\",\"$La\",\"fintech-core-api\",{\"href\":\"/projects/fintech-core-api\",\"className\":\"block\",\"children\":[\"$\",\"article\",null,{\"className\":\"group flex flex-col h-full p-6 border border-border dark:border-border-dark bg-surface dark:bg-surface-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200 rounded\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-2 mb-3\",\"children\":[[\"$\",\"span\",null,{\"className\":\"text-xs font-mono text-secondary dark:text-secondary-dark\",\"children\":\"Technical Assessment · Completed · Solo Project\"}],[\"$\",\"span\",null,{\"className\":\"text-xs font-mono px-2 py-0.5 bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded\",\"children\":\"Technical Assessment\"}]]}],[\"$\",\"h3\",null,{\"className\":\"text-lg font-semibold text-primary dark:text-primary-dark mb-2 group-hover:text-accent dark:group-hover:text-accent-dark transition-colors\",\"children\":\"FinTech Core API\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-secondary dark:text-secondary-dark leading-relaxed mb-4 flex-grow line-clamp-3\",\"children\":\"Transaction APIs with mutex locking, idempotency protection, and auditability — built as a backend engineering assessment.\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-1.5 mb-4\",\"children\":[[\"$\",\"span\",\"Node.js\",{\"className\":\"text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded\",\"children\":\"Node.js\"}],[\"$\",\"span\",\"Express\",{\"className\":\"text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded\",\"children\":\"Express\"}],[\"$\",\"span\",\"PostgreSQL\",{\"className\":\"text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded\",\"children\":\"PostgreSQL\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex items-center justify-between text-sm\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-mono text-xs text-secondary dark:text-secondary-dark\",\"children\":\"2 min read\"}],false]}]]}]}]\n"])
-    </script>
-    <script>
-        self.__next_f.push([1, "16:[\"$\",\"$La\",\"resource-hub\",{\"href\":\"/projects/resource-hub\",\"className\":\"block\",\"children\":[\"$\",\"article\",null,{\"className\":\"group flex flex-col h-full p-6 border border-border dark:border-border-dark bg-surface dark:bg-surface-dark hover:border-accent dark:hover:border-accent-dark transition-colors duration-200 rounded\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-2 mb-3\",\"children\":[[\"$\",\"span\",null,{\"className\":\"text-xs font-mono text-secondary dark:text-secondary-dark\",\"children\":\"Personal Tool · Active · Solo Project\"}],[\"$\",\"span\",null,{\"className\":\"text-xs font-mono px-2 py-0.5 bg-accent/10 dark:bg-accent-dark/10 text-accent dark:text-accent-dark rounded\",\"children\":\"Active Project\"}]]}],[\"$\",\"h3\",null,{\"className\":\"text-lg font-semibold text-primary dark:text-primary-dark mb-2 group-hover:text-accent dark:group-hover:text-accent-dark transition-colors\",\"children\":\"Resource Hub\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-secondary dark:text-secondary-dark leading-relaxed mb-4 flex-grow line-clamp-3\",\"children\":\"Centralized platform for managing resource links with pre-signed URL uploads and Auth Service integration.\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-1.5 mb-4\",\"children\":[[\"$\",\"span\",\"Node.js\",{\"className\":\"text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded\",\"children\":\"Node.js\"}],[\"$\",\"span\",\"Express\",{\"className\":\"text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded\",\"children\":\"Express\"}],[\"$\",\"span\",\"MongoDB\",{\"className\":\"text-xs font-mono px-2 py-0.5 border border-border dark:border-border-dark text-secondary dark:text-secondary-dark rounded\",\"children\":\"MongoDB\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex items-center justify-between text-sm\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-mono text-xs text-secondary dark:text-secondary-dark\",\"children\":\"1 min read\"}],false]}]]}]}]\n"])
-    </script>
-    <script>
-        self.__next_f.push([1, "17:[\"$\",\"$L23\",null,{}]\n18:[\"$\",\"$L24\",null,{}]\n19:[\"$\",\"$L25\",null,{}]\n1a:[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/0v_ue~msygctw.js\",\"async\":true,\"nonce\":\"$undefined\"}]\n1b:[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/0hwsf_8kxiyzw.js\",\"async\":true,\"nonce\":\"$undefined\"}]\n1c:[\"$\",\"$L26\",null,{\"children\":[\"$\",\"$21\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@27\"}]}]\n"])
-    </script>
-    <script>
-        self.__next_f.push([1, "1f:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])
-    </script>
-    <script>
-        self.__next_f.push([1, "28:I[27201,[\"/_next/static/chunks/09dew68nzz~jw.js\",\"/_next/static/chunks/0t2xr05rlu96l.js\"],\"IconMark\"]\n"])
-    </script>
-    <script>
-        self.__next_f.push([1, "22:[[\"$\",\"title\",\"0\",{\"children\":\"Projects — Lakshay Mahajan\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Engineering case studies covering authentication systems, event registration platforms, and backend API design.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"author\",\"content\":\"Lakshay Mahajan\"}],[\"$\",\"meta\",\"3\",{\"name\":\"keywords\",\"content\":\"Backend Engineer,Node.js,ExpressJS,Docker,Git,GitHub,MongoDB,RestAPIs\"}],[\"$\",\"meta\",\"4\",{\"name\":\"robots\",\"content\":\"index, follow\"}],[\"$\",\"meta\",\"5\",{\"name\":\"googlebot\",\"content\":\"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:title\",\"content\":\"Projects — Lakshay Mahajan\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:description\",\"content\":\"Engineering case studies covering authentication systems, event registration platforms, and backend API design.\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:url\",\"content\":\"https://www.lakshaymahajan.com/projects\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:site_name\",\"content\":\"Lakshay Mahajan\"}],[\"$\",\"meta\",\"10\",{\"property\":\"og:locale\",\"content\":\"en_IN\"}],[\"$\",\"meta\",\"11\",{\"property\":\"og:image\",\"content\":\"https://www.lakshaymahajan.com/opengraph-image\"}],[\"$\",\"meta\",\"12\",{\"property\":\"og:image:type\",\"content\":\"image/png\"}],[\"$\",\"meta\",\"13\",{\"property\":\"og:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"14\",{\"property\":\"og:image:height\",\"content\":\"630\"}],[\"$\",\"meta\",\"15\",{\"property\":\"og:image:alt\",\"content\":\"Lakshay Mahajan — Backend Engineer\"}],[\"$\",\"meta\",\"16\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"17\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"18\",{\"name\":\"twitter:site\",\"content\":\"@lakshay2224\"}],[\"$\",\"meta\",\"19\",{\"name\":\"twitter:creator\",\"content\":\"@lakshay2224\"}],[\"$\",\"meta\",\"20\",{\"name\":\"twitter:title\",\"content\":\"Projects — Lakshay Mahajan\"}],[\"$\",\"meta\",\"21\",{\"name\":\"twitter:description\",\"content\":\"Engineering case studies covering authentication systems, event registration platforms, and backend API design.\"}],[\"$\",\"meta\",\"22\",{\"name\":\"twitter:image\",\"content\":\"https://www.lakshaymahajan.com/twitter-image\"}],[\"$\",\"link\",\"23\",{\"rel\":\"icon\",\"href\":\"/favicon.png\"}],[\"$\",\"$L28\",\"24\",{}]]\n"])
-    </script>
-    <script>
-        self.__next_f.push([1, "27:null\n"])
-    </script>
+
 </body>
 
 </html>
