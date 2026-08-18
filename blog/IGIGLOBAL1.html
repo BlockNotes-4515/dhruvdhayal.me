@@ -7,21 +7,17 @@
     <meta name="theme-color" content="#000000">
 
     <title>
-        Quantum-Resistant Blockchain Authentication Protocol — Dhruv Dhayal
+        AI-Driven IoT Surveillance Framework for Signal-Resilient Environmental Monitoring in Extreme Condition — Dhruv Dhayal
     </title>
 
-    <meta name="description" content="Quantum-Resistant Blockchain Authentication Protocol: Securing Decentralized Systems Against Post-Quantum Attacks — Dhruv Dhayal">
+    <meta name="description" content="AI-Driven IoT Surveillance Framework for Signal-Resilient Environmental Monitoring in Extreme Condition — Dhruv Dhayal">
 
     <meta name="author" content="Dhruv Dhayal">
 
     <link rel="icon" href="../favicon.png">
 
     <style>
-        /* =========================================================
-           ROOT
-        ========================================================= */
-        
-         :root {
+        :root {
             --bg: #ffffff;
             --surface: #f8fafc;
             --primary: #111827;
@@ -32,10 +28,9 @@
             --tag-text: #15803d;
             --tag-bg: rgba(22, 163, 74, 0.08);
             --tag-border: rgba(22, 163, 74, 0.25);
-            --header-bg: rgba(255, 255, 255, 0.035);
             --selection: rgba(22, 163, 74, 0.15);
         }
-        
+
         html.dark {
             --bg: #0a0a0a;
             --surface: #111111;
@@ -47,21 +42,17 @@
             --tag-text: #4ade80;
             --tag-bg: rgba(34, 197, 94, 0.08);
             --tag-border: rgba(34, 197, 94, 0.25);
-            --header-bg: rgba(15, 23, 42, 0.18);
             --selection: rgba(34, 197, 94, 0.15);
         }
-        /* =========================================================
-           RESET
-        ========================================================= */
-        
+
         * {
             box-sizing: border-box;
         }
-        
+
         html {
             scroll-behavior: smooth;
         }
-        
+
         body {
             margin: 0;
             background: var(--bg);
@@ -69,23 +60,21 @@
             font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
-        
-         ::selection {
+
+        ::selection {
             background: var(--selection);
         }
-        /* =========================================================
-           LINKS
-        ========================================================= */
-        
+
         a {
             color: inherit;
             text-decoration: none;
             transition: color 0.25s ease, border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
         }
+
         /* =========================================================
            HEADER
         ========================================================= */
-        
+
         #mainHeader {
             position: fixed;
             top: 0;
@@ -95,25 +84,39 @@
             height: 80px;
             transition: background 0.35s ease, backdrop-filter 0.35s ease, border 0.35s ease, box-shadow 0.35s ease;
         }
-        
+
         #mainHeader.scrolled-header {
             background: rgba(255, 255, 255, 0.055);
             backdrop-filter: blur(32px) saturate(220%);
             -webkit-backdrop-filter: blur(32px) saturate(220%);
-            background-image: linear-gradient( 135deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
+            background-image: linear-gradient(
+                135deg,
+                rgba(255, 255, 255, 0.14),
+                rgba(255, 255, 255, 0.03),
+                rgba(255, 255, 255, 0.02)
+            );
             border-bottom: 1px solid rgba(255, 255, 255, 0.14);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.18), inset 0 -1px 0 rgba(255, 255, 255, 0.04);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.12),
+                inset 0 1px 0 rgba(255, 255, 255, 0.18),
+                inset 0 -1px 0 rgba(255, 255, 255, 0.04);
         }
-        
+
         html.dark #mainHeader.scrolled-header {
             background: rgba(15, 23, 42, 0.22);
             backdrop-filter: blur(32px) saturate(220%);
             -webkit-backdrop-filter: blur(32px) saturate(220%);
-            background-image: linear-gradient( 135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.015));
+            background-image: linear-gradient(
+                135deg,
+                rgba(255, 255, 255, 0.06),
+                rgba(255, 255, 255, 0.015)
+            );
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.22),
+                inset 0 1px 0 rgba(255, 255, 255, 0.06);
         }
-        
+
         .nav {
             max-width: 1200px;
             height: 100%;
@@ -123,23 +126,23 @@
             align-items: center;
             justify-content: space-between;
         }
-        
+
         .logo {
             font-size: 18px;
             font-weight: 600;
             color: var(--primary);
         }
-        
+
         .logo:hover {
             color: var(--accent);
         }
-        
+
         .desktop-menu {
             display: flex;
             align-items: center;
             gap: 32px;
         }
-        
+
         .desktop-menu a,
         .resume-btn {
             border: 0;
@@ -149,49 +152,65 @@
             color: var(--secondary);
             font-family: inherit;
         }
-        
+
         .desktop-menu a:hover,
         .resume-btn:hover {
             color: var(--accent);
         }
-        
+
         .mobile-menu {
             display: none;
             background: none;
             border: none;
             cursor: pointer;
+            padding: 8px;
         }
-        
+
         .mobile-menu span {
             display: block;
             width: 24px;
             height: 2px;
             margin: 5px 0;
             background: var(--primary);
+            transition: transform 0.25s ease, opacity 0.25s ease;
         }
+
+        .mobile-menu.active span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .mobile-menu.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu.active span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
         /* =========================================================
            MAIN
         ========================================================= */
-        
+
         main {
             min-height: 100vh;
         }
-        
+
         .page-container {
             width: 100%;
             max-width: 1200px;
             margin: auto;
             padding: 120px 24px 80px;
         }
-        
+
         .article {
             max-width: 850px;
             margin: auto;
         }
+
         /* =========================================================
            BACK LINK
         ========================================================= */
-        
+
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -200,43 +219,44 @@
             font-size: 14px;
             color: var(--secondary);
         }
-        
+
         .back-link:hover {
             color: var(--accent);
             transform: translateX(-3px);
         }
-        
+
         .back-link svg {
             width: 16px;
             height: 16px;
         }
+
         /* =========================================================
-           GREEN TAGS
+           TAGS
         ========================================================= */
-        
+
         .tags {
             display: flex;
             flex-wrap: wrap;
             gap: 9px;
             margin-bottom: 18px;
         }
-        
+
         .tag {
             display: inline-flex;
             align-items: center;
             gap: 7px;
             padding: 7px 11px;
-            border: 1px solid rgba(0, 255, 154, .18);
-            background: rgba(0, 255, 154, .075);
-            color: var(--green-bright);
+            border: 1px solid var(--tag-border);
+            background: var(--tag-bg);
+            color: var(--tag-text);
             font-family: "JetBrains Mono", monospace;
             font-size: 13px;
             font-weight: 600;
             line-height: 1.25;
             border-radius: 2px;
-            transition: color .2s ease, background .2s ease, border-color .2s ease;
+            transition: color .2s ease, background .2s ease, border-color .2s ease, transform .2s ease;
         }
-        
+
         .tag:hover {
             color: var(--accent-hover);
             background: rgba(34, 197, 94, 0.14);
@@ -244,16 +264,17 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(34, 197, 94, 0.08);
         }
-        
+
         .tag svg {
             width: 14px;
             height: 14px;
             flex-shrink: 0;
         }
+
         /* =========================================================
            TITLE
         ========================================================= */
-        
+
         h1 {
             margin: 0 0 20px;
             color: var(--primary);
@@ -262,20 +283,22 @@
             letter-spacing: -0.035em;
             font-weight: 700;
         }
+
         /* =========================================================
            SUBTITLE
         ========================================================= */
-        
+
         .subtitle {
             color: var(--secondary);
             font-size: 17px;
             line-height: 1.75;
             margin-bottom: 26px;
         }
+
         /* =========================================================
            META
         ========================================================= */
-        
+
         .meta {
             display: flex;
             flex-wrap: wrap;
@@ -287,25 +310,26 @@
             font-family: "SFMono-Regular", Consolas, monospace;
             font-size: 13px;
         }
-        
+
         .meta span {
             display: inline-flex;
             align-items: center;
             gap: 6px;
         }
-        
+
         .meta svg {
             width: 14px;
             height: 14px;
         }
+
         /* =========================================================
            CONTENT
         ========================================================= */
-        
+
         .content {
             margin-top: 48px;
         }
-        
+
         .content h2 {
             margin: 48px 0 18px;
             padding-bottom: 9px;
@@ -315,35 +339,31 @@
             line-height: 1.25;
             font-weight: 600;
         }
-        
+
         .content h3 {
             margin-top: 36px;
             color: var(--primary);
             font-size: 21px;
         }
-        
+
         .content p {
             margin: 0 0 24px;
             color: var(--secondary);
             font-size: 17px;
             line-height: 1.85;
         }
-        
+
         .content strong {
             color: var(--primary);
             font-weight: 600;
         }
-        /* =========================================================
-           ORDERED LIST
-        ========================================================= */
-        
+
         .content ol {
             margin: 0 0 28px;
             padding-left: 30px;
             color: var(--secondary);
-            counter-reset: item;
         }
-        
+
         .content ol li {
             padding-left: 7px;
             margin-bottom: 13px;
@@ -351,44 +371,40 @@
             font-size: 17px;
             line-height: 1.75;
         }
-        /* NUMBER COLOR = TEXT COLOR */
-        
+
         .content ol li::marker {
             color: var(--secondary);
             font-weight: 500;
         }
-        /* =========================================================
-           BULLET LIST
-        ========================================================= */
-        
+
         .content ul {
             margin: 0 0 28px;
             padding-left: 30px;
             color: var(--secondary);
         }
-        
+
         .content ul li {
             margin-bottom: 12px;
             color: var(--secondary);
             font-size: 17px;
             line-height: 1.75;
         }
-        /* BULLET COLOR = TEXT COLOR */
-        
+
         .content ul li::marker {
             color: var(--secondary);
             font-size: 0.9em;
         }
+
         /* =========================================================
            IMAGE
         ========================================================= */
-        
+
         .publication-image {
             display: block;
             margin: 40px auto;
             max-width: 100%;
         }
-        
+
         .image-wrapper {
             width: 100%;
             overflow: hidden;
@@ -397,18 +413,18 @@
             box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
             background: var(--surface);
         }
-        
+
         .image-wrapper img {
             display: block;
             width: 100%;
             height: auto;
             transition: transform 0.45s ease;
         }
-        
+
         .image-wrapper:hover img {
             transform: scale(1.015);
         }
-        
+
         .image-caption {
             margin-top: 11px;
             padding: 0 16px;
@@ -419,16 +435,17 @@
             font-style: italic;
             line-height: 1.5;
         }
+
         /* =========================================================
            ARTICLE FOOTER
         ========================================================= */
-        
+
         .article-footer {
             margin-top: 60px;
             padding-top: 24px;
             border-top: 1px solid var(--border);
         }
-        
+
         .view-publications {
             display: inline-flex;
             align-items: center;
@@ -436,46 +453,47 @@
             font-size: 14px;
             color: var(--secondary);
         }
-        
+
         .view-publications:hover {
             color: var(--accent);
             transform: translateX(-3px);
         }
-        
+
         .view-publications svg {
             width: 16px;
             height: 16px;
         }
+
         /* =========================================================
            SITE FOOTER
         ========================================================= */
-        
+
         .site-footer {
             background: var(--surface);
             border-top: 1px solid var(--border);
             margin-top: 60px;
         }
-        
+
         .footer-container {
             max-width: 1200px;
             margin: auto;
             padding: 48px 24px 30px;
         }
-        
+
         .footer-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 48px;
             margin-bottom: 45px;
         }
-        
+
         .footer-title {
             margin: 0 0 12px;
             color: var(--primary);
             font-size: 18px;
             font-weight: 600;
         }
-        
+
         .footer-heading {
             margin: 0 0 16px;
             color: var(--primary);
@@ -484,43 +502,44 @@
             text-transform: uppercase;
             letter-spacing: 0.1em;
         }
-        
+
         .footer-description {
             margin: 0;
             color: var(--secondary);
             font-size: 14px;
             line-height: 1.7;
         }
-        
+
         .footer-links {
             list-style: none;
             padding: 0;
             margin: 0;
         }
-        
+
         .footer-links li {
             margin-bottom: 12px;
         }
-        
+
         .footer-links a {
             color: var(--secondary);
             font-size: 14px;
         }
-        
+
         .footer-links a:hover {
             color: var(--accent);
             transform: translateX(3px);
         }
+
         /* =========================================================
            SOCIAL ICONS
         ========================================================= */
-        
+
         .socials {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
-        
+
         .social {
             width: 46px;
             height: 46px;
@@ -532,19 +551,19 @@
             background: transparent;
             transition: color 0.25s ease, border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
         }
-        
+
         .social:hover {
             color: var(--accent);
             border-color: var(--accent);
             transform: translateY(-4px);
             box-shadow: 0 8px 20px rgba(34, 197, 94, 0.15);
         }
-        
+
         .social svg {
             width: 17px;
             height: 17px;
         }
-        
+
         .copyright {
             padding-top: 22px;
             border-top: 1px solid var(--border);
@@ -552,10 +571,11 @@
             font-family: "SFMono-Regular", Consolas, monospace;
             font-size: 12px;
         }
+
         /* =========================================================
            FLOATING ACTIONS
         ========================================================= */
-        
+
         .floating-actions {
             position: fixed;
             right: 18px;
@@ -565,7 +585,7 @@
             gap: 14px;
             z-index: 999999;
         }
-        
+
         .float-btn {
             width: 62px;
             height: 62px;
@@ -579,24 +599,29 @@
             background: rgba(0, 0, 0, 0.92);
             backdrop-filter: blur(22px);
             -webkit-backdrop-filter: blur(22px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.30), inset 0 1px 2px rgba(255, 255, 255, 0.05);
+            box-shadow:
+                0 8px 24px rgba(0, 0, 0, 0.30),
+                inset 0 1px 2px rgba(255, 255, 255, 0.05);
             color: #ffffff;
             transition: transform 0.28s ease, box-shadow 0.28s ease, background 0.28s ease;
         }
-        
+
         .float-btn:hover {
             transform: scale(1.08);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35), inset 0 1px 2px rgba(255, 255, 255, 0.08);
+            box-shadow:
+                0 12px 30px rgba(0, 0, 0, 0.35),
+                inset 0 1px 2px rgba(255, 255, 255, 0.08);
         }
-        
+
         .float-btn svg {
             width: 24px;
             height: 24px;
         }
+
         /* =========================================================
            MOBILE NAV
         ========================================================= */
-        
+
         .mobile-navigation {
             display: none;
             position: fixed;
@@ -608,16 +633,18 @@
             background: rgba(255, 255, 255, 0.96);
             border-bottom: 1px solid var(--border);
             backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         }
-        
+
         html.dark .mobile-navigation {
             background: rgba(10, 10, 10, 0.96);
         }
-        
+
         .mobile-navigation.open {
             display: block;
         }
-        
+
         .mobile-navigation a,
         .mobile-navigation button {
             display: block;
@@ -631,75 +658,90 @@
             font-size: 15px;
             cursor: pointer;
         }
-        
+
         .mobile-navigation a:hover,
         .mobile-navigation button:hover {
             color: var(--accent);
         }
+
         /* =========================================================
            MOBILE
         ========================================================= */
-        
+
         @media (max-width: 768px) {
+
             .desktop-menu {
                 display: none;
             }
+
             .mobile-menu {
                 display: block;
             }
+
             .page-container {
                 padding: 105px 18px 60px;
             }
+
             .article {
                 max-width: 100%;
             }
+
             .subtitle {
                 font-size: 15px;
             }
+
             .content p,
             .content ol li,
             .content ul li {
                 font-size: 16px;
             }
+
             .footer-grid {
                 grid-template-columns: 1fr;
                 gap: 35px;
             }
+
             .floating-actions {
                 right: 14px;
                 bottom: 18px;
             }
+
             .float-btn {
                 width: 54px;
                 height: 54px;
             }
+
             .float-btn svg {
                 width: 21px;
                 height: 21px;
             }
         }
-        
+
         @media (max-width: 480px) {
+
             .nav {
                 padding: 0 18px;
             }
+
             .tags {
                 gap: 6px;
             }
+
             .tag {
                 font-size: 11px;
             }
+
             .meta {
                 gap: 10px;
                 font-size: 11px;
             }
+
             h1 {
                 font-size: 29px;
             }
         }
     </style>
 </head>
-
 
 <body>
 
@@ -727,15 +769,18 @@
 
                 <a href="../index.html#contact">Contact</a>
 
-                <button class="resume-btn" onclick="window.open('../images/UPDATED%20JUNE%20SUMMER%20CV.pdf','_blank')">
-
+                <button class="resume-btn"
+                    onclick="window.open('../images/UPDATED%20JUNE%20SUMMER%20CV.pdf','_blank')">
                     Resume
-
                 </button>
 
             </div>
 
-            <button class="mobile-menu" id="mobileMenuButton" aria-label="Open menu">
+            <button
+                class="mobile-menu"
+                id="mobileMenuButton"
+                aria-label="Open menu"
+                aria-expanded="false">
 
                 <span></span>
                 <span></span>
@@ -765,9 +810,7 @@
         <a href="../index.html#contact">Contact</a>
 
         <button onclick="window.open('../images/UPDATED%20JUNE%20SUMMER%20CV.pdf','_blank')">
-
             Resume
-
         </button>
 
     </div>
@@ -783,25 +826,25 @@
 
             <article class="article">
 
-
                 <!-- BACK -->
 
                 <a href="../blog.html" class="back-link">
 
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
 
-                        <line
-                            x1="19"
-                            y1="12"
-                            x2="5"
-                            y2="12">
-                        </line>
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
 
-                        <polyline
-                            points="12 19 5 12 12 5">
-                        </polyline>
+                        <polyline points="12 19 5 12 12 5"></polyline>
 
-                    </svg> Back to All Publications
+                    </svg>
+
+                    Back to All Publications
 
                 </a>
 
@@ -814,7 +857,6 @@
 
                     <div class="tags">
 
-
                         <span class="tag">
 
                             <svg
@@ -823,24 +865,14 @@
                                 stroke="currentColor"
                                 stroke-width="2">
 
-                                <path
-                                    d="M20.59 13.41
-                                    13.41 20.59
-                                    a2 2 0 0 1-2.83 0
-                                    L2 12V2h10l8.59 8.59
-                                    a2 2 0 0 1 0 2.82z">
-                                </path>
-
-                                <line
-                                    x1="7"
-                                    y1="7"
-                                    x2="7.01"
-                                    y2="7">
-                                </line>
+                                <path d="M20 7h-4V3H8v4H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
+                                <path d="M8 7h8"></path>
+                                <path d="M12 11v6"></path>
+                                <path d="M9 14h6"></path>
 
                             </svg>
 
-                            Quantum Computing
+                            Artificial Intelligence
 
                         </span>
 
@@ -853,17 +885,16 @@
                                 stroke="currentColor"
                                 stroke-width="2">
 
-                                <path
-                                    d="M20.59 13.41
-                                    13.41 20.59
-                                    a2 2 0 0 1-2.83 0
-                                    L2 12V2h10l8.59 8.59
-                                    a2 2 0 0 1 0 2.82z">
-                                </path>
+                                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                                <path d="M8 8h8v8H8z"></path>
+                                <path d="M8 1v2"></path>
+                                <path d="M16 1v2"></path>
+                                <path d="M8 21v2"></path>
+                                <path d="M16 21v2"></path>
 
                             </svg>
 
-                            Blockchain Security
+                            IoT Surveillance
 
                         </span>
 
@@ -876,17 +907,19 @@
                                 stroke="currentColor"
                                 stroke-width="2">
 
-                                <path
-                                    d="M20.59 13.41
-                                    13.41 20.59
-                                    a2 2 0 0 1-2.83 0
-                                    L2 12V2h10l8.59 8.59
-                                    a2 2 0 0 1 0 2.82z">
-                                </path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 2v3"></path>
+                                <path d="M12 19v3"></path>
+                                <path d="M2 12h3"></path>
+                                <path d="M19 12h3"></path>
+                                <path d="m4.93 4.93 2.12 2.12"></path>
+                                <path d="m16.95 16.95 2.12 2.12"></path>
+                                <path d="m19.07 4.93-2.12 2.12"></path>
+                                <path d="m7.05 16.95-2.12 2.12"></path>
 
                             </svg>
 
-                            Post-Quantum Cryptography
+                            Environmental Monitoring
 
                         </span>
 
@@ -899,17 +932,13 @@
                                 stroke="currentColor"
                                 stroke-width="2">
 
-                                <path
-                                    d="M20.59 13.41
-                                    13.41 20.59
-                                    a2 2 0 0 1-2.83 0
-                                    L2 12V2h10l8.59 8.59
-                                    a2 2 0 0 1 0 2.82z">
-                                </path>
+                                <path d="M12 2L3 7l9 5 9-5-9-5z"></path>
+                                <path d="M3 12l9 5 9-5"></path>
+                                <path d="M3 17l9 5 9-5"></path>
 
                             </svg>
 
-                            Authentication Protocol
+                            Signal Resilience
 
                         </span>
 
@@ -922,17 +951,13 @@
                                 stroke="currentColor"
                                 stroke-width="2">
 
-                                <path
-                                    d="M20.59 13.41
-                                    13.41 20.59
-                                    a2 2 0 0 1-2.83 0
-                                    L2 12V2h10l8.59 8.59
-                                    a2 2 0 0 1 0 2.82z">
-                                </path>
+                                <path d="M4 12h16"></path>
+                                <path d="M12 4v16"></path>
+                                <circle cx="12" cy="12" r="9"></circle>
 
                             </svg>
 
-                            Decentralized Systems
+                            Extreme Conditions
 
                         </span>
 
@@ -940,18 +965,22 @@
 
 
                     <h1>
-                        Quantum-Resistant Blockchain Authentication Protocol: Securing Decentralized Systems Against Post-Quantum Attacks
+                        AI-Driven IoT Surveillance Framework for Signal-Resilient Environmental Monitoring in Extreme Condition
                     </h1>
 
 
                     <div class="subtitle">
 
-                        2025 2nd International Conference On Multidisciplinary Research and Innovations in Engineering (MRIE)
+                        <strong>Source Title:</strong>
+                        AI Advancements in Internet of Things, Smart Healthcare, and Intelligent Devices
 
-                        <br> In the coming years, data mining and cybersecurity will become increasingly important for securing and managing large-scale data across industries. Data mining techniques will evolve to provide more accurate real-time insights,
-                        anomaly detection, and predictive analysis for complex systems.
+                        <br><br>
 
-                        <br><br> Publisher: IEEE
+                        This article introduces a signal-resilient surveillance platform for monitoring extreme environments. Its tele-operated robotic vehicle operates in perilous locations inaccessible to humans, featuring a critical radar-enabled system for real-time obstacle detection and directional mapping.
+
+                        <br><br>
+
+                        Publisher: IGI Global
 
                     </div>
 
@@ -960,6 +989,10 @@
 
                         <span>
                             Dhruv Dhayal
+                        </span>
+
+                        <span>
+                            Institute of Information Technology and Management, GGSIP University, New Delhi, India
                         </span>
 
                         <span>
@@ -978,30 +1011,15 @@
                                     rx="2">
                                 </rect>
 
-                                <line
-                                    x1="16"
-                                    y1="2"
-                                    x2="16"
-                                    y2="6">
-                                </line>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
 
-                                <line
-                                    x1="8"
-                                    y1="2"
-                                    x2="8"
-                                    y2="6">
-                                </line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
 
-                                <line
-                                    x1="3"
-                                    y1="10"
-                                    x2="21"
-                                    y2="10">
-                                </line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
 
                             </svg>
 
-                            September 19, 2026
+                            2026
 
                         </span>
 
@@ -1013,15 +1031,9 @@
                                 stroke="currentColor"
                                 stroke-width="2">
 
-                                <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="10">
-                                </circle>
+                                <circle cx="12" cy="12" r="10"></circle>
 
-                                <polyline
-                                    points="12 6 12 12 16 14">
-                                </polyline>
+                                <polyline points="12 6 12 12 16 14"></polyline>
 
                             </svg>
 
@@ -1040,184 +1052,197 @@
 
                 <div class="content">
 
-
                     <h2>
                         Abstract
                     </h2>
 
                     <p>
-                        We found that quantum computing can break traditional cryptography like RSA and ECC, making blockchain systems vulnerable. To overcome this, we use post-quantum cryptography methods and a quantum-resistant authentication model discussed below.
+                        This article introduces a signal-resilient surveillance platform for monitoring extreme environments. Its tele-operated robotic vehicle operates in perilous locations inaccessible to humans, featuring a critical radar-enabled system for real-time obstacle detection and directional mapping. This data is displayed on a simple red/green interface, enabling rapid operator interpretation under stress. A closed IP connection ensures secure, reliable data transfer, maintaining constant communication despite structural or electromagnetic interference.
                     </p>
-
-
-                    <ol>
-
-                        <li>
-                            Quantum computing poses a major threat to existing cryptographic systems such as RSA and ECC, as quantum algorithms like Shor’s can break them efficiently. This creates serious security risks for blockchain networks, which depend heavily on these encryption
-                            methods for secure transactions and authentication.
-                        </li>
-
-                        <li>
-                            To address this challenge, the study explores post-quantum cryptography techniques including lattice-based, hash-based, multivariate polynomial, and code-based cryptographic schemes.
-                        </li>
-
-                        <li>
-                            The research also proposes a quantum-resistant authentication model that uses post-quantum signature schemes and lightweight key exchange mechanisms.
-                        </li>
-
-                    </ol>
-
 
                     <p>
-
-                        Introduction and Main
-
-                        <strong>
-                            Objectives
-                        </strong>
-
+                        Key use cases include rescue missions in confined spaces like borewells and hazard detection in underground mines. Experiments confirmed the system maintains signal integrity and real-time data feedback in harsh conditions. By prioritizing signal resilience and operational simplicity, this platform overcomes critical limitations of existing technologies, paving the way for future autonomous systems in disaster management and environmental hazard detection.
                     </p>
 
+
+                    <h2>
+                        Introduction
+                    </h2>
+
+                    <p>
+                        Surveillance systems in extreme environments such as borewells, coal mines, and disaster zones face numerous challenges, foremost in communication signal weakness, structural barriers, and electromagnetic interference. Such conditions pose a hindrance to real-time data transmission, accurate navigation, and continuous operator control, which are serious detractors for mission success.
+                    </p>
+
+                    <p>
+                        Often conventional monitoring platforms lack the capability to withstand such conditions reliably. To bridge this gap, we suggest a conceptual design for a signal-resilient surveillance platform specifically intended for extreme environmental monitoring.
+                    </p>
+
+                    <p>
+                        This system consists of a teleoperated robotic vehicle with multimodal sensors and a radar for recognizing obstacles and giving angular and directional feedback. The simple red-green parameter guided interface ensures better comprehension by operators, while the protected private IP communication channel confirms a strong and uninterrupted data flow.
+                    </p>
+
+
+                    <h2>
+                        Proposed Framework
+                    </h2>
+
+                    <p>
+                        To address the growing need for autonomous monitoring in inaccessible or hazardous environments, this study proposes a secure, signal-resilient, and intelligent surveillance framework based on a layered architectural design.
+                    </p>
 
                     <ol>
 
                         <li>
-                            Blockchain provides secure and decentralized digital transactions, but quantum computing threatens its cryptographic foundations like RSA and ECC.
+                            The framework integrates advanced IoT sensor fusion for collecting and combining information from multiple environmental and robotic sensors.
                         </li>
 
                         <li>
-                            Without post-quantum security, blockchain systems may face risks of data breaches, integrity loss, and financial vulnerabilities.
+                            Edge computing is incorporated to support real-time data acquisition, processing, and decision-making closer to the source of the data.
                         </li>
 
                         <li>
-                            This study focuses on analyzing quantum threats and developing quantum-resistant cryptographic techniques and authentication protocols.
+                            Encrypted communication protocols are used to ensure uninterrupted and secure data transfer in challenging environments.
+                        </li>
+
+                        <li>
+                            The system incorporates adaptive hardware and dual-mode communication channels to overcome electromagnetic interference, structural barriers, and confined operational settings.
+                        </li>
+
+                        <li>
+                            AI-driven analytics support intelligent interpretation of environmental and surveillance data for mission-critical applications.
                         </li>
 
                     </ol>
 
 
                     <h2>
-                        Methodology and Main Objective of Quantum Physics Concepts
+                        System Architecture and Main Objectives
                     </h2>
 
-
                     <p>
-                        This study follows a systematic approach to design and evaluate a quantum-resistant blockchain authentication protocol. Initially, a detailed analysis of existing cryptographic systems such as RSA and ECC is conducted to identify vulnerabilities against
-                        quantum attacks, particularly those enabled by
-                        <strong>Shor’s and Grover’s</strong> algorithms.
+                        The proposed surveillance platform combines a teleoperated robotic vehicle, multimodal IoT sensors, radar-based obstacle detection, edge computing, and secure communication into a unified framework.
                     </p>
 
-
                     <p>
-                        After selecting appropriate PQC methods, a secure authentication protocol is designed by integrating lattice-based key generation, zero-knowledge proof-based authentication, and hash-based digital signatures.
+                        The radar-enabled system provides real-time obstacle detection and directional mapping. This information is presented through a simple red/green interface, allowing operators to quickly understand environmental conditions and respond appropriately under stressful operational circumstances.
                     </p>
 
-
                     <p>
-                        The proposed model is then implemented in a simulated blockchain environment using Python and
-                        <strong>Hyperledger Fabric</strong>.
+                        A protected private IP communication channel is used to maintain reliable communication between the robotic vehicle and the remote operator despite structural or electromagnetic interference.
                     </p>
-
-
-                    <figure class="publication-image">
-
-                        <div class="image-wrapper">
-
-                            <img src="images/PUBLICATIONS/IEEE1.png" alt="Proposed Quantum Identity Authentication Algorithm">
-
-                        </div>
-
-                        <figcaption class="image-caption">
-
-                            Proposed Quantum Identity Authentication Algorithm
-
-                        </figcaption>
-
-                    </figure>
 
 
                     <h2>
                         Problem Statement &amp; Key Challenges
                     </h2>
 
-
                     <p>
-                        Those who develop different kinds of applications using these Machine Learning Techniques and their software knowledge are called
-                        <strong>
-                            Data Minning or Blockchain Lang Engineers
-                        </strong>. Applications such as:
+                        Extreme environments create significant challenges for conventional surveillance and monitoring systems. Borewells, underground mines, disaster zones, and other confined or hazardous locations can make direct human intervention unsafe or impossible.
                     </p>
-
 
                     <ol>
 
                         <li>
-                            Quantum computing threatens existing blockchain security by breaking classical cryptographic algorithms like RSA and ECC.
+                            Weak communication signals can interrupt real-time transmission between the robotic vehicle and its remote operator.
                         </li>
 
                         <li>
-                            The main challenges include the vulnerability of classical cryptographic systems to quantum attacks, increased computational complexity, and difficulties in maintaining low latency and high throughput.
+                            Structural barriers and electromagnetic interference can negatively affect communication reliability and system performance.
                         </li>
 
                         <li>
-                            The major challenges include the vulnerability of classical cryptographic systems like RSA and ECC to quantum attacks.
+                            Conventional surveillance platforms may struggle to provide accurate navigation and continuous operator control in harsh environments.
+                        </li>
+
+                        <li>
+                            Real-time obstacle detection and directional information are essential for safe robotic movement in confined environments.
+                        </li>
+
+                        <li>
+                            Operators require a simple and easily interpretable interface to make rapid decisions during high-pressure rescue and monitoring operations.
                         </li>
 
                     </ol>
 
 
+                    <h2>
+                        IoT Sensor Fusion and Edge Computing
+                    </h2>
+
                     <p>
-                        Problems that we found and solution by passing different Intercepting Challenges by using several Techniques we got the way to recover the data as well.
+                        The proposed model integrates advanced IoT sensor fusion with edge computing to improve real-time environmental monitoring. Multiple sensors can collect environmental and operational information simultaneously, allowing the system to develop a more comprehensive understanding of its surroundings.
                     </p>
 
-
-                    <figure class="publication-image">
-
-                        <div class="image-wrapper">
-
-                            <img src="images/PUBLICATIONS/IEEE2.jpg" alt="Post-Quantum Public-Key CryptoSystem">
-
-                        </div>
-
-                        <figcaption class="image-caption">
-
-                            Post-Quantum Public-Key CryptoSystem by using the Random CP's and Babai's Algorithm Overview
-
-                        </figcaption>
-
-                    </figure>
-
-
-                    <figure class="publication-image">
-
-                        <div class="image-wrapper">
-
-                            <img src="images/PUBLICATIONS/IEEE3.jpg" alt="Proposed Quantum Resistant Authentication Algorithm">
-
-                        </div>
-
-                        <figcaption class="image-caption">
-
-                            Proposed Quantum Resistant Authentication Algorithm
-
-                        </figcaption>
-
-                    </figure>
+                    <p>
+                        Edge computing enables the processing of collected information close to the robotic platform. This reduces dependence on remote processing and supports rapid decision-making, which is particularly important when communication conditions are unstable.
+                    </p>
 
 
                     <h2>
-                        Quantum Attacks on Decentralized Systems &amp; Their Prevention
+                        Signal-Resilient Communication
                     </h2>
 
+                    <p>
+                        A central objective of the proposed framework is maintaining reliable communication in environments affected by structural barriers and electromagnetic interference. The system uses a closed IP connection to provide secure and reliable data transfer between the robotic vehicle and the operator.
+                    </p>
 
                     <p>
-                        Quantum computing introduces several advanced attack vectors that threaten the security of decentralized systems such as blockchain. One of the most critical threats is Shor’s algorithm attack, which can break public-key cryptographic systems like RSA
-                        and ECC.
+                        The framework also incorporates dual-mode communication channels and adaptive hardware to improve resilience under changing environmental conditions. These features are intended to maintain constant communication and real-time data feedback during critical missions.
                     </p>
 
 
+                    <h2>
+                        AI-Driven Surveillance and Environmental Monitoring
+                    </h2>
+
                     <p>
-                        To mitigate these threats, several post-quantum and quantum-resistant techniques are proposed. Shor’s algorithm attacks can be prevented using post-quantum cryptography (PQC) such as lattice-based schemes.
+                        AI-driven analytics provide an intelligent layer for interpreting data collected by the IoT sensors and robotic platform. By combining sensor information with real-time radar observations, the system can support improved situational awareness in hazardous environments.
+                    </p>
+
+                    <p>
+                        The combination of AI, IoT, edge computing, and secure communication creates a foundation for future autonomous surveillance systems capable of operating in locations where human access is restricted or unsafe.
+                    </p>
+
+
+                    <h2>
+                        Applications
+                    </h2>
+
+                    <ol>
+
+                        <li>
+                            <strong>Borewell Rescue:</strong> The robotic vehicle can operate inside confined borewell environments where direct human access is dangerous.
+                        </li>
+
+                        <li>
+                            <strong>Underground Hazard Detection:</strong> The platform can support monitoring and hazard identification in underground mines.
+                        </li>
+
+                        <li>
+                            <strong>Disaster Management:</strong> The system can provide remote surveillance and situational awareness in disaster zones.
+                        </li>
+
+                        <li>
+                            <strong>Military Operations:</strong> Signal-resilient remote surveillance can support operations in dangerous or inaccessible environments.
+                        </li>
+
+                        <li>
+                            <strong>Smart City Infrastructure:</strong> The framework can assist in inspecting and monitoring infrastructure where human inspection may be difficult or hazardous.
+                        </li>
+
+                    </ol>
+
+
+                    <h2>
+                        Experimental Findings
+                    </h2>
+
+                    <p>
+                        Experiments confirmed that the proposed system can maintain signal integrity and provide real-time data feedback under harsh environmental conditions. The results demonstrate the potential of combining signal-resilient communication, radar-based obstacle detection, and simplified operator interfaces for mission-critical surveillance.
+                    </p>
+
+                    <p>
+                        The simple red/green interface improves rapid interpretation by operators, while the protected communication architecture supports continuous data transmission even when structural or electromagnetic interference is present.
                     </p>
 
 
@@ -1225,13 +1250,16 @@
                         Conclusions and Future Direction
                     </h2>
 
-
                     <p>
-                        This study addresses the problem of quantum threats to blockchain by introducing a quantum-resistant authentication framework using post-quantum cryptography techniques like lattice-based encryption, hash-based signatures, and zero-knowledge proofs.
+                        This study presents a secure, signal-resilient, and intelligent surveillance framework designed for monitoring extreme environments. The proposed platform combines teleoperated robotics, IoT sensor fusion, radar-enabled obstacle detection, edge computing, AI-driven analytics, and encrypted communication protocols.
                     </p>
 
                     <p>
-                        In conclusion, the proposed approach successfully strengthens blockchain security against future quantum attacks while maintaining performance.
+                        By prioritizing signal resilience and operational simplicity, the framework addresses critical limitations of conventional surveillance technologies in dangerous and inaccessible environments. Its applications include borewell rescue missions, underground hazard detection, disaster management, military operations, and smart city infrastructure maintenance.
+                    </p>
+
+                    <p>
+                        Future work can focus on increasing the autonomy of the robotic platform, improving AI-based environmental interpretation, strengthening adaptive communication mechanisms, and extending the framework toward fully autonomous systems for disaster management and environmental hazard detection.
                     </p>
 
                 </div>
@@ -1243,20 +1271,21 @@
 
                     <a href="../blog.html" class="view-publications">
 
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
 
-                            <line
-                                x1="19"
-                                y1="12"
-                                x2="5"
-                                y2="12">
-                            </line>
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
 
-                            <polyline
-                                points="12 19 5 12 12 5">
-                            </polyline>
+                            <polyline points="12 19 5 12 12 5"></polyline>
 
-                        </svg> View all Publications
+                        </svg>
+
+                        View all Publications
 
                     </a>
 
@@ -1343,141 +1372,108 @@
 
                     <div class="socials">
 
-                        <a href="https://github.com/BlockNotes-4515" target="_blank" rel="noopener noreferrer" class="social" aria-label="GitHub">
+                        <!-- GITHUB -->
 
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <a
+                            href="https://github.com/BlockNotes-4515"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social"
+                            aria-label="GitHub">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
 
                                 <path d="M9 19c-5 1.5-5-2.5-7-3"></path>
 
-                                <path
-                                    d="M15 22v-3.87
-                                    a3.37 3.37 0 0 0-.94-2.61
-                                    c3.14-.35 6.44-1.54
-                                    6.44-7
-                                    A5.44 5.44 0 0 0 20 4.77
-                                    A5.07 5.07 0 0 0 19.91 1
-                                    S18.73.65 16 2.48
-                                    a13.38 13.38 0 0 0-7 0
-                                    C6.27.65 5.09 1 5.09 1
-                                    A5.07 5.07 0 0 0 5 4.77
-                                    a5.44 5.44 0 0 0-1.5 3.78
-                                    c0 5.42 3.3 6.61 6.44 7
-                                    A3.37 3.37 0 0 0 9 18.13
-                                    V22">
-                                </path>
+                                <path d="M15 22v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
 
                             </svg>
 
                         </a>
 
 
-                        <a href="https://www.linkedin.com/in/dhruv-dhayal-9568b7262/" target="_blank" rel="noopener noreferrer" class="social" aria-label="LinkedIn">
+                        <!-- LINKEDIN -->
 
-                            <svg viewBox="0 0 24 24" fill="currentColor">
+                        <a
+                            href="https://www.linkedin.com/in/dhruv-dhayal-9568b7262/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social"
+                            aria-label="LinkedIn">
 
-                                <path
-                                    d="M20.45 20.45h-3.56v-5.58
-                                    c0-1.33-.03-3.04-1.85-3.04
-                                    -1.85 0-2.13 1.44-2.13 2.94v5.68
-                                    H9.35V9h3.42v1.56h.05
-                                    c.48-.9 1.64-1.85 3.37-1.85
-                                    3.6 0 4.27 2.37 4.27 5.46v6.28z
-                                    M5.34 7.43a2.06 2.06 0 1 1 0-4.12
-                                    2.06 2.06 0 0 1 0 4.12z
-                                    M7.12 20.45H3.56V9h3.56v11.45z">
-                                </path>
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="currentColor">
 
-                            </svg>
-
-                        </a>
-
-
-                        <a href="https://x.com/DhayalDhruv" target="_blank" rel="noopener noreferrer" class="social" aria-label="X">
-
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-
-                                <path
-                                    d="M18 2
-                                    L22 2
-                                    L13.5 11.7
-                                    L23.5 22
-                                    H15.7
-                                    L9.6 15.7
-                                    L4.1 22
-                                    H0
-                                    L9.1 11.6
-                                    L0 2
-                                    H8
-                                    L13.5 7.8
-                                    Z">
-                                </path>
+                                <path d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.68H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"></path>
 
                             </svg>
 
                         </a>
 
 
-                        <a href="https://t.me/dhayaldhruv271" target="_blank" rel="noopener noreferrer" class="social" aria-label="Telegram">
+                        <!-- X -->
 
-                            <svg viewBox="0 0 24 24" fill="currentColor">
+                        <a
+                            href="https://x.com/DhayalDhruv"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social"
+                            aria-label="X">
 
-                                <path
-                                    d="M21.944 2.506
-                                    a1.5 1.5 0 0 0-1.633-.242
-                                    L2.64 10.06
-                                    a1.5 1.5 0 0 0 .104 2.77
-                                    l4.52 1.694
-                                    1.694 4.52
-                                    a1.5 1.5 0 0 0 2.77.104
-                                    l7.796-17.67
-                                    a1.5 1.5 0 0 0-.58-1.972z
-                                    M9.5 14.5
-                                    l-.8 3.2
-                                    -1.2-3.2
-                                    8.9-8.1
-                                    -6.9 8.1z">
-                                </path>
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2">
+
+                                <path d="M18 2L22 2L13.5 11.7L23.5 22H15.7L9.6 15.7L4.1 22H0L9.1 11.6L0 2H8L13.5 7.8Z"></path>
 
                             </svg>
 
                         </a>
 
 
-                        <a href="https://orcid.org/0009-0000-8346-7834" target="_blank" rel="noopener noreferrer" class="social" aria-label="ORCID">
+                        <!-- TELEGRAM -->
 
-                            <svg viewBox="0 0 256 256" fill="currentColor">
+                        <a
+                            href="https://t.me/dhayaldhruv271"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social"
+                            aria-label="Telegram">
 
-                                <path
-                                    d="M128 0
-                                    C57.3 0 0 57.3 0 128
-                                    s57.3 128 128 128
-                                    128-57.3 128-128
-                                    S198.7 0 128 0z
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="currentColor">
 
-                                    M82.7 192
-                                    H59.7V64h23v128z
+                                <path d="M21.944 2.506a1.5 1.5 0 0 0-1.633-.242L2.64 10.06a1.5 1.5 0 0 0 .104 2.77l4.52 1.694 1.694 4.52a1.5 1.5 0 0 0 2.77.104l7.796-17.67a1.5 1.5 0 0 0-.58-1.972zM9.5 14.5l-.8 3.2-1.2-3.2 8.9-8.1-6.9 8.1z"></path>
 
-                                    M71.2 52.5
-                                    c-7.6 0-13.7-6.1-13.7-13.7
-                                    S63.6 25 71.2 25
-                                    s13.7 6.1 13.7 13.8
-                                    -6.1 13.7-13.7 13.7z
+                            </svg>
 
-                                    M197 192
-                                    h-28.8
-                                    l-39.5-64.5
-                                    h-.6V192h-23V64
-                                    h39.5
-                                    c29.5 0 52.5 13.2
-                                    52.5 44.7
-                                    0 22.7-12.7 38.2-35.8 41.9
-                                    L197 192z
+                        </a>
 
-                                    M144.7 83
-                                    h-16.6v49.7h16.6
-                                    c17.3 0 29.4-7.9
-                                    29.4-24.9S162 83 144.7 83z">
-                                </path>
+
+                        <!-- ORCID -->
+
+                        <a
+                            href="https://orcid.org/0009-0000-8346-7834"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social"
+                            aria-label="ORCID">
+
+                            <svg
+                                viewBox="0 0 256 256"
+                                fill="currentColor">
+
+                                <path d="M128 0C57.3 0 0 57.3 0 128s57.3 128 128 128 128-57.3 128-128S198.7 0 128 0zM82.7 192H59.7V64h23v128zM71.2 52.5c-7.6 0-13.7-6.1-13.7-13.7S63.6 25 71.2 25s13.7 6.1 13.7 13.8-6.1 13.7-13.7 13.7zM197 192h-28.8l-39.5-64.5h-.6V192h-23V64h39.5c29.5 0 52.5 13.2 52.5 44.7 0 22.7-12.7 38.2-35.8 41.9L197 192zM144.7 83h-16.6v49.7h16.6c17.3 0 29.4-7.9 29.4-24.9S162 83 144.7 83z"></path>
 
                             </svg>
 
@@ -1507,29 +1503,18 @@
 
     <div class="floating-actions">
 
-
         <!-- LINKEDIN -->
 
-        <button class="float-btn" onclick="window.open(
-                'https://www.linkedin.com/in/dhruv-dhayal-9568b7262/',
-                '_blank'
-            )" aria-label="LinkedIn">
+        <button
+            class="float-btn"
+            onclick="window.open('https://www.linkedin.com/in/dhruv-dhayal-9568b7262/', '_blank')"
+            aria-label="LinkedIn">
 
             <svg
                 viewBox="0 0 24 24"
                 fill="currentColor">
 
-                <path
-                    d="M20.45 20.45h-3.56v-5.58
-                    c0-1.33-.03-3.04-1.85-3.04
-                    -1.85 0-2.13 1.44-2.13 2.94v5.68
-                    H9.35V9h3.42v1.56h.05
-                    c.48-.9 1.64-1.85 3.37-1.85
-                    3.6 0 4.27 2.37 4.27 5.46v6.28z
-                    M5.34 7.43a2.06 2.06 0 1 1 0-4.12
-                    2.06 2.06 0 0 1 0 4.12z
-                    M7.12 20.45H3.56V9h3.56v11.45z">
-                </path>
+                <path d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.68H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"></path>
 
             </svg>
 
@@ -1538,7 +1523,10 @@
 
         <!-- THEME -->
 
-        <button class="float-btn" id="themeToggle" aria-label="Toggle theme">
+        <button
+            class="float-btn"
+            id="themeToggle"
+            aria-label="Toggle theme">
 
             <svg
                 id="themeIcon"
@@ -1560,12 +1548,12 @@
     ========================================================= -->
 
     <script>
-        /* =========================================================
-                                                                   THEME
-                                                                ========================================================= */
 
-        const html =
-            document.documentElement;
+        /* =========================================================
+           THEME
+        ========================================================= */
+
+        const html = document.documentElement;
 
         const themeToggle =
             document.getElementById("themeToggle");
@@ -1575,58 +1563,31 @@
 
 
         const sunIcon = `
-
-            <circle
-                cx="12"
-                cy="12"
-                r="4">
-            </circle>
-
+            <circle cx="12" cy="12" r="4"></circle>
             <path d="M12 2v2"></path>
             <path d="M12 20v2"></path>
-
             <path d="m4.93 4.93 1.41 1.41"></path>
-
             <path d="m17.66 17.66 1.41 1.41"></path>
-
             <path d="M2 12h2"></path>
             <path d="M20 12h2"></path>
-
             <path d="m6.34 17.66-1.41 1.41"></path>
-
             <path d="m19.07 4.93-1.41 1.41"></path>
-
         `;
 
 
         const moonIcon = `
-
-            <path
-                d="M21 12.79
-                A9 9 0 1 1
-                11.21 3
-                7 7 0 0 0
-                21 12.79z">
-            </path>
-
+            <path d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79z"></path>
         `;
 
 
         function updateThemeIcon() {
 
-            if (
-                html.classList.contains("dark")
-            ) {
-
-                themeIcon.innerHTML =
-                    sunIcon;
-
+            if (html.classList.contains("dark")) {
+                themeIcon.innerHTML = sunIcon;
             } else {
-
-                themeIcon.innerHTML =
-                    moonIcon;
-
+                themeIcon.innerHTML = moonIcon;
             }
+
         }
 
 
@@ -1661,23 +1622,21 @@
                     html.classList.add("light");
 
                 }
+
             }
 
-
             updateThemeIcon();
+
         }
 
 
         themeToggle.addEventListener(
             "click",
-            function() {
+            function () {
 
-                if (
-                    html.classList.contains("dark")
-                ) {
+                if (html.classList.contains("dark")) {
 
                     html.classList.remove("dark");
-
                     html.classList.add("light");
 
                     localStorage.setItem(
@@ -1688,7 +1647,6 @@
                 } else {
 
                     html.classList.remove("light");
-
                     html.classList.add("dark");
 
                     localStorage.setItem(
@@ -1712,9 +1670,7 @@
         ========================================================= */
 
         const header =
-            document.getElementById(
-                "mainHeader"
-            );
+            document.getElementById("mainHeader");
 
 
         function updateHeader() {
@@ -1732,12 +1688,14 @@
                 );
 
             }
+
         }
 
 
         window.addEventListener(
             "scroll",
-            updateHeader, {
+            updateHeader,
+            {
                 passive: true
             }
         );
@@ -1761,38 +1719,88 @@
             );
 
 
+        function closeMobileMenu() {
+
+            mobileNavigation.classList.remove("open");
+
+            mobileButton.classList.remove("active");
+
+            mobileButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        }
+
+
+        function toggleMobileMenu() {
+
+            const isOpen =
+                mobileNavigation.classList.toggle("open");
+
+            mobileButton.classList.toggle(
+                "active",
+                isOpen
+            );
+
+            mobileButton.setAttribute(
+                "aria-expanded",
+                String(isOpen)
+            );
+
+        }
+
+
         mobileButton.addEventListener(
             "click",
-            function() {
-
-                mobileNavigation.classList.toggle(
-                    "open"
-                );
-
-            }
+            toggleMobileMenu
         );
 
 
         document
             .querySelectorAll(
-                "#mobileNavigation a"
+                "#mobileNavigation a, #mobileNavigation button"
             )
             .forEach(
-                link => {
+                element => {
 
-                    link.addEventListener(
+                    element.addEventListener(
                         "click",
-                        () => {
-
-                            mobileNavigation
-                                .classList
-                                .remove("open");
-
-                        }
+                        closeMobileMenu
                     );
 
                 }
             );
+
+
+        document.addEventListener(
+            "click",
+            function (event) {
+
+                if (
+                    !mobileButton.contains(event.target) &&
+                    !mobileNavigation.contains(event.target)
+                ) {
+
+                    closeMobileMenu();
+
+                }
+
+            }
+        );
+
+
+        window.addEventListener(
+            "resize",
+            function () {
+
+                if (window.innerWidth > 768) {
+                    closeMobileMenu();
+                }
+
+            }
+        );
+
     </script>
 
 </body>
