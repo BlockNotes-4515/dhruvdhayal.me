@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Highlights — Dhruv Dhayal</title>
+
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+
+    <meta name="description" content="Videos by Dhruv Dhayal — technical talks, projects, research and technology.">
+
+    <meta name="author" content="Dhruv Dhayal">
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        /* =========================================================
+           ROOT
+        ========================================================= */
+        
+         :root {
+            --bg: #ffffff;
+            --panel: #f7f7f7;
+            --panel-2: #eeeeee;
+            --text: #050505;
+            --muted: #4f4f4f;
+            --line: #d8d8d8;
+            --green: #008f62;
+            --green-bright: #00a86b;
+            --header-bg: rgba(255, 255, 255, 0.78);
+        }
+        
+        html.dark {
+            --bg: #050505;
+            --panel: #0b0b0b;
+            --panel-2: #111111;
+            --text: #f5f5f5;
+            --muted: #9a9a9a;
+            --line: #242424;
+            --green: #00c982;
+            --green-bright: #00ff9a;
+            --header-bg: rgba(10, 10, 10, 0.72);
+            color-scheme: dark;
+        }
+        
+        html.light {
+            --bg: #ffffff;
+            --panel: #f7f7f7;
+            --panel-2: #eeeeee;
+            --text: #050505;
+            --muted: #4f4f4f;
+            --line: #d8d8d8;
+            --green: #008f62;
+            --green-bright: #00a86b;
+            --header-bg: rgba(255, 255, 255, 0.78);
+            color-scheme: light;
+        }
+        /* =========================================================
+           RESET
+        ========================================================= */
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            min-height: 100vh;
+            background: var(--bg);
+            color: var(--text);
+            font-family: "Sora", system-ui, sans-serif;
+            transition: background-color .3s ease, color .3s ease;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        button {
+            font-family: inherit;
+        }
+        /* =========================================================
+           CONTAINER
+        ========================================================= */
+        
+        .container {
+            width: min(100% - 40px, 1120px);
+            margin: 0 auto;
+        }
+        /* =========================================================
+           HEADER
+        ========================================================= */
+        
+        #mainHeader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            transition: background .35s ease, backdrop-filter .35s ease, border-color .35s ease, box-shadow .35s ease;
+        }
+        
+        .nav {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text);
+            transition: color .2s ease;
+        }
+        
+        .logo:hover {
+            color: var(--green-bright);
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+        
+        .nav-links a,
+        .resume-btn {
+            border: none;
+            background: transparent;
+            color: var(--muted);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: color .2s ease, transform .2s ease;
+        }
+        
+        .nav-links a:hover,
+        .resume-btn:hover {
+            color: var(--green-bright);
+            transform: translateY(-1px);
+        }
+        
+        .nav-links .active {
+            color: var(--text);
+        }
+        /* =========================================================
+           SCROLL HEADER
+        ========================================================= */
+        
+        .scrolled-header {
+            background: rgba(10, 10, 10, .72);
+            backdrop-filter: blur(28px) saturate(180%);
+            -webkit-backdrop-filter: blur(28px) saturate(180%);
+            border-bottom: 1px solid rgba(255, 255, 255, .10);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, .28), inset 0 1px 0 rgba(255, 255, 255, .06);
+        }
+        
+        html.light .scrolled-header {
+            background: rgba(255, 255, 255, .78);
+            border-bottom: 1px solid rgba(0, 0, 0, .10);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, .08), inset 0 1px 0 rgba(255, 255, 255, .9);
+        }
+        /* =========================================================
+           MOBILE BUTTON
+        ========================================================= */
+        
+        .mobile-menu-btn {
+            display: none;
+            width: 42px;
+            height: 42px;
+            border: 1px solid var(--line);
+            background: var(--panel);
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .mobile-menu-btn span {
+            width: 20px;
+            height: 2px;
+            background: var(--text);
+        }
+        /* =========================================================
+           MOBILE MENU
+        ========================================================= */
+        
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            right: 0;
+            padding: 18px;
+            background: var(--panel);
+            border-bottom: 1px solid var(--line);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, .15);
+        }
+        
+        .mobile-menu.open {
+            display: block;
+        }
+        
+        .mobile-menu a {
+            display: block;
+            padding: 13px 10px;
+            color: var(--muted);
+            font-size: 14px;
+            border-bottom: 1px solid var(--line);
+        }
+        
+        .mobile-menu a:last-child {
+            border-bottom: none;
+        }
+        
+        .mobile-menu a:hover {
+            color: var(--green-bright);
+        }
+        /* =========================================================
+           MAIN
+        ========================================================= */
+        
+        main {
+            min-height: 100vh;
+        }
+        
+        .page {
+            padding-top: 145px;
+            padding-bottom: 100px;
+        }
+        
+        .page-inner {
+            width: min(100%, 900px);
+            margin: 0 auto;
+        }
+        /* =========================================================
+           PAGE HEADER
+        ========================================================= */
+        
+        .page-header {
+            margin-bottom: 48px;
+        }
+        
+        .page-header h1 {
+            font-size: clamp(42px, 6vw, 58px);
+            line-height: 1.1;
+            font-weight: 700;
+            letter-spacing: -.04em;
+            margin-bottom: 16px;
+        }
+        
+        .page-header p {
+            max-width: 780px;
+            font-size: 17px;
+            line-height: 1.8;
+            color: var(--muted);
+        }
+        /* =========================================================
+           VIDEO GRID
+        ========================================================= */
+        
+        .video-grid {
+            display: grid;
+            gap: 28px;
+        }
+        /* =========================================================
+           VIDEO CARD
+        ========================================================= */
+        
+        .video-card {
+            padding: 28px;
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 2px;
+            transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+        }
+        
+        .video-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--green);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, .16);
+        }
+        
+        html.dark .video-card:hover {
+            box-shadow: 0 18px 45px rgba(0, 0, 0, .38), 0 0 0 1px rgba(0, 255, 154, .05);
+        }
+        /* =========================================================
+           VIDEO NUMBER
+        ========================================================= */
+        
+        .video-number {
+            font-family: "JetBrains Mono", monospace;
+            color: var(--green-bright);
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+        }
+        /* =========================================================
+           VIDEO TITLE
+        ========================================================= */
+        
+        .video-title {
+            font-size: 23px;
+            line-height: 1.45;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 12px;
+            letter-spacing: -.015em;
+        }
+        
+        .video-card:hover .video-title {
+            color: var(--green-bright);
+        }
+        /* =========================================================
+           DESCRIPTION
+        ========================================================= */
+        
+        .video-description {
+            font-size: 15px;
+            line-height: 1.75;
+            color: var(--muted);
+            margin-bottom: 22px;
+        }
+        /* =========================================================
+           YOUTUBE THUMBNAIL
+        ========================================================= */
+        
+        .video-thumbnail {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            background: #000;
+            border: 1px solid var(--line);
+            margin-bottom: 22px;
+            cursor: pointer;
+            display: block;
+        }
+        
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            transition: transform .35s ease, filter .35s ease;
+        }
+        
+        .video-thumbnail:hover img {
+            transform: scale(1.04);
+            filter: brightness(.62);
+        }
+        /* =========================================================
+           YOUTUBE PLAY BUTTON
+        ========================================================= */
+        
+        .thumbnail-play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 74px;
+            height: 52px;
+            border-radius: 14px;
+            background: #ff0000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform .25s ease, background .25s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, .35);
+        }
+        
+        .video-thumbnail:hover .thumbnail-play {
+            transform: translate(-50%, -50%) scale(1.12);
+            background: #ff0000;
+        }
+        
+        .thumbnail-play svg {
+            width: 25px;
+            height: 25px;
+            margin-left: 3px;
+        }
+        /* =========================================================
+           WATCH BUTTON
+        ========================================================= */
+        
+        .watch-btn {
+            width: 100%;
+            min-height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: 1px solid var(--green);
+            background: var(--green);
+            color: #ffffff;
+            font-family: "JetBrains Mono", monospace;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: .03em;
+            cursor: pointer;
+            transition: background .25s ease, border-color .25s ease, color .25s ease, transform .25s ease;
+        }
+        
+        .watch-btn:hover {
+            background: var(--green-bright);
+            border-color: var(--green-bright);
+            color: #000;
+            transform: translateY(-2px);
+        }
+        
+        .watch-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+        
+        footer {
+            background: var(--panel);
+            border-top: 1px solid var(--line);
+        }
+        
+        .footer-inner {
+            padding-top: 55px;
+            padding-bottom: 35px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 45px;
+        }
+        
+        .footer-title {
+            font-size: 21px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        
+        .footer-description {
+            max-width: 350px;
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 1.8;
+        }
+        
+        .footer-heading {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            margin-bottom: 18px;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 11px;
+        }
+        
+        .footer-links a {
+            color: var(--muted);
+            font-size: 15px;
+            transition: color .2s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--green-bright);
+        }
+        /* =========================================================
+           SOCIAL
+        ========================================================= */
+        
+        .socials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .social-btn {
+            width: 48px;
+            height: 48px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--line);
+            background: transparent;
+            color: var(--text);
+            transition: color .2s ease, border-color .2s ease, transform .2s ease;
+        }
+        
+        .social-btn:hover {
+            color: var(--green-bright);
+            border-color: var(--green);
+            transform: translateY(-2px);
+        }
+        
+        .social-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+        /* =========================================================
+           FOOTER BOTTOM
+        ========================================================= */
+        
+        .footer-bottom {
+            padding-top: 22px;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 13px;
+        }
+        /* =========================================================
+           FLOATING BUTTONS
+        ========================================================= */
+        
+        .floating-actions {
+            position: fixed;
+            bottom: 24px;
+            right: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            z-index: 999999;
+        }
+        
+        .float-btn {
+            width: 62px;
+            height: 62px;
+            padding: 0;
+            border: 1px solid rgba(255, 255, 255, .12);
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #111;
+            color: white;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .35);
+            transition: all .28s ease;
+        }
+        
+        html.light .float-btn {
+            background: white;
+            color: #050505;
+            border-color: #d6d6d6;
+        }
+        
+        .float-btn:hover {
+            transform: translateY(-3px) scale(1.04);
+            border-color: var(--green);
+            color: var(--green-bright);
+        }
+        
+        .float-btn svg {
+            width: 25px;
+            height: 25px;
+        }
+        /* =========================================================
+           RESPONSIVE
+        ========================================================= */
+        
+        @media (max-width: 900px) {
+            .container {
+                width: min(100% - 32px, 760px);
+            }
+            .nav-links {
+                display: none;
+            }
+            .mobile-menu-btn {
+                display: flex;
+            }
+            .page {
+                padding-top: 125px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media (max-width: 650px) {
+            .container {
+                width: min(100% - 28px, 560px);
+            }
+            .nav {
+                height: 72px;
+            }
+            .mobile-menu {
+                top: 72px;
+            }
+            .page {
+                padding-top: 110px;
+                padding-bottom: 70px;
+            }
+            .page-header {
+                margin-bottom: 35px;
+            }
+            .page-header h1 {
+                font-size: 40px;
+            }
+            .page-header p {
+                font-size: 15px;
+                line-height: 1.7;
+            }
+            .video-grid {
+                gap: 18px;
+            }
+            .video-card {
+                padding: 20px;
+            }
+            .video-title {
+                font-size: 19px;
+            }
+            .video-description {
+                font-size: 14px;
+                line-height: 1.7;
+            }
+            .watch-btn {
+                min-height: 52px;
+                font-size: 13px;
+            }
+            .thumbnail-play {
+                width: 62px;
+                height: 44px;
+                border-radius: 11px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+            .float-btn {
+                width: 56px;
+                height: 56px;
+            }
+            .floating-actions {
+                right: 14px;
+                bottom: 16px;
+                gap: 11px;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================================
+         HEADER
+    ========================================================= -->
+
+    <header id="mainHeader">
+
+        <div class="container">
+
+            <div class="nav">
+
+                <a href="index.html" class="logo">
+                    Dhruv Dhayal
+                </a>
+
+
+                <nav class="nav-links">
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="projects.html">
+                        Projects
+                    </a>
+
+                    <a href="experience.html">
+                        Experience
+                    </a>
+
+                    <a href="blog.html" class="active">
+                        Videos
+                    </a>
+
+                    <a href="index.html#contact">
+                        Contact
+                    </a>
+
+
+                    <button class="resume-btn" onclick="window.open('./images/UPDATED%20JUNE%20SUMMER%20CV.pdf','_blank')">
+
+                        Resume
+
+                    </button>
+
+                </nav>
+
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+
+            <!-- MOBILE MENU -->
+
+            <div class="mobile-menu" id="mobileMenu">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="experience.html">
+                    Experience
+                </a>
+
+                <a href="blog.html">
+                    Videos
+                </a>
+
+                <a href="index.html#contact">
+                    Contact
+                </a>
+
+                <a href="./images/UPDATED%20JUNE%20SUMMER%20CV.pdf" target="_blank">
+
+                    Resume
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================================
+         MAIN
+    ========================================================= -->
+
+    <main>
+
+        <section class="page">
+
+            <div class="container">
+
+                <div class="page-inner">
+
+
+                    <!-- PAGE HEADER -->
+
+                    <header class="page-header">
+
+                        <h1>
+                            Highlights
+                        </h1>
+
+                        <p>
+                            A collection of milestones, International Conference experiences, research contributions, internships, awards, and technical achievements from my journey in technology and software engineering.
+                        </p>
+
+                    </header>
+
+
+
+                    <!-- =================================================
+                         VIDEO GRID
+                    ================================================= -->
+
+                    <div class="video-grid">
+
+
+
+                        <!-- =================================================
+                             VIDEO 1
+                        ================================================= -->
+
+                        <article class="video-card">
+
+                            <div class="video-number">
+                                D-SET-01
+                            </div>
+
+
+                            <h2 class="video-title">
+                                Young Achiever Award — S4IoT'25—(Kuwait City, Kuwait 🇰🇼)
+                            </h2>
+
+                            <p class="video-description">
+                                Honored with the Young Achiever Award at S4IoT'25 '🇰🇼 in recognition of my achievements, contributions, and excellence in technology, innovation, and software engineering.
+                            </p>
+
+
+                            <!-- YOUTUBE THUMBNAIL -->
+
+                            <a class="video-thumbnail" href="https://www.youtube.com/watch?v=Oc_giMpDirk&t=11974s" target="_blank" rel="noopener noreferrer" aria-label="Watch AI and Intelligent Systems video on YouTube">
+
+                                <img src="https://i.ytimg.com/vi/Oc_giMpDirk/maxresdefault.jpg" alt="AI & Intelligent Systems YouTube thumbnail" loading="lazy" onerror="this.src='https://i.ytimg.com/vi/Oc_giMpDirk/hqdefault.jpg'">
+
+
+                                <div class="thumbnail-play">
+
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+
+                                        <path d="M8 5v14l11-7z"></path>
+
+                                    </svg>
+
+                                </div>
+
+                            </a>
+
+
+                            <!-- WATCH ON YOUTUBE -->
+
+                            <button class="watch-btn" onclick="openYouTube('https://www.youtube.com/watch?v=Oc_giMpDirk&t=11974s')">
+
+                                Watch on YouTube
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+
+                                </svg>
+
+                            </button>
+
+                        </article>
+
+
+
+                        <!-- =================================================
+                             VIDEO 2
+                        ================================================= -->
+
+                        <article class="video-card">
+
+                            <div class="video-number">
+                                D-SET-02
+                            </div>
+
+
+                            <h2 class="video-title" dir="rtl">
+                                جائزة الشاب المتميّز — الكويت 🇰🇼
+                            </h2>
+
+                            <p class="video-description" dir="rtl">
+                                لحظة فخر واعتزاز من دولة الكويت، حيث تم تكريمي بجائزة الشاب المتميّز تقديراً لإنجازاتي ومساهماتي في مجال التكنولوجيا والابتكار والبحث العلمي وهندسة البرمجيات.
+                            </p>
+
+
+                            <!-- YOUTUBE THUMBNAIL -->
+
+                            <a class="video-thumbnail" href="https://www.youtube.com/watch?v=n8_ygVyML5w" target="_blank" rel="noopener noreferrer" aria-label="Watch Research and Technology video on YouTube">
+
+                                <img src="https://i.ytimg.com/vi/n8_ygVyML5w/maxresdefault.jpg" alt="Research & Technology YouTube thumbnail" loading="lazy" onerror="this.src='https://i.ytimg.com/vi/n8_ygVyML5w/hqdefault.jpg'">
+
+
+                                <div class="thumbnail-play">
+
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+
+                                        <path d="M8 5v14l11-7z"></path>
+
+                                    </svg>
+
+                                </div>
+
+                            </a>
+
+
+                            <!-- WATCH ON YOUTUBE -->
+
+                            <button class="watch-btn" onclick="openYouTube('https://www.youtube.com/watch?v=n8_ygVyML5w')">
+
+                                Watch on YouTube 'مشاهدة على يوتيوب'
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+
+                                </svg>
+
+                            </button>
+
+                        </article>
+
+
+
+                        <!-- =================================================
+                             VIDEO 3
+                        ================================================= -->
+
+                        <article class="video-card">
+
+                            <div class="video-number">
+                                D-SET-03
+                            </div>
+
+
+                            <h2 class="video-title">
+                                IntelliGuard V2 — CyberRover 'IITM Janakpuri, West Delhi, India 🇮🇳'
+                            </h2>
+
+                            <p class="video-description">
+                                IntelliGuard V2 (CyberRover) '🇳 is an autonomous robotic system developed to reduce human life risks in hazardous and confined environments such as borewells, mines, and narrow spaces. The rover is designed to perform operations in place of human workers
+                                where direct access can be dangerous, helping improve safety and reduce the risk of fatalities. The project was presented at an international conference and showcased at our college.
+                            </p>
+
+
+                            <!-- YOUTUBE THUMBNAIL -->
+
+                            <a class="video-thumbnail" href="https://www.youtube.com/watch?v=PXgyOh3_czE" target="_blank" rel="noopener noreferrer" aria-label="Watch Software Engineering and Projects video on YouTube">
+
+                                <img src="https://i.ytimg.com/vi/PXgyOh3_czE/maxresdefault.jpg" alt="Software Engineering & Projects YouTube thumbnail" loading="lazy" onerror="this.src='https://i.ytimg.com/vi/PXgyOh3_czE/hqdefault.jpg'">
+
+
+                                <div class="thumbnail-play">
+
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+
+                                        <path d="M8 5v14l11-7z"></path>
+
+                                    </svg>
+
+                                </div>
+
+                            </a>
+
+
+                            <!-- WATCH ON YOUTUBE -->
+
+                            <button class="watch-btn" onclick="openYouTube('https://www.youtube.com/watch?v=PXgyOh3_czE')">
+
+                                Watch on YouTube
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+
+                                </svg>
+
+                            </button>
+
+                        </article>
+
+                        <!-- =================================================
+                             VIDEO 2
+                        ================================================= -->
+
+                        <article class="video-card">
+
+                            <div class="video-number">
+                                D-SET-04
+                            </div>
+
+
+                            <h2 class="video-title">
+                                Quantum Cryptography — Research Presentation
+                            </h2>
+
+                            <p class="video-description">
+                                Our research on Quantum Cryptography, exploring next-generation approaches to secure communication and post-quantum security, was presented at an international conference hosted at BITS Pilani, Dubai Campus. The conference provided a platform to present
+                                our research, engage with researchers and experts, and exchange ideas on emerging technologies in quantum computing and cybersecurity.
+                            </p>
+
+
+                            <!-- YOUTUBE THUMBNAIL -->
+
+                            <a class="video-thumbnail" href="https://www.youtube.com/watch?v=7ompLI9gm7s" target="_blank" rel="noopener noreferrer" aria-label="Watch Research and Technology video on YouTube">
+
+                                <img src="https://www.youtube.com/watch?v=7ompLI9gm7s" alt="Research & Technology YouTube thumbnail" loading="lazy" onerror="this.src='https://www.youtube.com/watch?v=7ompLI9gm7s'">
+
+
+                                <div class="thumbnail-play">
+
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+
+                                        <path d="M8 5v14l11-7z"></path>
+
+                                    </svg>
+
+                                </div>
+
+                            </a>
+
+
+                            <!-- WATCH ON YOUTUBE -->
+
+                            <button class="watch-btn" onclick="openYouTube('https://www.youtube.com/watch?v=7ompLI9gm7s')">
+
+                                Watch on YouTube
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+
+                                </svg>
+
+                            </button>
+
+                        </article>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================= -->
+
+    <footer>
+
+        <div class="container footer-inner">
+
+            <div class="footer-grid">
+
+
+                <!-- FOOTER ABOUT -->
+
+                <div>
+
+                    <h3 class="footer-title">
+                        Dhruv Dhayal
+                    </h3>
+
+                    <p class="footer-description">
+                        Software Engineer focused on building reliable systems with Node.js, MongoDB, AWS, AI/ML, and research-driven technologies.
+                    </p>
+
+                </div>
+
+
+                <!-- QUICK LINKS -->
+
+                <div>
+
+                    <h4 class="footer-heading">
+                        Quick Links
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="projects.html">
+                                Projects
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="experience.html">
+                                Experience
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="blog.html">
+                                Videos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/BlockNotes-4515" target="_blank" rel="noopener noreferrer">
+
+                                Research
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#contact">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- SOCIAL -->
+
+                <div>
+
+                    <h4 class="footer-heading">
+                        Connect
+                    </h4>
+
+                    <div class="socials">
+
+
+                        <!-- GITHUB -->
+
+                        <a href="https://github.com/BlockNotes-4515" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+
+                                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.85 10.91.57.1.78-.25.78-.55v-2.13c-3.19.69-3.86-1.54-3.86-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.25 3.32.96.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.9 10.9 0 0 1 5.74 0c2.19-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.75.11 3.04.73.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.11c0 .3.21.65.79.54A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"></path>
+
+                            </svg>
+
+                        </a>
+
+
+                        <!-- LINKEDIN -->
+
+                        <a href="https://www.linkedin.com/in/dhruv-dhayal-9568b7262/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+
+                                <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95v5.66H9.37V8.99h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29zM5.36 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.14 20.45H3.57V8.99h3.57v11.46zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.21 24 24 23.23 24 22.28V1.72C24 .77 23.21 0 22.23 0z"></path>
+
+                            </svg>
+
+                        </a>
+
+
+                        <!-- X -->
+
+                        <a href="https://x.com/DhayalDhruv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="X">
+
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+
+                                <path d="M18.244 2.25h3.308l-7.227 8.26L22.827 21.75h-6.583l-5.154-6.733-5.895 6.733H1.887l7.73-8.835L1.45 2.25h6.75l4.659 6.164L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"></path>
+
+                            </svg>
+
+                        </a>
+
+
+                        <!-- TELEGRAM -->
+
+                        <a href="https://t.me/dhayaldhruv271" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Telegram">
+
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+
+                                <path d="M21.944 2.506a1.5 1.5 0 0 0-1.633-.242L2.64 10.06a1.5 1.5 0 0 0 .104 2.77l4.52 1.694 1.694 4.52a1.5 1.5 0 0 0 2.77.104l7.796-17.67a1.5 1.5 0 0 0-.58-1.972z"></path>
+
+                            </svg>
+
+                        </a>
+
+
+                        <!-- ORCID -->
+
+                        <a href="https://orcid.org/0009-0000-8346-7834" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="ORCID">
+
+                            <svg viewBox="0 0 256 256" fill="currentColor">
+
+                                <path d="M128 0C57.3 0 0 57.3 0 128s57.3 128 128 128 128-57.3 128-128S198.7 0 128 0zm-45.3 192H59.7V64h23v128zm-11.5-139.5c-7.6 0-13.7-6.1-13.7-13.7S63.6 25 71.2 25s13.7 6.1 13.7 13.8-6.1 13.7-13.7 13.7zM197 192h-28.8l-39.5-64.5h-.6V192h-23V64h39.5c29.5 0 52.5 13.2 52.5 44.7 0 22.7-12.7 38.2-35.8 41.9L197 192z"></path>
+
+                            </svg>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                © 2026 Dhruv Dhayal | All rights reserved
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================================
+         FLOATING ACTIONS
+    ========================================================= -->
+
+    <div class="floating-actions">
+
+
+        <!-- LINKEDIN -->
+
+        <button class="float-btn" id="linkedinBtn" aria-label="LinkedIn">
+
+            <svg
+                viewBox="0 0 24 24"
+                fill="currentColor">
+
+                <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95v5.66H9.37V8.99h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29zM5.36 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.14 20.45H3.57V8.99h3.57v11.46zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.21 24 24 23.23 24 22.28V1.72C24 .77 23.21 0 22.23 0z"></path>
+
+            </svg>
+
+        </button>
+
+
+
+        <!-- THEME TOGGLE -->
+
+        <button class="float-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+
+            <svg
+                id="themeIcon"
+                viewBox="0 0 24 24"
+                fill="currentColor">
+
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+
+            </svg>
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================= -->
+
+    <script>
+        /* =========================================================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   OPEN YOUTUBE
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ========================================================= */
+
+        function openYouTube(url) {
+
+            window.open(
+                url,
+                "_blank",
+                "noopener,noreferrer"
+            );
+
+        }
+
+
+
+        /* =========================================================
+           THEME SYSTEM
+        ========================================================= */
+
+        const html =
+            document.documentElement;
+
+
+        const themeToggle =
+            document.getElementById(
+                "themeToggle"
+            );
+
+
+        const themeIcon =
+            document.getElementById(
+                "themeIcon"
+            );
+
+
+
+        /* =========================================================
+           SUN ICON
+        ========================================================= */
+
+        const sunIcon = `
+
+            <path
+                d="
+                    M12 3V2
+                    M12 22V21
+                    M4.93 4.93L3.51 3.51
+                    M20.49 20.49L19.07 19.07
+                    M3 12H2
+                    M22 12H21
+                    M4.93 19.07L3.51 20.49
+                    M20.49 3.51L19.07 4.93
+
+                    M12 18
+                    A6 6 0 1 0 12 6
+                    A6 6 0 0 0 12 18Z
+                "
+
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round">
+            </path>
+
+        `;
+
+
+
+        /* =========================================================
+           MOON ICON
+        ========================================================= */
+
+        const moonIcon = `
+
+            <path
+                d="
+                    M21 12.79
+                    A9 9 0 1 1 11.21 3
+                    A7 7 0 0 0 21 12.79Z
+                ">
+            </path>
+
+        `;
+
+
+
+        /* =========================================================
+           UPDATE THEME ICON
+        ========================================================= */
+
+        function updateThemeIcon() {
+
+            if (
+                html.classList.contains("dark")
+            ) {
+
+                themeIcon.innerHTML =
+                    sunIcon;
+
+
+                themeToggle.setAttribute(
+                    "title",
+                    "Switch to light mode"
+                );
+
+            } else {
+
+                themeIcon.innerHTML =
+                    moonIcon;
+
+
+                themeToggle.setAttribute(
+                    "title",
+                    "Switch to dark mode"
+                );
+
+            }
+
+        }
+
+
+
+        /* =========================================================
+           LOAD SAVED THEME
+        ========================================================= */
+
+        const savedTheme =
+            localStorage.getItem("theme");
+
+
+        if (
+            savedTheme === "light"
+        ) {
+
+            html.classList.remove("dark");
+
+            html.classList.add("light");
+
+        } else {
+
+            html.classList.remove("light");
+
+            html.classList.add("dark");
+
+        }
+
+
+        updateThemeIcon();
+
+
+
+        /* =========================================================
+           TOGGLE THEME
+        ========================================================= */
+
+        themeToggle.addEventListener(
+            "click",
+            function() {
+
+                if (
+                    html.classList.contains("dark")
+                ) {
+
+                    html.classList.remove("dark");
+
+                    html.classList.add("light");
+
+
+                    localStorage.setItem(
+                        "theme",
+                        "light"
+                    );
+
+                } else {
+
+                    html.classList.remove("light");
+
+                    html.classList.add("dark");
+
+
+                    localStorage.setItem(
+                        "theme",
+                        "dark"
+                    );
+
+                }
+
+
+                updateThemeIcon();
+
+            }
+        );
+
+
+
+        /* =========================================================
+           HEADER SCROLL
+        ========================================================= */
+
+        const header =
+            document.getElementById(
+                "mainHeader"
+            );
+
+
+        function updateHeader() {
+
+            if (
+                window.scrollY > 50
+            ) {
+
+                header.classList.add(
+                    "scrolled-header"
+                );
+
+            } else {
+
+                header.classList.remove(
+                    "scrolled-header"
+                );
+
+            }
+
+        }
+
+
+        window.addEventListener(
+            "scroll",
+            updateHeader
+        );
+
+
+        updateHeader();
+
+
+
+        /* =========================================================
+           LINKEDIN FLOAT BUTTON
+        ========================================================= */
+
+        document
+            .getElementById("linkedinBtn")
+            .addEventListener(
+                "click",
+                function() {
+
+                    window.open(
+                        "https://www.linkedin.com/in/dhruv-dhayal-9568b7262/",
+                        "_blank",
+                        "noopener,noreferrer"
+                    );
+
+                }
+            );
+
+
+
+        /* =========================================================
+           MOBILE MENU
+        ========================================================= */
+
+        const mobileMenuBtn =
+            document.getElementById(
+                "mobileMenuBtn"
+            );
+
+
+        const mobileMenu =
+            document.getElementById(
+                "mobileMenu"
+            );
+
+
+        mobileMenuBtn.addEventListener(
+            "click",
+            function() {
+
+                mobileMenu.classList.toggle(
+                    "open"
+                );
+
+            }
+        );
+
+
+        document
+            .querySelectorAll(
+                ".mobile-menu a"
+            )
+            .forEach(
+                function(link) {
+
+                    link.addEventListener(
+                        "click",
+                        function() {
+
+                            mobileMenu.classList.remove(
+                                "open"
+                            );
+
+                        }
+                    );
+
+                }
+            );
+    </script>
+
+
+</body>
+
+</html>
