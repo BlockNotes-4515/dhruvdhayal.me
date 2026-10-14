@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build an AI/ML Tennis Analysis System with YOLO, PyTorch, and Key Point Extraction — Dhruv Dhayal</title>
+    <meta name="description" content="Research book chapter on AI/ML-based tennis analysis using YOLO, PyTorch, computer vision, and keypoint extraction. Published by Bentham Science Publishers.">
+    <meta name="author" content="Dhruv Dhayal">
+    <meta name="keywords" content="Tennis Analysis, Artificial Intelligence, Machine Learning, YOLO, PyTorch, Computer Vision, Keypoint Extraction, Sports Analytics, Bentham Science">
+    <link rel="icon" href="../favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+         :root {
+            --background: #ffffff;
+            --surface: #f8fafc;
+            --surface-hover: #f1f5f9;
+            --primary: #111827;
+            --secondary: #64748b;
+            --border: #e2e8f0;
+            --accent: #22c55e;
+            --accent-hover: #16a34a;
+            --tag-background: rgba(34, 197, 94, .08);
+            --tag-border: rgba(34, 197, 94, .25);
+            --shadow: rgba(0, 0, 0, .08);
+        }
+        
+        html.dark {
+            --background: #000000;
+            --surface: #0a0a0a;
+            --surface-hover: #111111;
+            --primary: #f8fafc;
+            --secondary: #94a3b8;
+            --border: #222222;
+            --accent: #22c55e;
+            --accent-hover: #4ade80;
+            --tag-background: rgba(34, 197, 94, .08);
+            --tag-border: rgba(34, 197, 94, .28);
+            --shadow: rgba(0, 0, 0, .35);
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background: var(--background);
+            color: var(--primary);
+            font-family: "Inter", sans-serif;
+            line-height: 1.7;
+            transition: background-color .3s ease, color .3s ease;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        button {
+            font-family: inherit;
+        }
+        
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        
+         ::selection {
+            background: rgba(34, 197, 94, .25);
+            color: var(--primary);
+        }
+        
+        #mainHeader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            height: 80px;
+            background: transparent;
+            transition: background .3s ease, backdrop-filter .3s ease, border-color .3s ease, box-shadow .3s ease;
+        }
+        
+        #mainHeader.scrolled-header {
+            background: rgba(255, 255, 255, .72);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border-bottom: 1px solid rgba(0, 0, 0, .08);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, .06);
+        }
+        
+        html.dark #mainHeader.scrolled-header {
+            background: rgba(0, 0, 0, .72);
+            border-bottom: 1px solid rgba(255, 255, 255, .08);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, .35);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            height: 100%;
+            margin: auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--primary);
+            transition: color .25s ease;
+        }
+        
+        .logo:hover {
+            color: var(--accent);
+        }
+        
+        .desktop-nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .nav-link,
+        .resume-btn {
+            font-size: 14px;
+            color: var(--secondary);
+            transition: color .2s ease;
+        }
+        
+        .nav-link:hover,
+        .nav-link.active,
+        .resume-btn:hover {
+            color: var(--accent);
+        }
+        
+        .resume-btn {
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            width: 42px;
+            height: 42px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .mobile-menu-btn span {
+            width: 23px;
+            height: 2px;
+            background: var(--primary);
+            transition: .25s ease;
+        }
+        
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            right: 0;
+            padding: 20px 24px;
+            background: var(--background);
+            border-bottom: 1px solid var(--border);
+            box-shadow: 0 10px 25px var(--shadow);
+        }
+        
+        .mobile-menu.open {
+            display: block;
+        }
+        
+        .mobile-menu a,
+        .mobile-menu button {
+            display: block;
+            width: 100%;
+            padding: 12px 0;
+            border: none;
+            background: transparent;
+            text-align: left;
+            color: var(--secondary);
+            font-size: 15px;
+            cursor: pointer;
+        }
+        
+        .mobile-menu a:hover,
+        .mobile-menu button:hover {
+            color: var(--accent);
+        }
+        
+        main {
+            min-height: 100vh;
+        }
+        
+        .article-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 130px 24px 80px;
+        }
+        
+        article {
+            max-width: 850px;
+            margin: auto;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: var(--secondary);
+            margin-bottom: 32px;
+            transition: color .25s ease;
+        }
+        
+        .back-link:hover {
+            color: var(--accent);
+        }
+        
+        .back-link svg {
+            width: 17px;
+            height: 17px;
+        }
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+            margin-bottom: 18px;
+        }
+        
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 7px 11px;
+            border: 1px solid rgba(0, 255, 154, .18);
+            background: rgba(0, 255, 154, .075);
+            color: var(--accent);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.25;
+            border-radius: 2px;
+            transition: color .2s ease, background .2s ease, border-color .2s ease;
+        }
+        
+        .tag:hover {
+            color: var(--accent-hover);
+            background: rgba(34, 197, 94, .14);
+            border-color: rgba(34, 197, 94, .38);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(34, 197, 94, .08);
+        }
+        
+        .article-header {
+            margin-bottom: 45px;
+        }
+        
+        .article-title {
+            font-size: clamp(30px, 5vw, 48px);
+            line-height: 1.15;
+            font-weight: 700;
+            letter-spacing: -.035em;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .article-subtitle {
+            font-size: 17px;
+            line-height: 1.8;
+            color: var(--secondary);
+            margin-bottom: 25px;
+        }
+        
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 16px;
+            padding-bottom: 22px;
+            border-bottom: 1px solid var(--border);
+            color: var(--secondary);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 12px;
+        }
+        
+        .meta-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .meta-item svg {
+            width: 14px;
+            height: 14px;
+            flex-shrink: 0;
+        }
+        
+        .article-content {
+            color: var(--secondary);
+            font-size: 17px;
+        }
+        
+        .article-content h2 {
+            margin-top: 55px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+            font-size: 28px;
+            line-height: 1.35;
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .article-content h3 {
+            margin: 28px 0 12px;
+            font-size: 20px;
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .article-content p {
+            margin-bottom: 25px;
+            color: var(--secondary);
+            line-height: 1.85;
+        }
+        
+        .article-content strong {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .article-list {
+            margin: 0 0 28px 28px;
+            padding-left: 22px;
+            color: var(--secondary);
+        }
+        
+        .article-list li {
+            padding-left: 8px;
+            margin-bottom: 14px;
+            line-height: 1.8;
+        }
+        
+        .article-image {
+            margin: 40px auto;
+            max-width: 850px;
+        }
+        
+        .article-image-wrapper {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            background: var(--surface);
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+        
+        .article-image img {
+            width: 100%;
+            height: auto;
+            transition: transform .4s ease;
+        }
+        
+        .article-image:hover img {
+            transform: scale(1.01);
+        }
+        
+        .image-caption {
+            display: block;
+            margin-top: 12px;
+            padding: 0 12px;
+            text-align: center;
+            color: var(--secondary);
+            opacity: .85;
+            font-size: 12px;
+            font-style: italic;
+        }
+        
+        .publication-info {
+            margin: 35px 0;
+            padding: 24px;
+            border: 1px solid var(--border);
+            background: var(--surface);
+            border-radius: 8px;
+        }
+        
+        .publication-info-row {
+            display: flex;
+            gap: 18px;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .publication-info-row:last-child {
+            border-bottom: none;
+        }
+        
+        .publication-info-label {
+            min-width: 145px;
+            color: var(--primary);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .publication-info-value {
+            color: var(--secondary);
+            font-size: 14px;
+            overflow-wrap: anywhere;
+        }
+        
+        .publication-info-value a {
+            color: var(--accent);
+        }
+        
+        .publication-info-value a:hover {
+            color: var(--accent-hover);
+        }
+        
+        .article-footer {
+            margin-top: 55px;
+            padding-top: 25px;
+            border-top: 1px solid var(--border);
+        }
+        
+        .publications-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            font-size: 14px;
+            color: var(--secondary);
+            transition: color .25s ease, transform .25s ease;
+        }
+        
+        .publications-link:hover {
+            color: var(--accent);
+            transform: translateX(3px);
+        }
+        
+        .site-footer {
+            background: var(--surface);
+            border-top: 1px solid var(--border);
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 55px 24px 30px;
+        }
+        
+        .footer-grid {
+            max-width: 1000px;
+            margin: 0 auto 45px;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1fr;
+            gap: 70px;
+        }
+        
+        .footer-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+        
+        .footer-description {
+            font-size: 14px;
+            line-height: 1.8;
+            color: var(--secondary);
+            max-width: 330px;
+        }
+        
+        .footer-heading {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 18px;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 11px;
+        }
+        
+        .footer-links a {
+            color: var(--secondary);
+            font-size: 14px;
+            transition: color .2s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+        
+        .social-icons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .social-icon {
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border);
+            color: var(--secondary);
+            background: transparent;
+            transition: .2s ease;
+        }
+        
+        .social-icon:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: rgba(34, 197, 94, .05);
+            transform: translateY(-2px);
+        }
+        
+        .social-icon svg {
+            width: 18px;
+            height: 18px;
+            display: block;
+        }
+        
+        .footer-divider {
+            height: 1px;
+            background: var(--border);
+            margin-bottom: 22px;
+        }
+        
+        .copyright {
+            color: var(--secondary);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 11px;
+        }
+        
+        .floating-actions {
+            position: fixed;
+            right: 18px;
+            bottom: 24px;
+            z-index: 99999;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .float-btn {
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            border: 1px solid #d1d5db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background: #fff;
+            color: #111;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, .15);
+            transition: transform .25s ease, background .25s ease, color .25s ease, border-color .25s ease, box-shadow .25s ease;
+        }
+        
+        html.dark .float-btn {
+            background: #000;
+            color: #fff;
+            border-color: #333;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, .45);
+        }
+        
+        .float-btn:hover {
+            transform: scale(1.08);
+            border-color: var(--accent);
+            color: var(--accent);
+            box-shadow: 0 10px 30px rgba(34, 197, 94, .15);
+        }
+        
+        .float-btn svg {
+            width: 22px;
+            height: 22px;
+        }
+        
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
+        @media (max-width:768px) {
+            #mainHeader {
+                height: 70px;
+            }
+            .desktop-nav {
+                display: none;
+            }
+            .mobile-menu-btn {
+                display: flex;
+            }
+            .mobile-menu {
+                top: 70px;
+            }
+            .article-container {
+                padding: 105px 18px 60px;
+            }
+            .article-title {
+                font-size: 32px;
+            }
+            .article-subtitle {
+                font-size: 15px;
+            }
+            .article-content {
+                font-size: 16px;
+            }
+            .article-content h2 {
+                font-size: 24px;
+            }
+            .publication-info-row {
+                flex-direction: column;
+                gap: 4px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 38px;
+            }
+            .floating-actions {
+                right: 14px;
+                bottom: 18px;
+            }
+            .float-btn {
+                width: 52px;
+                height: 52px;
+            }
+        }
+        
+        @media (max-width:480px) {
+            .nav-container {
+                padding: 0 18px;
+            }
+            .article-container {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+            .article-title {
+                font-size: 29px;
+            }
+            .tags {
+                gap: 6px;
+            }
+            .tag {
+                font-size: 10px;
+                padding: 7px 8px;
+            }
+            .article-meta {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER / NAVIGATION -->
+    <header id="mainHeader">
+        <nav class="nav-container" aria-label="Main navigation">
+            <a href="../index.html" class="logo">Dhruv Dhayal</a>
+            <div class="desktop-nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../projects.html" class="nav-link">Projects</a>
+                <a href="../experience.html" class="nav-link">Experience</a>
+                <a href="../blog.html" class="nav-link active">Publications</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+                <button class="resume-btn" onclick="window.open('../images/UPDATED%20JUNE%20SUMMER%20CV.pdf','_blank')">Resume ↗</button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="../index.html">Home</a>
+            <a href="../projects.html">Projects</a>
+            <a href="../experience.html">Experience</a>
+            <a href="../blog.html">Publications</a>
+            <a href="../index.html#contact">Contact</a>
+            <button onclick="window.open('../images/UPDATED%20JUNE%20SUMMER%20CV.pdf','_blank')">Resume ↗</button>
+        </div>
+    </header>
+
+    <!-- PUBLICATION CONTENT -->
+    <main>
+        <div class="article-container">
+            <article>
+                <a href="../blog.html" class="back-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path>
+                    </svg> Back to Publications
+                </a>
+
+                <header class="article-header">
+                    <div class="tags">
+                        <span class="tag">Artificial Intelligence</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">YOLO Object Detection</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Tennis Analytics</span>
+                        <span class="tag">Keypoint Extraction</span>
+                    </div>
+
+                    <h1 class="article-title">Build an AI/ML Tennis Analysis System with YOLO, PyTorch, and Key Point Extraction</h1>
+                    <p class="article-subtitle">
+                        A research book chapter exploring the use of artificial intelligence, deep learning, and computer vision for tennis video analysis, object detection, and keypoint-based visual understanding.
+                    </p>
+
+                    <div class="article-meta">
+                        <span class="meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            2026
+                        </span>
+                        <span class="meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                            Research Book Chapter
+                        </span>
+                        <span class="meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                            Bentham Science Publishers
+                        </span>
+                    </div>
+                </header>
+
+                <div class="article-content">
+                    <h2>Abstract</h2>
+                    <p>
+                        Artificial intelligence and computer vision are creating new opportunities for automated sports analysis. Tennis footage can be challenging to interpret computationally because of fast player movement, small objects such as tennis balls, changing camera
+                        perspectives, and complex court interactions.
+                    </p>
+                    <p>
+                        The chapter <strong>Build an AI/ML Tennis Analysis System with YOLO, PyTorch, and Key Point Extraction</strong> explores a computer-vision approach to tennis analysis using modern deep-learning tools. Its stated technical focus
+                        brings together YOLO-based object detection, PyTorch-based model development, and keypoint extraction to support the interpretation of visual information from tennis footage.
+                    </p>
+                    <p>
+                        These methods can form components of a sports-analysis workflow: detecting relevant objects, representing spatial information, and visualizing model outputs. Practical performance depends on the selected models, available data, video conditions, and appropriate
+                        evaluation.
+                    </p>
+
+                    <h2>Research Overview</h2>
+                    <p>
+                        The research topic examines how AI and machine learning can make tennis video analysis more systematic and computationally assisted. A computer-vision pipeline can process recorded footage and extract visual information that may help analysts review a
+                        tennis scene.
+                    </p>
+                    <p>
+                        Object detection, deep learning, and keypoint extraction serve complementary purposes. Detection can identify objects of interest, while keypoints can represent selected spatial landmarks. Together, these outputs can provide a structured view of a scene
+                        for further analysis.
+                    </p>
+
+                    <figure class="article-image">
+                        <div class="article-image-wrapper">
+                            <img src="../images/PUBLICATIONS/Fig 6.1.png" alt="Conceptual AI tennis-analysis workflow showing video input, frame processing, object detection, keypoint extraction, and visualization." loading="lazy">
+                        </div>
+                        <figcaption class="image-caption">
+                            Figure 1. Conceptual workflow for AI-assisted tennis video analysis, from video input and frame processing to object detection, keypoint extraction, and visualization. Replace this illustration with the actual workflow from the chapter when available.
+                        </figcaption>
+                    </figure>
+
+                    <h2>Research Objectives</h2>
+                    <p>The chapter's technology focus can be organized around the following objectives:</p>
+                    <ol class="article-list">
+                        <li><strong>Object detection:</strong> Explore YOLO-based approaches to locating and classifying relevant objects in tennis footage, depending on the selected model and its trained classes.</li>
+                        <li><strong>Deep learning:</strong> Examine PyTorch as a framework for implementing, training, loading, or evaluating models used in computer-vision tasks.</li>
+                        <li><strong>Keypoint extraction:</strong> Represent selected spatial landmarks, such as body joints or court points, according to the chosen keypoint or pose-estimation method.</li>
+                        <li><strong>Visual interpretation:</strong> Organize model predictions into overlays and structured visual outputs that can be reviewed by a human analyst.</li>
+                        <li><strong>Pipeline integration:</strong> Consider how video processing, object detection, and spatial information extraction can be combined into an AI-assisted workflow.</li>
+                    </ol>
+
+                    <h2>Technical Methodology</h2>
+                    <h3>1. Video Input and Frame Processing</h3>
+                    <p>Recorded tennis footage can be processed as a sequence of frames. Depending on the implementation, frames may be sampled, resized, and preprocessed before being passed to a computer-vision model.</p>
+
+                    <h3>2. YOLO-Based Object Detection</h3>
+                    <p>YOLO is a family of object-detection models designed to locate and classify objects in images. In a tennis-analysis application, a suitably trained model may detect players, tennis balls, or other relevant objects. Performance depends
+                        on model selection, training data, camera conditions, and object visibility.</p>
+
+                    <h3>3. PyTorch and Deep Learning</h3>
+                    <p>PyTorch provides tools for developing and running machine-learning models. It can be part of a computer-vision workflow for model training, inference, and evaluation, depending on the model implementation and framework compatibility.</p>
+
+                    <h3>4. Keypoint Extraction</h3>
+                    <p>Keypoint extraction provides spatial information about selected landmarks. Depending on the method, these may represent human body joints, court landmarks, or other points of interest. Such information can help describe positions and
+                        spatial relationships in a video frame.</p>
+
+                    <h3>5. Visualization and Analysis</h3>
+                    <p>Bounding boxes, class labels, confidence scores, and extracted keypoints can be visualized over video frames. These visual outputs make model predictions easier to inspect. Quantitative claims about performance or match events require
+                        appropriate validation.</p>
+
+                    <figure class="article-image">
+                        <div class="article-image-wrapper">
+                            <img src="../images/PUBLICATIONS/Fig 6.1.png" alt="Illustrative computer-vision visualization of a tennis scene with player detection boxes and spatial keypoints." loading="lazy">
+                        </div>
+                        <figcaption class="image-caption">
+                            Figure 2. Illustrative tennis-scene visualization showing how object detection and keypoint overlays may be presented. Replace with a genuine screenshot or figure from the research chapter; do not present illustrative imagery as experimental results.
+                        </figcaption>
+                    </figure>
+
+                    <h2>Technologies and Tools</h2>
+                    <ol class="article-list">
+                        <li><strong>YOLO:</strong> Object detection in images and video frames.</li>
+                        <li><strong>PyTorch:</strong> Deep-learning development, model execution, and evaluation.</li>
+                        <li><strong>Computer vision:</strong> Processing and interpretation of visual data.</li>
+                        <li><strong>Keypoint extraction:</strong> Spatial landmark representation using a suitable keypoint or pose-estimation method.</li>
+                        <li><strong>Video processing:</strong> Frame-based analysis and visualization of model predictions.</li>
+                    </ol>
+
+                    <h2>Potential Applications</h2>
+                    <ol class="article-list">
+                        <li><strong>Sports performance review:</strong> Assist coaches and analysts in reviewing player positions and selected visual events.</li>
+                        <li><strong>Automated video annotation:</strong> Help locate objects and add visual labels to recorded tennis footage.</li>
+                        <li><strong>Player movement studies:</strong> Use suitable keypoints to investigate spatial movement patterns across video frames.</li>
+                        <li><strong>Sports technology research:</strong> Support further exploration of computer vision in sports applications.</li>
+                        <li><strong>Training-support tools:</strong> Inform systems that assist video review and training workflows.</li>
+                    </ol>
+
+                    <h2>Research Challenges and Considerations</h2>
+                    <p>
+                        Tennis analysis presents several computer-vision challenges, including motion blur, occlusion, variable lighting, camera angle, the small apparent size of the ball, and rapid movement. Detection and keypoint quality can be affected by these conditions
+                        and by the data used to train a model.
+                    </p>
+                    <p>
+                        Reliable evaluation is essential before making claims about accuracy, player performance, or match events. Any deployed system should be tested on suitable footage and evaluated against clearly defined criteria.
+                    </p>
+
+                    <h2>Conclusion</h2>
+                    <p>
+                        <strong>Build an AI/ML Tennis Analysis System with YOLO, PyTorch, and Key Point Extraction</strong> focuses on the application of artificial intelligence and computer vision to tennis video analysis. Object detection, deep learning,
+                        and keypoint extraction provide complementary methods for interpreting visual information from a court scene.
+                    </p>
+                    <p>
+                        The topic offers a foundation for further work on automated sports analysis, video annotation, and intelligent training applications. The usefulness of a practical implementation depends on its design, data quality, testing, and validation.
+                    </p>
+
+                    <h2>Publication Details</h2>
+                    <div class="publication-info">
+                        <div class="publication-info-row">
+                            <div class="publication-info-label">Chapter Title</div>
+                            <div class="publication-info-value">Build an AI/ML Tennis Analysis System with YOLO, PyTorch, and Key Point Extraction</div>
+                        </div>
+                        <div class="publication-info-row">
+                            <div class="publication-info-label">Publication Type</div>
+                            <div class="publication-info-value">Book Chapter</div>
+                        </div>
+                        <div class="publication-info-row">
+                            <div class="publication-info-label">Book Title</div>
+                            <div class="publication-info-value">Advances in Science, Technology, and Engineering: Trends and Applications</div>
+                        </div>
+                        <div class="publication-info-row">
+                            <div class="publication-info-label">Publisher</div>
+                            <div class="publication-info-value">Bentham Science Publishers</div>
+                        </div>
+                        <div class="publication-info-row">
+                            <div class="publication-info-label">Year</div>
+                            <div class="publication-info-value">2026</div>
+                        </div>
+                        <div class="publication-info-row">
+                            <div class="publication-info-label">Authors / Contributors</div>
+                            <div class="publication-info-value">Dhruv Dhayal; Preeti; Ganesh Kr. Wadhwani; Vikas Bharara; Pankaj Kr. Varshney. Please verify spelling and author order against the publisher's record.</div>
+                        </div>
+                        <div class="publication-info-row">
+                            <div class="publication-info-label">Pages</div>
+                            <div class="publication-info-value">167–179</div>
+                        </div>
+                        <div class="publication-info-row">
+                            <div class="publication-info-label">Online ISBN</div>
+                            <div class="publication-info-value">979-8-89881-684-1</div>
+                        </div>
+                        <div class="publication-info-row">
+                            <div class="publication-info-label">Chapter DOI</div>
+                            <div class="publication-info-value"><a href="https://doi.org/10.2174/9798898816841126010011" target="_blank" rel="noopener noreferrer">10.2174/9798898816841126010011</a></div>
+                        </div>
+                        <div class="publication-info-row">
+                            <div class="publication-info-label">Publisher Record</div>
+                            <div class="publication-info-value"><a href="https://www.benthamscience.com/public/ebook_volume/4174" target="_blank" rel="noopener noreferrer">View on Bentham Science</a></div>
+                        </div>
+                    </div>
+
+                    <h2>About This Publication</h2>
+                    <p>
+                        This chapter contributes to the broader discussion of AI, machine learning, and computer vision for sports analysis. It highlights the relevance of object detection and keypoint-based methods in developing systems that interpret visual information from
+                        tennis footage.
+                    </p>
+
+                    <div class="article-footer">
+                        <a href="../blog.html" class="publications-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17" aria-hidden="true">
+                                <path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path>
+                            </svg> Explore More Publications
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div>
+                    <h2 class="footer-title">Dhruv Dhayal</h2>
+                    <p class="footer-description">Research and software development at the intersection of artificial intelligence, computer vision, and software engineering.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../projects.html">Projects</a></li>
+                        <li><a href="../experience.html">Experience</a></li>
+                        <li><a href="../blog.html">Publications</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Publication</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://doi.org/10.2174/9798898816841126010011" target="_blank" rel="noopener noreferrer">Chapter DOI</a></li>
+                        <li><a href="https://www.benthamscience.com/public/ebook_volume/4174" target="_blank" rel="noopener noreferrer">Bentham Science record</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <p class="copyright">© <span id="currentYear"></span> Dhruv Dhayal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING THEME / TOP BUTTONS -->
+    <div class="floating-actions">
+        <button class="float-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+        <button class="float-btn" id="backToTop" aria-label="Back to top" title="Back to top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 19V5"></path><path d="m5 12 7-7 7 7"></path>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        // Header blur after scrolling
+        const mainHeader = document.getElementById("mainHeader");
+
+        function updateHeader() {
+            if (window.scrollY > 20) mainHeader.classList.add("scrolled-header");
+            else mainHeader.classList.remove("scrolled-header");
+        }
+        window.addEventListener("scroll", updateHeader);
+        updateHeader();
+
+        // Mobile navigation
+        const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenuBtn.addEventListener("click", () => {
+            const isOpen = mobileMenu.classList.toggle("open");
+            mobileMenuBtn.setAttribute("aria-expanded", String(isOpen));
+            mobileMenuBtn.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+        });
+        mobileMenu.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.remove("open");
+                mobileMenuBtn.setAttribute("aria-expanded", "false");
+            });
+        });
+
+        // Theme toggle (uses localStorage when available)
+        const themeToggle = document.getElementById("themeToggle");
+        const themeIcon = document.getElementById("themeIcon");
+
+        function setTheme(dark) {
+            document.documentElement.classList.toggle("dark", dark);
+            themeIcon.innerHTML = dark ?
+                '<circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>' :
+                '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>';
+            themeToggle.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+            try {
+                localStorage.setItem("publication-theme", dark ? "dark" : "light");
+            } catch (e) {}
+        }
+        let initialDark = true;
+        try {
+            const savedTheme = localStorage.getItem("publication-theme");
+            if (savedTheme) initialDark = savedTheme === "dark";
+        } catch (e) {}
+        setTheme(initialDark);
+        themeToggle.addEventListener("click", () => {
+            setTheme(!document.documentElement.classList.contains("dark"));
+        });
+
+        // Back to top
+        document.getElementById("backToTop").addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+        // Footer year
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
